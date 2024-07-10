@@ -1,1 +1,189 @@
-Hello Wolrd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Resume - Aboul Hassane Cisse</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <!-- jsPDF Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body id="page-top">
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <div>
+            <select id="language-select" onchange="changeLanguage()" class="form-select mt-3">
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <!-- <option value="so">Songhoy</option> -->
+                <!-- <option value="bm">Bambara</option> -->
+                <option value="ja">Japanese</option>
+            </select>
+        </div>
+
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">Aboul Hassane Cisse</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..." /></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav" id="navbar-menu">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-key="about"><i class="fas fa-user"></i> About</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-key="interests"><i class="fas fa-heart"></i> Interests</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications" data-key="publications"><i class="fas fa-book"></i> Publications</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-key="experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-key="skills"><i class="fas fa-tools"></i> Skills</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-key="education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards" data-key="awards"><i class="fas fa-award"></i> Awards</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services" data-key="services"><i class="fas fa-concierge-bell"></i> Services</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery" data-key="gallery"><i class="fas fa-images"></i> Gallery</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map" data-key="map"><i class="fas fa-globe"></i> Around the World</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" data-key="contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li class="nav-item"><a id="download-pdf" onclick="downloadPDF()" class="nav-link js-scroll-trigger"><i class="fas fa-envelope"></i> Download as PDF</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h1>
+                    Aboul Hassane (Pacha)
+                    <span class="text-primary">Cisse</span>
+                </h1>
+                <h2 id="about-title" class="mb-0">
+                    Aboul Hassane (Pacha)
+                    <span class="text-primary">Cisse</span>
+                </h2>
+                <div class="subheading mb-5">
+                    SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 ·
+                    <a href="mailto:aboulhcisse@gmail.com">aboulhcisse@gmail.com</a>
+                </div>
+                <p id="about-lead" class="lead mb-5"></p>
+                <div class="social-icons">
+                    <a class="social-icon" href="https://www.linkedin.com/in/pachaboul/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="social-icon" href="https://github.com/pachaboul" target="_blank"><i class="fab fa-github"></i></a>
+                    <a class="social-icon" href="https://twitter.com/pachaboul" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a class="social-icon" href="https://www.facebook.com/aboulhassanec" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <hr class="m-0" />
+
+        <!-- Interests-->
+        <section class="resume-section" id="interests">
+            <div class="resume-section-content">
+                <h2 id="interests-title" class="mb-5">Interests</h2>
+                <p id="interests-content" class="mb-5"></p>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Publications-->
+        <section class="resume-section" id="publications">
+            <div class="resume-section-content">
+                <h2 id="publications-title" class="mb-5">Publications</h2>
+                <div id="publications-list"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Experience-->
+        <section class="resume-section" id="experience">
+            <div class="resume-section-content">
+                <h2 id="experience-title" class="mb-5">Experience</h2>
+                <div id="experience-list"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Skills-->
+        <section class="resume-section" id="skills">
+            <div class="resume-section-content">
+                <h2 id="skills-title" class="mb-5">Skills</h2>
+                <div id="skills-list"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Education-->
+        <section class="resume-section" id="education">
+            <div class="resume-section-content">
+                <h2 id="education-title" class="mb-5">Education</h2>
+                <div id="education-list"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Awards-->
+        <section class="resume-section" id="awards">
+            <div class="resume-section-content">
+                <h2 id="awards-title" class="mb-5">Awards & Scholarships</h2>
+                <ul id="awards-list" class="fa-ul mb-0"></ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Services-->
+        <section class="resume-section" id="services">
+            <div class="resume-section-content">
+                <h2 id="services-title" class="mb-5">Services</h2>
+                <ul id="services-list" class="fa-ul mb-0"></ul>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Contact-->
+        <section class="resume-section" id="contact">
+            <div class="resume-section-content">
+                <h2 id="contact-title" class="mb-5">Contact</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+                <div id="contact-status"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Map-->
+        <section class="resume-section" id="map">
+            <div class="resume-section-content">
+                <h2 id="map-title" class="mb-5">Around the World</h2>
+                <div id="map-container" style="width: 100%; height: 500px;"></div>
+            </div>
+        </section>
+        <hr class="m-0" />
+        <!-- Gallery-->
+        <section class="resume-section" id="gallery">
+            <div class="resume-section-content">
+                <h2 id="gallery-title" class="mb-5">Gallery</h2>
+                <div id="gallery-list" class="row"></div>
+            </div>
+        </section>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/functions.js"></script>
+</body>
+</html>
