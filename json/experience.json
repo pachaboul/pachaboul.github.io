@@ -1,0 +1,447 @@
+{
+    "en": {
+        "title": "Experience",
+        "list": [
+            {
+                "title": "Co-Founder & Executive Officer",
+                "company": "SankoPlus - Japan-Africa Economic, Cultural, and Technological Exchange Initiative",
+                "description": "Leading initiatives to foster economic, cultural, and technological exchange between Japan and Africa.",
+                "date": "March 13, 2024 - Present"
+            },
+            {
+                "title": "Intern",
+                "company": "Kyōiku Jōhō Sābisu - An ICT company focused on Education in Miyazaki (Japan)",
+                "description": "Worked on various ICT projects aimed at improving educational services.",
+                "date": "September 24, 2021 - March 11, 2022"
+            },
+            {
+                "title": "Founder & Manager",
+                "company": "ONG Smart YIRIBA - An incubator center of Technology and Entrepreneurship in Bamako (Mali)",
+                "description": "Founded and managed an incubator center focused on technology and entrepreneurship.",
+                "date": "May 15, 2018 - Present"
+            },
+            {
+                "title": "Webmaster",
+                "company": "Benbere",
+                "description": "Managed the Benbere platform, overseeing all web-related activities.",
+                "date": "May 2018 - Present"
+            },
+            {
+                "title": "Co-founder and Technical",
+                "company": "SankoreLabs - An incubator center of Entrepreneurship, Technology, and Governance in Timbuktu",
+                "description": "Co-founded and managed technical operations for an incubator center.",
+                "date": "June 2016 - September 2019"
+            },
+            {
+                "title": "Management IT Advisor",
+                "company": "DELTA-C - Bamako and Timbuktu (Mali)",
+                "description": "Provided IT management and advisory services for a private university.",
+                "date": "February 1, 2016 - January 31, 2019"
+            },
+            {
+                "title": "Technology Specialist",
+                "company": "ABSIS Technology",
+                "description": "Specialized in various technology-related projects and services.",
+                "date": "March 1, 2015 - January 31, 2016"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "Sup’Management",
+                "description": "Trained students in IT at a private higher education institution in Mali.",
+                "date": "December 2015 - March 2016"
+            },
+            {
+                "title": "Blogger",
+                "company": "malitechblog.wordpress.com and pachapic.wordpress.com",
+                "description": "Blogged on topics of new technology and everyday life through images.",
+                "date": "December 2015 - Present"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "ISFIC - Higher Institute of Training in Information and Commerce in Bamako (Mali)",
+                "description": "Provided IT training at a private university.",
+                "date": "January 8, 2015 - March 31, 2016"
+            },
+            {
+                "title": "IT Project Manager",
+                "company": "BMA Inter - Solar energy and IT company in Bamako (Mali)",
+                "description": "Managed IT projects focused on solar energy.",
+                "date": "December 1, 2014 - February 28, 2015"
+            },
+            {
+                "title": "Technician",
+                "company": "Naima Trading SARL - Cotonou (Benin)",
+                "description": "Worked as a technician in the SAV.",
+                "date": "March 27 - August 2014"
+            },
+            {
+                "title": "IT Developer",
+                "company": "Chic Web Design - Remote Work",
+                "description": "Developed IT solutions remotely for various clients.",
+                "date": "June 2012 - September 5, 2013"
+            },
+            {
+                "title": "End of Study Internship",
+                "company": "Tynex Media - Agadir (Morocco)",
+                "description": "Completed an internship focusing on web hosting and media services.",
+                "date": "April 6 - May 20, 2012"
+            }
+        ]
+    },
+    "fr": {
+        "title": "Expérience",
+        "list": [
+            {
+                "title": "Co-fondateur et directeur exécutif",
+                "company": "SankoPlus - Initiative d'échange économique, culturel et technologique Japon-Afrique",
+                "description": "Dirige des initiatives visant à promouvoir les échanges économiques, culturels et technologiques entre le Japon et l'Afrique.",
+                "date": "13 mars 2024 - Présent"
+            },
+            {
+                "title": "Stagiaire",
+                "company": "Kyōiku Jōhō Sābisu - Une entreprise TIC axée sur l'éducation à Miyazaki (Japon)",
+                "description": "Travaillé sur divers projets TIC visant à améliorer les services éducatifs.",
+                "date": "24 septembre 2021 - 11 mars 2022"
+            },
+            {
+                "title": "Fondateur et gérant",
+                "company": "ONG Smart YIRIBA - Un centre d'incubation de technologie et d'entrepreneuriat à Bamako (Mali)",
+                "description": "Fondé et géré un centre d'incubation axé sur la technologie et l'entrepreneuriat.",
+                "date": "15 mai 2018 - Présent"
+            },
+            {
+                "title": "Webmaster",
+                "company": "Benbere",
+                "description": "Géré la plateforme Benbere, supervisant toutes les activités liées au web.",
+                "date": "Mai 2018 - Présent"
+            },
+            {
+                "title": "Cofondateur et technique",
+                "company": "SankoreLabs - Un centre d'incubation d'entrepreneuriat, de technologie et de gouvernance à Tombouctou",
+                "description": "Cofondé et géré les opérations techniques pour un centre d'incubation.",
+                "date": "Juin 2016 - Septembre 2019"
+            },
+            {
+                "title": "Conseiller en gestion informatique",
+                "company": "DELTA-C - Bamako et Tombouctou (Mali)",
+                "description": "Fournit des services de gestion et de conseil en informatique pour une université privée.",
+                "date": "1er février 2016 - 31 janvier 2019"
+            },
+            {
+                "title": "Spécialiste en technologie",
+                "company": "ABSIS Technology",
+                "description": "Spécialisé dans divers projets et services liés à la technologie.",
+                "date": "1er mars 2015 - 31 janvier 2016"
+            },
+            {
+                "title": "Formateur en informatique",
+                "company": "Sup’Management",
+                "description": "Formé des étudiants en informatique dans une institution d'enseignement supérieur privée au Mali.",
+                "date": "Décembre 2015 - Mars 2016"
+            },
+            {
+                "title": "Blogger",
+                "company": "malitechblog.wordpress.com et pachapic.wordpress.com",
+                "description": "Blogué sur des sujets de nouvelles technologies et de la vie quotidienne à travers des images.",
+                "date": "Décembre 2015 - Présent"
+            },
+            {
+                "title": "Formateur en informatique",
+                "company": "ISFIC - Institut Supérieur de Formation en Informatique et Commerce à Bamako (Mali)",
+                "description": "A dispensé une formation en informatique dans une université privée.",
+                "date": "8 janvier 2015 - 31 mars 2016"
+            },
+            {
+                "title": "Chef de projet informatique",
+                "company": "BMA Inter - Société d'énergie solaire et informatique à Bamako (Mali)",
+                "description": "Géré des projets informatiques axés sur l'énergie solaire.",
+                "date": "1er décembre 2014 - 28 février 2015"
+            },
+            {
+                "title": "Technicien",
+                "company": "Naima Trading SARL - Cotonou (Bénin)",
+                "description": "Travaillé comme technicien dans le SAV.",
+                "date": "27 mars - août 2014"
+            },
+            {
+                "title": "Développeur informatique",
+                "company": "Chic Web Design - Travail à distance",
+                "description": "Développé des solutions informatiques à distance pour divers clients.",
+                "date": "Juin 2012 - 5 septembre 2013"
+            },
+            {
+                "title": "Stage de fin d'études",
+                "company": "Tynex Media - Agadir (Maroc)",
+                "description": "A effectué un stage axé sur l'hébergement web et les services de médias.",
+                "date": "6 avril - 20 mai 2012"
+            }
+        ]
+    },
+    "so": {
+        "title": "Songhoy Experience",
+        "list": [
+            {
+                "title": "Co-Founder & Executive Officer",
+                "company": "SankoPlus - Japan-Africa Economic, Cultural, and Technological Exchange Initiative",
+                "description": "Leading initiatives to foster economic, cultural, and technological exchange between Japan and Africa.",
+                "date": "March 13, 2024 - Present"
+            },
+            {
+                "title": "Intern",
+                "company": "Kyōiku Jōhō Sābisu - An ICT company focused on Education in Miyazaki (Japan)",
+                "description": "Worked on various ICT projects aimed at improving educational services.",
+                "date": "September 24, 2021 - March 11, 2022"
+            },
+            {
+                "title": "Founder & Manager",
+                "company": "ONG Smart YIRIBA - An incubator center of Technology and Entrepreneurship in Bamako (Mali)",
+                "description": "Founded and managed an incubator center focused on technology and entrepreneurship.",
+                "date": "May 15, 2018 - Present"
+            },
+            {
+                "title": "Webmaster",
+                "company": "Benbere",
+                "description": "Managed the Benbere platform, overseeing all web-related activities.",
+                "date": "May 2018 - Present"
+            },
+            {
+                "title": "Co-founder and Technical",
+                "company": "SankoreLabs - An incubator center of Entrepreneurship, Technology, and Governance in Timbuktu",
+                "description": "Co-founded and managed technical operations for an incubator center.",
+                "date": "June 2016 - September 2019"
+            },
+            {
+                "title": "Management IT Advisor",
+                "company": "DELTA-C - Bamako and Timbuktu (Mali)",
+                "description": "Provided IT management and advisory services for a private university.",
+                "date": "February 1, 2016 - January 31, 2019"
+            },
+            {
+                "title": "Technology Specialist",
+                "company": "ABSIS Technology",
+                "description": "Specialized in various technology-related projects and services.",
+                "date": "March 1, 2015 - January 31, 2016"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "Sup’Management",
+                "description": "Trained students in IT at a private higher education institution in Mali.",
+                "date": "December 2015 - March 2016"
+            },
+            {
+                "title": "Blogger",
+                "company": "malitechblog.wordpress.com and pachapic.wordpress.com",
+                "description": "Blogged on topics of new technology and everyday life through images.",
+                "date": "December 2015 - Present"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "ISFIC - Higher Institute of Training in Information and Commerce in Bamako (Mali)",
+                "description": "Provided IT training at a private university.",
+                "date": "January 8, 2015 - March 31, 2016"
+            },
+            {
+                "title": "IT Project Manager",
+                "company": "BMA Inter - Solar energy and IT company in Bamako (Mali)",
+                "description": "Managed IT projects focused on solar energy.",
+                "date": "December 1, 2014 - February 28, 2015"
+            },
+            {
+                "title": "Technician",
+                "company": "Naima Trading SARL - Cotonou (Benin)",
+                "description": "Worked as a technician in the SAV.",
+                "date": "March 27 - August 2014"
+            },
+            {
+                "title": "IT Developer",
+                "company": "Chic Web Design - Remote Work",
+                "description": "Developed IT solutions remotely for various clients.",
+                "date": "June 2012 - September 5, 2013"
+            },
+            {
+                "title": "End of Study Internship",
+                "company": "Tynex Media - Agadir (Morocco)",
+                "description": "Completed an internship focusing on web hosting and media services.",
+                "date": "April 6 - May 20, 2012"
+            }
+        ]
+    },
+    "bm": {
+        "title": "Bambara Experience",
+        "list": [
+            {
+                "title": "Co-Founder & Executive Officer",
+                "company": "SankoPlus - Japan-Africa Economic, Cultural, and Technological Exchange Initiative",
+                "description": "Leading initiatives to foster economic, cultural, and technological exchange between Japan and Africa.",
+                "date": "March 13, 2024 - Present"
+            },
+            {
+                "title": "Intern",
+                "company": "Kyōiku Jōhō Sābisu - An ICT company focused on Education in Miyazaki (Japan)",
+                "description": "Worked on various ICT projects aimed at improving educational services.",
+                "date": "September 24, 2021 - March 11, 2022"
+            },
+            {
+                "title": "Founder & Manager",
+                "company": "ONG Smart YIRIBA - An incubator center of Technology and Entrepreneurship in Bamako (Mali)",
+                "description": "Founded and managed an incubator center focused on technology and entrepreneurship.",
+                "date": "May 15, 2018 - Present"
+            },
+            {
+                "title": "Webmaster",
+                "company": "Benbere",
+                "description": "Managed the Benbere platform, overseeing all web-related activities.",
+                "date": "May 2018 - Present"
+            },
+            {
+                "title": "Co-founder and Technical",
+                "company": "SankoreLabs - An incubator center of Entrepreneurship, Technology, and Governance in Timbuktu",
+                "description": "Co-founded and managed technical operations for an incubator center.",
+                "date": "June 2016 - September 2019"
+            },
+            {
+                "title": "Management IT Advisor",
+                "company": "DELTA-C - Bamako and Timbuktu (Mali)",
+                "description": "Provided IT management and advisory services for a private university.",
+                "date": "February 1, 2016 - January 31, 2019"
+            },
+            {
+                "title": "Technology Specialist",
+                "company": "ABSIS Technology",
+                "description": "Specialized in various technology-related projects and services.",
+                "date": "March 1, 2015 - January 31, 2016"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "Sup’Management",
+                "description": "Trained students in IT at a private higher education institution in Mali.",
+                "date": "December 2015 - March 2016"
+            },
+            {
+                "title": "Blogger",
+                "company": "malitechblog.wordpress.com and pachapic.wordpress.com",
+                "description": "Blogged on topics of new technology and everyday life through images.",
+                "date": "December 2015 - Present"
+            },
+            {
+                "title": "IT Trainer",
+                "company": "ISFIC - Higher Institute of Training in Information and Commerce in Bamako (Mali)",
+                "description": "Provided IT training at a private university.",
+                "date": "January 8, 2015 - March 31, 2016"
+            },
+            {
+                "title": "IT Project Manager",
+                "company": "BMA Inter - Solar energy and IT company in Bamako (Mali)",
+                "description": "Managed IT projects focused on solar energy.",
+                "date": "December 1, 2014 - February 28, 2015"
+            },
+            {
+                "title": "Technician",
+                "company": "Naima Trading SARL - Cotonou (Benin)",
+                "description": "Worked as a technician in the SAV.",
+                "date": "March 27 - August 2014"
+            },
+            {
+                "title": "IT Developer",
+                "company": "Chic Web Design - Remote Work",
+                "description": "Developed IT solutions remotely for various clients.",
+                "date": "June 2012 - September 5, 2013"
+            },
+            {
+                "title": "End of Study Internship",
+                "company": "Tynex Media - Agadir (Morocco)",
+                "description": "Completed an internship focusing on web hosting and media services.",
+                "date": "April 6 - May 20, 2012"
+            }
+        ]
+    },
+    "ja": {
+        "title": "経験",
+        "list": [
+            {
+                "title": "共同創設者兼最高経営責任者",
+                "company": "SankoPlus - 日本・アフリカ経済、文化、技術交流イニシアチブ",
+                "description": "日本とアフリカ間の経済、文化、技術交流を促進するためのイニシアチブをリードしています。",
+                "date": "2024年3月13日 - 現在"
+            },
+            {
+                "title": "インターン",
+                "company": "Kyōiku Jōhō Sābisu - 宮崎の教育に焦点を当てたICT企業 (日本)",
+                "description": "教育サービスの向上を目指したさまざまなICTプロジェクトに取り組みました。",
+                "date": "2021年9月24日 - 2022年3月11日"
+            },
+            {
+                "title": "創設者兼マネージャー",
+                "company": "ONG Smart YIRIBA - バマコ（マリ）の技術と起業のインキュベーターセンター",
+                "description": "技術と起業に焦点を当てたインキュベーターセンターを創設し、管理しました。",
+                "date": "2018年5月15日 - 現在"
+            },
+            {
+                "title": "ウェブマスター",
+                "company": "Benbere",
+                "description": "Benbereプラットフォームを管理し、すべてのWeb関連活動を監督しました。",
+                "date": "2018年5月 - 現在"
+            },
+            {
+                "title": "共同創設者兼技術者",
+                "company": "SankoreLabs - トンブクトゥの起業、技術、ガバナンスのインキュベーターセンター",
+                "description": "インキュベーターセンターの技術運営を共同創設し、管理しました。",
+                "date": "2016年6月 - 2019年9月"
+            },
+            {
+                "title": "IT管理アドバイザー",
+                "company": "DELTA-C - バマコとトンブクトゥ (マリ)",
+                "description": "私立大学に対し、IT管理およびアドバイザリーサービスを提供しました。",
+                "date": "2016年2月1日 - 2019年1月31日"
+            },
+            {
+                "title": "技術専門家",
+                "company": "ABSIS Technology",
+                "description": "さまざまな技術関連プロジェクトやサービスに特化しています。",
+                "date": "2015年3月1日 - 2016年1月31日"
+            },
+            {
+                "title": "ITトレーナー",
+                "company": "Sup’Management",
+                "description": "マリの私立高等教育機関で学生にITを指導しました。",
+                "date": "2015年12月 - 2016年3月"
+            },
+            {
+                "title": "ブロガー",
+                "company": "malitechblog.wordpress.com と pachapic.wordpress.com",
+                "description": "新技術や日常生活に関するトピックを画像を通じてブログで発信しました。",
+                "date": "2015年12月 - 現在"
+            },
+            {
+                "title": "ITトレーナー",
+                "company": "ISFIC - バマコ（マリ）の情報と商業の高等訓練研究所",
+                "description": "私立大学でITトレーニングを提供しました。",
+                "date": "2015年1月8日 - 2016年3月31日"
+            },
+            {
+                "title": "ITプロジェクトマネージャー",
+                "company": "BMA Inter - バマコ（マリ）のソーラーエネルギーおよびIT企業",
+                "description": "ソーラーエネルギーに焦点を当てたITプロジェクトを管理しました。",
+                "date": "2014年12月1日 - 2015年2月28日"
+            },
+            {
+                "title": "技術者",
+                "company": "Naima Trading SARL - コトヌー（ベナン）",
+                "description": "SAVの技術者として働きました。",
+                "date": "2014年3月27日 - 8月"
+            },
+            {
+                "title": "IT開発者",
+                "company": "Chic Web Design - リモートワーク",
+                "description": "さまざまなクライアントのためにリモートでITソリューションを開発しました。",
+                "date": "2012年6月 - 2013年9月5日"
+            },
+            {
+                "title": "卒業論文インターンシップ",
+                "company": "Tynex Media - アガディール（モロッコ）",
+                "description": "ウェブホスティングとメディアサービスに焦点を当てたインターンシップを完了しました。",
+                "date": "2012年4月6日 - 5月20日"
+            }
+        ]
+    }
+}

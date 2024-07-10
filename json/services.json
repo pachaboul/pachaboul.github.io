@@ -1,0 +1,20 @@
+{
+    "en": {
+        "title": "Services",
+        "list": [
+            "Website creation and maintenance",
+            "Domain name and hosting space sales",
+            "Consulting in Digital Transformation",
+            "Consulting in Digital Communication"
+        ]
+    },
+    "fr": {
+        "title": "Services",
+        "list": [
+            "Création et maintenance de sites web",
+            "Vente de noms de domaine et d'espace d'hébergement",
+            "Consultance en Transformation digitale",
+            "Consultance en Communication Digitale"
+        ]
+    }
+}

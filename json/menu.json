@@ -1,0 +1,26 @@
+{
+    "en": {
+        "about": "About",
+        "interests": "Interests",
+        "publications": "Publications",
+        "experience": "Experience",
+        "skills": "Skills",
+        "education": "Education",
+        "awards": "Awards",
+        "services": "Services",
+        "contact": "Contact",
+        "gallery": "Gallery"
+    },
+    "fr": {
+        "about": "À propos",
+        "interests": "Intérêts",
+        "publications": "Publications",
+        "experience": "Expérience",
+        "skills": "Compétences",
+        "education": "Éducation",
+        "awards": "Prix",
+        "services": "Services",
+        "contact": "Contact",
+        "gallery": "Galerie"
+    }
+}

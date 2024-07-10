@@ -1,0 +1,56 @@
+{
+    "en": [
+        {
+            "longitude": -0.1276,
+            "latitude": 51.5074,
+            "description": "London, UK"
+        },
+        {
+            "longitude": 2.3522,
+            "latitude": 48.8566,
+            "description": "Paris, France"
+        },
+        {
+            "longitude": 139.6917,
+            "latitude": 35.6895,
+            "description": "Tokyo, Japan"
+        },
+        {
+            "longitude": -74.0060,
+            "latitude": 40.7128,
+            "description": "New York, USA"
+        },
+        {
+            "longitude": -3.7038,
+            "latitude": 40.4168,
+            "description": "Madrid, Spain"
+        }
+    ],
+    "fr": [
+        {
+            "longitude": -0.1276,
+            "latitude": 51.5074,
+            "description": "Londres, Royaume-Uni"
+        },
+        {
+            "longitude": 2.3522,
+            "latitude": 48.8566,
+            "description": "Paris, France"
+        },
+        {
+            "longitude": 139.6917,
+            "latitude": 35.6895,
+            "description": "Tokyo, Japon"
+        },
+        {
+            "longitude": -74.0060,
+            "latitude": 40.7128,
+            "description": "New York, États-Unis"
+        },
+        {
+            "longitude": -3.7038,
+            "latitude": 40.4168,
+            "description": "Madrid, Espagne"
+        }
+    ]
+}

@@ -1,0 +1,192 @@
+{
+    "en": {
+        "title": "Interests",
+        "content": [
+            {
+                "category": "Academic and Professional Growth",
+                "items": [
+                    "Engaged in advanced research on real-time adaptive learning environments using gaze and emotion recognition to improve engagement and learning outcomes."
+                ]
+            },
+            {
+                "category": "Technology and Innovation",
+                "items": [
+                    "Active blogger on technology and daily life, contributing to platforms like malitechblog.wordpress.com and pachapic.wordpress.com.",
+                    "Interest in programming, network wiring, and computer graphics.",
+                    "Owner and manager of the Facebook page 'Bonjour Tombouctou,' promoting the culture and values of Timbuktu."
+                ]
+            },
+            {
+                "category": "Community Involvement",
+                "items": [
+                    "President-Founder of Smart YIRIBA Association, focusing on entrepreneurship and technology in Mali.",
+                    "Co-founder of Yermatoun, a collective citizen group.",
+                    "Member of the Internet Society Mali Chapter and DoniBlog, the community of Malian bloggers.",
+                    "Head of Relations for the Youth Movement of Bintagoungou."
+                ]
+            },
+            {
+                "category": "Sports",
+                "items": [
+                    "Passionate about basketball, football, swimming, and jogging."
+                ]
+            },
+            {
+                "category": "Personal Development",
+                "items": [
+                    "Avid reader and traveler, continually seeking to expand knowledge and experience."
+                ]
+            }
+        ]
+    },
+    "fr": {
+        "title": "Intérêts",
+        "content": [
+            {
+                "category": "Croissance Académique et Professionnelle",
+                "items": [
+                    "Engagé dans des recherches avancées sur les environnements d'apprentissage adaptatif en temps réel utilisant la reconnaissance du regard et des émotions pour améliorer l'engagement et les résultats d'apprentissage."
+                ]
+            },
+            {
+                "category": "Technologie et Innovation",
+                "items": [
+                    "Blogueur actif sur la technologie et la vie quotidienne, contribuant à des plateformes telles que malitechblog.wordpress.com et pachapic.wordpress.com.",
+                    "Intérêt pour la programmation, le câblage réseau et les graphismes informatiques.",
+                    "Propriétaire et gestionnaire de la page Facebook 'Bonjour Tombouctou', promouvant la culture et les valeurs de Tombouctou."
+                ]
+            },
+            {
+                "category": "Engagement Communautaire",
+                "items": [
+                    "Président-fondateur de l'association Smart YIRIBA, axée sur l'entrepreneuriat et la technologie au Mali.",
+                    "Co-fondateur de Yermatoun, un groupe de citoyens collectifs.",
+                    "Membre de l'Internet Society Mali Chapter et de DoniBlog, la communauté des blogueurs maliens.",
+                    "Responsable des relations pour le Mouvement des Jeunes de Bintagoungou."
+                ]
+            },
+            {
+                "category": "Sports",
+                "items": [
+                    "Passionné de basket-ball, de football, de natation et de jogging."
+                ]
+            },
+            {
+                "category": "Développement Personnel",
+                "items": [
+                    "Lecteur avide et voyageur, cherchant continuellement à élargir ses connaissances et son expérience."
+                ]
+            }
+        ]
+    },
+    "so": {
+        "title": "Songhoy Interests",
+        "content": [
+            {
+                "category": "Songhoy Community Involvement",
+                "items": [
+                    "Songhoy translation of community involvement items."
+                ]
+            },
+            {
+                "category": "Songhoy Sports",
+                "items": [
+                    "Songhoy translation of sports items."
+                ]
+            },
+            {
+                "category": "Songhoy Technology and Innovation",
+                "items": [
+                    "Songhoy translation of technology and innovation items."
+                ]
+            },
+            {
+                "category": "Songhoy Personal Development",
+                "items": [
+                    "Songhoy translation of personal development items."
+                ]
+            },
+            {
+                "category": "Songhoy Academic and Professional Growth",
+                "items": [
+                    "Songhoy translation of academic and professional growth items."
+                ]
+            }
+        ]
+    },
+    "bm": {
+        "title": "Bambara Interests",
+        "content": [
+            {
+                "category": "Bambara Community Involvement",
+                "items": [
+                    "Bambara translation of community involvement items."
+                ]
+            },
+            {
+                "category": "Bambara Sports",
+                "items": [
+                    "Bambara translation of sports items."
+                ]
+            },
+            {
+                "category": "Bambara Technology and Innovation",
+                "items": [
+                    "Bambara translation of technology and innovation items."
+                ]
+            },
+            {
+                "category": "Bambara Personal Development",
+                "items": [
+                    "Bambara translation of personal development items."
+                ]
+            },
+            {
+                "category": "Bambara Academic and Professional Growth",
+                "items": [
+                    "Bambara translation of academic and professional growth items."
+                ]
+            }
+        ]
+    },
+    "ja": {
+        "title": "興味",
+        "content": [
+            {
+                "category": "地域貢献",
+                "items": [
+                    "マリで起業と技術に焦点を当てたSmart YIRIBA協会の創設者・会長。",
+                    "市民グループYermatounの共同創設者。",
+                    "インターネットソサエティマリ支部およびマリのブロガーコミュニティDoniBlogのメンバー。",
+                    "ビンタゴンゴ青年運動の関係責任者。"
+                ]
+            },
+            {
+                "category": "スポーツ",
+                "items": [
+                    "バスケットボール、サッカー、水泳、ジョギングが大好き。"
+                ]
+            },
+            {
+                "category": "技術とイノベーション",
+                "items": [
+                    "技術と日常生活についての積極的なブロガーであり、malitechblog.wordpress.comやpachapic.wordpress.comなどのプラットフォームに貢献しています。",
+                    "プログラミング、ネットワーク配線、コンピュータグラフィックスに興味があります。",
+                    "ティンブクトゥの文化と価値を促進するFacebookページ「Bonjour Tombouctou」の所有者兼管理者。"
+                ]
+            },
+            {
+                "category": "自己啓発",
+                "items": [
+                    "熱心な読書家であり旅行者であり、知識と経験を常に拡大しようとしています。"
+                ]
+            },
+            {
+                "category": "学問と専門的成長",
+                "items": [
+                    "注視と感情認識を使用してエンゲージメントと学習成果を改善するリアルタイム適応学習環境に関する高度な研究に従事しています。"
+                ]
+            }
+        ]
+    }
+}

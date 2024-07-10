@@ -1,0 +1,165 @@
+{
+    "en": {
+        "title": "Education",
+        "list": [
+            {
+                "school": "Osaka Metropolitan University (OMU)",
+                "degree": "Ph.D. Student in Educational Technology",
+                "date": "2022-2025",
+                "description": "Ph.D. program focused on Educational Technology in Japan."
+            },
+            {
+                "school": "Kobe Institute of Computing (KIC)",
+                "degree": "Master in ICT Innovator",
+                "date": "2019-2021",
+                "description": "Master program in ICT Innovator in Japan."
+            },
+            {
+                "school": "Delta-C University",
+                "degree": "Master II in Project Cycle Management, Program and Development Policy",
+                "date": "2016-2017",
+                "description": "Master program focused on project cycle management and development policy in Bamako, Mali."
+            },
+            {
+                "school": "International Polytechnic University - Dr Obiang NGuema M’Basogo (UPI-ONM)",
+                "degree": "Master I in Computer Method Applied to Business Management",
+                "date": "2013-2014",
+                "description": "Master program in business management with a focus on computer methods in Benin."
+            },
+            {
+                "school": "Faculty of Sciences of Agadir (FSA)",
+                "degree": "Professional License in Computer Engineering",
+                "date": "2012",
+                "description": "Professional license in computer engineering in Morocco."
+            },
+            {
+                "school": "Faculty of Sciences of Agadir (FSA)",
+                "degree": "Diploma of General University Studies (DEUG) in Applied Mathematics",
+                "date": "2011",
+                "description": "Diploma in Applied Mathematics in Morocco."
+            },
+            {
+                "school": "Technical High School of Bamako (LTB)",
+                "degree": "Technical Baccalaureate in Technical Industry",
+                "date": "2008",
+                "description": "Technical baccalaureate in technical industry in Mali."
+            }
+        ]
+    },
+    "fr": {
+        "title": "Éducation",
+        "list": [
+            {
+                "school": "Université Métropolitaine d'Osaka (OMU)",
+                "degree": "Doctorant en technologie éducative",
+                "date": "2022-2025",
+                "description": "Programme de doctorat axé sur la technologie éducative au Japon."
+            },
+            {
+                "school": "Institut d'informatique de Kobe (KIC)",
+                "degree": "Master en innovateur TIC",
+                "date": "2019-2021",
+                "description": "Programme de master en innovateur TIC au Japon."
+            },
+            {
+                "school": "Université Delta-C",
+                "degree": "Master II en gestion du cycle de projet, programme et politique de développement",
+                "date": "2016-2017",
+                "description": "Programme de master axé sur la gestion du cycle de projet et la politique de développement à Bamako, Mali."
+            },
+            {
+                "school": "Université Polytechnique Internationale - Dr Obiang NGuema M’Basogo (UPI-ONM)",
+                "degree": "Master I en méthode informatique appliquée à la gestion des affaires",
+                "date": "2013-2014",
+                "description": "Programme de master en gestion des affaires avec une spécialisation en méthodes informatiques au Bénin."
+            },
+            {
+                "school": "Faculté des sciences d'Agadir (FSA)",
+                "degree": "Licence professionnelle en ingénierie informatique",
+                "date": "2012",
+                "description": "Licence professionnelle en ingénierie informatique au Maroc."
+            },
+            {
+                "school": "Faculté des sciences d'Agadir (FSA)",
+                "degree": "Diplôme d'études universitaires générales (DEUG) en mathématiques appliquées",
+                "date": "2011",
+                "description": "Diplôme en mathématiques appliquées au Maroc."
+            },
+            {
+                "school": "Lycée technique de Bamako (LTB)",
+                "degree": "Baccalauréat technique en industrie technique",
+                "date": "2008",
+                "description": "Baccalauréat technique en industrie technique au Mali."
+            }
+        ]
+    },
+    "so": {
+        "title": "Songhoy Education",
+        "list": [
+            {
+                "school": "Songhoy University",
+                "degree": "Songhoy degree",
+                "date": "Dates",
+                "description": "Songhoy description."
+            }
+        ]
+    },
+    "bm": {
+        "title": "Bambara Education",
+        "list": [
+            {
+                "school": "Bambara University",
+                "degree": "Bambara degree",
+                "date": "Dates",
+                "description": "Bambara description."
+            }
+        ]
+    },
+    "ja": {
+        "title": "教育",
+        "list": [
+            {
+                "school": "大阪都市大学 (OMU)",
+                "degree": "教育技術博士課程",
+                "date": "2022-2025",
+                "description": "日本の教育技術に関する博士課程。"
+            },
+            {
+                "school": "神戸情報大学院大学 (KIC)",
+                "degree": "ICTイノベーター修士",
+                "date": "2019-2021",
+                "description": "日本のICTイノベーター修士課程。"
+            },
+            {
+                "school": "デルタC大学",
+                "degree": "プロジェクトサイクル管理、プログラムおよび開発政策の修士",
+                "date": "2016-2017",
+                "description": "マリのバマコでのプロジェクトサイクル管理と開発政策に関する修士課程。"
+            },
+            {
+                "school": "国際工科大学 - ドクター・オビアン・ンゲマ・ンバソゴ (UPI-ONM)",
+                "degree": "ビジネスマネジメントに適用されるコンピュータメソッドの修士",
+                "date": "2013-2014",
+                "description": "ベナンでのビジネスマネジメントに適用されるコンピュータメソッドに関する修士課程。"
+            },
+            {
+                "school": "アガディール科学部 (FSA)",
+                "degree": "コンピュータエンジニアリングの専門ライセンス",
+                "date": "2012",
+                "description": "モロッコでのコンピュータエンジニアリングの専門ライセンス。"
+            },
+            {
+                "school": "アガディール科学部 (FSA)",
+                "degree": "応用数学の総合大学研究の卒業証書 (DEUG)",
+                "date": "2011",
+                "description": "モロッコでの応用数学の卒業証書。"
+            },
+            {
+                "school": "バマコ技術高校 (LTB)",
+                "degree": "技術産業の技術バカロレア",
+                "date": "2008",
+                "description": "マリでの技術産業の技術バカロレア。"
+            }
+        ]
+    }
+}

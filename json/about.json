@@ -1,0 +1,22 @@
+{
+    "en": {
+        "title": "About",
+        "lead": "Experienced IT Developer, Social Entrepreneur, and Trainer with a strong understanding of web platforms and course management systems. Demonstrated leadership and project management skills in the technology and education sectors. Proficient in multitasking, problem-solving, and working collaboratively in diverse teams."
+    },
+    "fr": {
+        "title": "À propos",
+        "lead": "Développeur IT expérimenté, entrepreneur social et formateur avec une solide compréhension des plateformes web et des systèmes de gestion de cours. Compétences démontrées en leadership et en gestion de projets dans les secteurs de la technologie et de l'éducation. Compétent en multitâche, en résolution de problèmes et en travail collaboratif au sein d'équipes diversifiées."
+    },
+    "so": {
+        "title": "Songhoy About",
+        "lead": "Songhoy translation of the about section goes here."
+    },
+    "bm": {
+        "title": "Bambara About",
+        "lead": "Bambara translation of the about section goes here."
+    },
+    "ja": {
+        "title": "日本語の概要",
+        "lead": "日本語の概要セクションの翻訳がここに表示されます。"
+    }
+}

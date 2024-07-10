@@ -1,0 +1,147 @@
+{
+    "en": {
+        "title": "Awards & Scholarships",
+        "list": [
+            {
+                "id": "S1",
+                "title": "Scholarship from the Moroccan Agency for International Cooperation (AMCI)",
+                "date": "2008-2012",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S2",
+                "title": "Scholarship from the Dr. Obiang Nguema MBASSOGO Foundation",
+                "date": "2013-2014",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S3",
+                "title": "Scholarship from the ABE-Initiative Program of the Japan International Cooperation Agency (JICA)",
+                "date": "2019-2021",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S4",
+                "title": "Research Fellowship Program Scholarship from the Japan Science and Technology Agency (JST)",
+                "date": "2022-2025",
+                "category": "Scholarship"
+            }
+        ]
+    },
+    "fr": {
+        "title": "Prix et Bourses",
+        "list": [
+            {
+                "id": "S1",
+                "title": "Bourse de l'Agence Marocaine de coopération Internationale (AMCI)",
+                "date": "2008-2012",
+                "category": "Bourse"
+            },
+            {
+                "id": "S2",
+                "title": "Bourse de la fondation Dr Obiang Nguema MBASSOGO",
+                "date": "2013-2014",
+                "category": "Bourse"
+            },
+            {
+                "id": "S3",
+                "title": "Bourse du programme ABE-Initiative de l'Agence Japonaise Coopération Internationale (JICA)",
+                "date": "2019-2021",
+                "category": "Bourse"
+            },
+            {
+                "id": "S4",
+                "title": "Bourse de recherche du Fellowship Program de JST (Japan Science and Technology Agency)",
+                "date": "2022-2025",
+                "category": "Bourse"
+            }
+        ]
+    },
+    "so": {
+        "title": "Songhoy Awards & Scholarships",
+        "list": [
+            {
+                "id": "S1",
+                "title": "Scholarship from the Moroccan Agency for International Cooperation (AMCI)",
+                "date": "2008-2012",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S2",
+                "title": "Scholarship from the Dr. Obiang Nguema MBASSOGO Foundation",
+                "date": "2013-2014",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S3",
+                "title": "Scholarship from the ABE-Initiative Program of the Japan International Cooperation Agency (JICA)",
+                "date": "2019-2021",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S4",
+                "title": "Research Fellowship Program Scholarship from the Japan Science and Technology Agency (JST)",
+                "date": "2022-2025",
+                "category": "Scholarship"
+            }
+        ]
+    },
+    "bm": {
+        "title": "Bambara Awards & Scholarships",
+        "list": [
+            {
+                "id": "S1",
+                "title": "Scholarship from the Moroccan Agency for International Cooperation (AMCI)",
+                "date": "2008-2012",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S2",
+                "title": "Scholarship from the Dr. Obiang Nguema MBASSOGO Foundation",
+                "date": "2013-2014",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S3",
+                "title": "Scholarship from the ABE-Initiative Program of the Japan International Cooperation Agency (JICA)",
+                "date": "2019-2021",
+                "category": "Scholarship"
+            },
+            {
+                "id": "S4",
+                "title": "Research Fellowship Program Scholarship from the Japan Science and Technology Agency (JST)",
+                "date": "2022-2025",
+                "category": "Scholarship"
+            }
+        ]
+    },
+    "ja": {
+        "title": "賞と奨学金",
+        "list": [
+            {
+                "id": "S1",
+                "title": "モロッコ国際協力庁（AMCI）からの奨学金",
+                "date": "2008-2012",
+                "category": "奨学金"
+            },
+            {
+                "id": "S2",
+                "title": "Dr. Obiang Nguema MBASSOGO 財団からの奨学金",
+                "date": "2013-2014",
+                "category": "奨学金"
+            },
+            {
+                "id": "S3",
+                "title": "日本国際協力機構（JICA）のABEイニシアティブプログラムからの奨学金",
+                "date": "2019-2021",
+                "category": "奨学金"
+            },
+            {
+                "id": "S4",
+                "title": "日本科学技術振興機構（JST）からの研究フェローシッププログラム奨学金",
+                "date": "2022-2025",
+                "category": "奨学金"
+            }
+        ]
+    }
+}

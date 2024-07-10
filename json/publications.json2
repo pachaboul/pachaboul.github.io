@@ -1,0 +1,219 @@
+{
+    "en": {
+        "title": "Publications",
+        "list": [
+            {
+                "type": "Workshop",
+                "publications": [
+                    {
+                        "id": "WP1",
+                        "title": "Workshop - Remote Area Education: A Hybrid University for Collaboration and Inclusion through ICT in Timbuktu",
+                        "event": "CROMSSMMLA + SLE at LAK22 Workshop",
+                        "date": "2022-03-21",
+                        "category": "Other",
+                        "contributors": ["AboulHassane, C", "Takahara Toshiro"],
+                        "language": "en"
+                    }
+                ]
+            },
+            /*
+            {
+                "type": "Journal Papers",
+                "publications": [
+                    {
+                        "id": "JP1",
+                        "title": "Example Journal Paper",
+                        "journal": "Journal Name",
+                        "date": "2023-01-01",
+                        "category": "Research",
+                        "contributors": ["Contributor 1", "Contributor 2"],
+                        "language": "en"
+                    }
+                ]
+            },
+            {
+                "type": "Academic Papers",
+                "publications": [
+                    {
+                        "id": "AP1",
+                        "title": "Example Academic Paper",
+                        "conference": "Conference Name",
+                        "date": "2023-01-01",
+                        "category": "Research",
+                        "contributors": ["Contributor 1", "Contributor 2"],
+                        "language": "en"
+                    }
+                ]
+            },
+            */
+            {
+                "type": "Blogs",
+                "publications": [
+                    {
+                        "id": "BP5",
+                        "title": "Coronavirus : 5 conseils pour renforcer le système immunitaire",
+                        "date": "2020-03-30",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"
+                    },
+                    {
+                        "id": "BP4",
+                        "title": "En plus d’une médaille, Mamoutou Diarra mérite une bourse d’études",
+                        "date": "2019-05-21",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"
+                    },
+                    {
+                        "id": "BP3",
+                        "title": "La non-transparence encourage les « fake news »",
+                        "date": "2018-08-31",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/non-transparence-encourage-fake-news/"
+                    },
+                    {
+                        "id": "BP2",
+                        "title": "Ce que j’ai aimé de l’élection présidentielle",
+                        "date": "2018-08-24",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/politique/aime-election-presidentielle-mali/"
+                    },
+                    {
+                        "id": "BP1",
+                        "title": "Religion : Après le Ramadan, bonjour les mauvaises habitudes",
+                        "date": "2018-06-16",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"
+                    }
+                ]
+            },
+            /*
+            {
+                "type": "Books",
+                "publications": [
+                    {
+                        "id": "B1",
+                        "title": "Example Book",
+                        "author": "Author Name",
+                        "date": "2023-01-01",
+                        "category": "Book",
+                        "language": "en",
+                        "link": "https://example.com"
+                    }
+                ]
+            }*/
+        ]
+    },
+    "fr": {
+        "title": "Publications",
+        "list": [
+            {
+                "type": "Ateliers",
+                "publications": [
+                    {
+                        "id": "WP1",
+                        "title": "Atelier - Éducation des zones reculées : une université hybride pour la collaboration et l'inclusion grâce aux TIC à Tombouctou",
+                        "event": "Atelier CROMSSMMLA + SLE à LAK22",
+                        "date": "2022-03-21",
+                        "category": "Autre",
+                        "contributors": ["AboulHassane, C", "Takahara Toshiro"],
+                        "language": "fr"
+                    }
+                ]
+            },
+            /*
+            {
+                "type": "Articles de Revues",
+                "publications": [
+                    {
+                        "id": "JP1",
+                        "title": "Exemple d'Article de Revue",
+                        "journal": "Nom du Journal",
+                        "date": "2023-01-01",
+                        "category": "Recherche",
+                        "contributors": ["Contributeur 1", "Contributeur 2"],
+                        "language": "fr"
+                    }
+                ]
+            },
+            {
+                "type": "Articles Académiques",
+                "publications": [
+                    {
+                        "id": "AP1",
+                        "title": "Exemple d'Article Académique",
+                        "conference": "Nom de la Conférence",
+                        "date": "2023-01-01",
+                        "category": "Recherche",
+                        "contributors": ["Contributeur 1", "Contributeur 2"],
+                        "language": "fr"
+                    }
+                ]
+            },
+            */
+            {
+                "type": "Blogs",
+                "publications": [
+                    {
+                        "id": "BP5",
+                        "title": "Coronavirus : 5 conseils pour renforcer le système immunitaire",
+                        "date": "2020-03-30",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"
+                    },
+                    {
+                        "id": "BP4",
+                        "title": "En plus d’une médaille, Mamoutou Diarra mérite une bourse d’études",
+                        "date": "2019-05-21",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"
+                    },
+                    {
+                        "id": "BP3",
+                        "title": "La non-transparence encourage les « fake news »",
+                        "date": "2018-08-31",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/non-transparence-encourage-fake-news/"
+                    },
+                    {
+                        "id": "BP2",
+                        "title": "Ce que j’ai aimé de l’élection présidentielle",
+                        "date": "2018-08-24",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/politique/aime-election-presidentielle-mali/"
+                    },
+                    {
+                        "id": "BP1",
+                        "title": "Religion : Après le Ramadan, bonjour les mauvaises habitudes",
+                        "date": "2018-06-16",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"
+                    }
+                ]
+            },
+            {
+                "type": "Livres",
+                "publications": [
+                    {
+                        "id": "B1",
+                        "title": "Exemple de Livre",
+                        "author": "Nom de l'Auteur",
+                        "date": "2023-01-01",
+                        "category": "Livre",
+                        "language": "fr",
+                        "link": "https://example.com"
+                    }
+                ]
+            }
+        ]
+    }
+}

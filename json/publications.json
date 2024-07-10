@@ -1,0 +1,156 @@
+{
+    "en": {
+        "title": "Publications",
+        "list": [
+            {
+                "type": "Workshop",
+                "publications": [
+                    {
+                        "id": "WP1",
+                        "title": "Workshop - Remote Area Education: A Hybrid University for Collaboration and Inclusion through ICT in Timbuktu",
+                        "abstract": "The study environment in Malian universities has been considerably degraded in recent decades,and at the same time a digital divide between urban and rural area is also being observed, howeverother developing countries continue to offer or deploy new solutions to cope with the significantincrease of the number of new students. To cope with this issue, deploying an integrated ICT inEducation can be a better option to improve the quality of education and reduce the unemploymentrate in the Malian youth. Our case study is focused on Timbuktu town located at 930 kilometersfrom the capital city Bamako, although Timbuktu has no public university. In 2019, 2456 students(from Timbuktu region, source Academia of Timbuktu) enrolled at the various universities in Mali.95% of them had to move to Bamako because Timbuktu has only 2 private universities. Toinvestigate the efficiency of our proposed solution, this research study explored the potentialbenefits and challenges towards the utilization of the Khadas [1], Raspberry PI 4[2] and refurbishedold Laptop computers for the use of projected university in Timbuktu. While we encountered somechallenges, we were able to test and understand the possibility of integrating and associatingexisting tools for our proposed solution for improving access to higher education for an increasingneed of higher education and reducing the digital divide in Mali.",
+                        "keywords": "Digital pedagogy, e-learning, Technology leapfrogging, Digital Transforming, ICT in Education",
+                        "event": "CROMSSMMLA + SLE at LAK22 Workshop",
+                        "date": "2022-03-21",
+                        "category": "Workshop",
+                        "contributors": ["AboulHassane, C", "Takahara Toshiro"],
+                        "language": "en",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "type": "Blogs",
+                "publications": [
+                    {
+                        "id": "BP5",
+                        "title": "Coronavirus : 5 conseils pour renforcer le système immunitaire",
+                        "abstract": "Dans ce billet, le blogueur Malizé prodigue 5 conseils pour renforcer son système immunitaire contre la maladie du coronavirus présente au Mali.",
+                        "keywords": "",
+                        "date": "2020-03-30",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"
+                    },
+                    {
+                        "id": "BP4",
+                        "title": "En plus d’une médaille, Mamoutou Diarra mérite une bourse d’études",
+                        "abstract": "Le jeune Mamoutou Diarra, qui a sauvé des adolescents durant les inondations qui ont endeuillé Bamako le 16 mai dernier, sera décoré par le président de la République, Ibrahim Boubacar Keïta. Pour le blogueur Pacha Malizé, une bourse d’études pour l’étranger serait un cadeau encore plus significatif que cette médaille.",
+                        "keywords": "",
+                        "date": "2019-05-21",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"
+                    },
+                    {
+                        "id": "BP3",
+                        "title": "La non-transparence encourage les « fake news »",
+                        "abstract": "Dans une situation post électorale tendue comme la nôtre, une rumeur peut être source d’une profonde crise. Or, si les autorités continuent de cacher les vraies informations sur les affaires sensibles, ce sont les rumeurs qui prendront le dessus, écrit le blogueur Malize. ",
+                        "keywords": "",
+                        "date": "2018-08-31",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/non-transparence-encourage-fake-news/"
+                    },
+                    {
+                        "id": "BP2",
+                        "title": "Ce que j’ai aimé de l’élection présidentielle",
+                        "abstract": "L’élection présidentielle que nous venons de terminer a déçu beaucoup de gens, moi y compris. Mais j’ai aimé la façon dont les populations du Nord se sont comportées, écrit le blogueur Malize. ",
+                        "keywords": "",
+                        "date": "2018-08-24",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/politique/aime-election-presidentielle-mali/"
+                    },
+                    {
+                        "id": "BP1",
+                        "title": "Religion : Après le Ramadan, bonjour les mauvaises habitudes",
+                        "abstract": "Aussitôt le Ramadan terminé, les jeunes se remettent à consommer de l’alcool, les boîtes de nuit sont bondées et les chambres de passes pleines. Comment peut-on obtenir le pardon d’Allah alors que nous reprenons nos bêtises le jour même de la fête, se demande le blogueur Malizé. ",
+                        "keywords": "",
+                        "date": "2018-06-16",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"
+                    }
+                ]
+            }
+        ]
+    },
+    "fr": {
+        "title": "Publications",
+        "list": [
+            {
+                "type": "Ateliers",
+                "publications": [
+                    {
+                        "id": "WP1",
+                        "title": "Atelier - Éducation des zones reculées : une université hybride pour la collaboration et l'inclusion grâce aux TIC à Tombouctou",
+                        "abstract": "The study environment in Malian universities has been considerably degraded in recent decades,and at the same time a digital divide between urban and rural area is also being observed, howeverother developing countries continue to offer or deploy new solutions to cope with the significantincrease of the number of new students. To cope with this issue, deploying an integrated ICT inEducation can be a better option to improve the quality of education and reduce the unemploymentrate in the Malian youth. Our case study is focused on Timbuktu town located at 930 kilometersfrom the capital city Bamako, although Timbuktu has no public university. In 2019, 2456 students(from Timbuktu region, source Academia of Timbuktu) enrolled at the various universities in Mali.95% of them had to move to Bamako because Timbuktu has only 2 private universities. Toinvestigate the efficiency of our proposed solution, this research study explored the potentialbenefits and challenges towards the utilization of the Khadas [1], Raspberry PI 4[2] and refurbishedold Laptop computers for the use of projected university in Timbuktu. While we encountered somechallenges, we were able to test and understand the possibility of integrating and associatingexisting tools for our proposed solution for improving access to higher education for an increasingneed of higher education and reducing the digital divide in Mali.",
+                        "keywords": "Digital pedagogy, e-learning, Technology leapfrogging, Digital Transforming, ICT in Education",
+                        "event": "Atelier CROMSSMMLA + SLE à LAK22",
+                        "date": "2022-03-21",
+                        "category": "Autre",
+                        "contributors": ["AboulHassane, C", "Takahara Toshiro"],
+                        "language": "en",
+                        "link": "#"
+                    }
+                ]
+            },
+            {
+                "type": "Blogs",
+                "publications": [
+                    {
+                        "id": "BP5",
+                        "title": "Coronavirus : 5 conseils pour renforcer le système immunitaire",
+                        "abstract": "Dans ce billet, le blogueur Malizé prodigue 5 conseils pour renforcer son système immunitaire contre la maladie du coronavirus présente au Mali.",
+                        "keywords": "",
+                        "date": "2020-03-30",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"
+                    },
+                    {
+                        "id": "BP4",
+                        "title": "En plus d’une médaille, Mamoutou Diarra mérite une bourse d’études",
+                        "abstract": "Le jeune Mamoutou Diarra, qui a sauvé des adolescents durant les inondations qui ont endeuillé Bamako le 16 mai dernier, sera décoré par le président de la République, Ibrahim Boubacar Keïta. Pour le blogueur Pacha Malizé, une bourse d’études pour l’étranger serait un cadeau encore plus significatif que cette médaille.",
+                        "keywords": "",
+                        "date": "2019-05-21",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"
+                    },
+                    {
+                        "id": "BP3",
+                        "title": "La non-transparence encourage les « fake news »",
+                        "abstract": "Dans une situation post électorale tendue comme la nôtre, une rumeur peut être source d’une profonde crise. Or, si les autorités continuent de cacher les vraies informations sur les affaires sensibles, ce sont les rumeurs qui prendront le dessus, écrit le blogueur Malize. ",
+                        "keywords": "",
+                        "date": "2018-08-31",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/au-grin/non-transparence-encourage-fake-news/"
+                    },
+                    {
+                        "id": "BP2",
+                        "title": "Ce que j’ai aimé de l’élection présidentielle",
+                        "abstract": "L’élection présidentielle que nous venons de terminer a déçu beaucoup de gens, moi y compris. Mais j’ai aimé la façon dont les populations du Nord se sont comportées, écrit le blogueur Malize. ",
+                        "keywords": "",
+                        "date": "2018-08-24",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/politique/aime-election-presidentielle-mali/"
+                    },
+                    {
+                        "id": "BP1",
+                        "title": "Religion : Après le Ramadan, bonjour les mauvaises habitudes",
+                        "abstract": "Aussitôt le Ramadan terminé, les jeunes se remettent à consommer de l’alcool, les boîtes de nuit sont bondées et les chambres de passes pleines. Comment peut-on obtenir le pardon d’Allah alors que nous reprenons nos bêtises le jour même de la fête, se demande le blogueur Malizé. ",
+                        "keywords": "",
+                        "date": "2018-06-16",
+                        "category": "Blog",
+                        "language": "fr",
+                        "link": "https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"
+                    }
+                ]
+            }
+        ]
+    }
+}

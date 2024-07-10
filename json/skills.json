@@ -1,0 +1,232 @@
+{
+    "en": {
+        "title": "Skills",
+        "list": [
+            {
+                "category": "Programming Languages & Tools",
+                "icons": [
+                    "fab fa-html5",
+                    "fab fa-css3-alt",
+                    "fab fa-js-square",
+                    "fab fa-angular",
+                    "fab fa-react",
+                    "fab fa-node-js",
+                    "fab fa-sass",
+                    "fab fa-less",
+                    "fab fa-wordpress",
+                    "fab fa-gulp",
+                    "fab fa-grunt",
+                    "fab fa-npm",
+                    "fab fa-python",
+                    "fab fa-java",
+                    "fab fa-docker"
+                ]
+            },
+            {
+                "category": "Workflow",
+                "workflow": [
+                    "Mobile-First, Responsive Design",
+                    "Cross Browser Testing & Debugging",
+                    "Cross Functional Teams",
+                    "Agile Development & Scrum"
+                ]
+            },
+            {
+                "category": "Other Skills",
+                "skills": [
+                    "Problem Solving",
+                    "Project Management",
+                    "Team Leadership",
+                    "Effective Communication",
+                    "Time Management",
+                    "Multitasking",
+                    "Teaching & Mentoring"
+                ]
+            }
+        ]
+    },
+    "fr": {
+        "title": "Compétences",
+        "list": [
+            {
+                "category": "Langages de Programmation & Outils",
+                "icons": [
+                    "fab fa-html5",
+                    "fab fa-css3-alt",
+                    "fab fa-js-square",
+                    "fab fa-angular",
+                    "fab fa-react",
+                    "fab fa-node-js",
+                    "fab fa-sass",
+                    "fab fa-less",
+                    "fab fa-wordpress",
+                    "fab fa-gulp",
+                    "fab fa-grunt",
+                    "fab fa-npm",
+                    "fab fa-python",
+                    "fab fa-java",
+                    "fab fa-docker"
+                ]
+            },
+            {
+                "category": "Flux de Travail",
+                "workflow": [
+                    "Conception Mobile-First, Responsive",
+                    "Tests et Débogage Multi-navigateurs",
+                    "Équipes Multifonctionnelles",
+                    "Développement Agile & Scrum"
+                ]
+            },
+            {
+                "category": "Autres Compétences",
+                "skills": [
+                    "Résolution de Problèmes",
+                    "Gestion de Projet",
+                    "Leadership d'Équipe",
+                    "Communication Efficace",
+                    "Gestion du Temps",
+                    "Multitâche",
+                    "Enseignement & Mentorat"
+                ]
+            }
+        ]
+    },
+    "so": {
+        "title": "Songhoy Skills",
+        "list": [
+            {
+                "category": "Programming Languages & Tools",
+                "icons": [
+                    "fab fa-html5",
+                    "fab fa-css3-alt",
+                    "fab fa-js-square",
+                    "fab fa-angular",
+                    "fab fa-react",
+                    "fab fa-node-js",
+                    "fab fa-sass",
+                    "fab fa-less",
+                    "fab fa-wordpress",
+                    "fab fa-gulp",
+                    "fab fa-grunt",
+                    "fab fa-npm",
+                    "fab fa-python",
+                    "fab fa-java",
+                    "fab fa-docker"
+                ]
+            },
+            {
+                "category": "Workflow",
+                "workflow": [
+                    "Mobile-First, Responsive Design",
+                    "Cross Browser Testing & Debugging",
+                    "Cross Functional Teams",
+                    "Agile Development & Scrum"
+                ]
+            },
+            {
+                "category": "Other Skills",
+                "skills": [
+                    "Problem Solving",
+                    "Project Management",
+                    "Team Leadership",
+                    "Effective Communication",
+                    "Time Management",
+                    "Multitasking",
+                    "Teaching & Mentoring"
+                ]
+            }
+        ]
+    },
+    "bm": {
+        "title": "Bambara Skills",
+        "list": [
+            {
+                "category": "Programming Languages & Tools",
+                "icons": [
+                    "fab fa-html5",
+                    "fab fa-css3-alt",
+                    "fab fa-js-square",
+                    "fab fa-angular",
+                    "fab fa-react",
+                    "fab fa-node-js",
+                    "fab fa-sass",
+                    "fab fa-less",
+                    "fab fa-wordpress",
+                    "fab fa-gulp",
+                    "fab fa-grunt",
+                    "fab fa-npm",
+                    "fab fa-python",
+                    "fab fa-java",
+                    "fab fa-docker"
+                ]
+            },
+            {
+                "category": "Workflow",
+                "workflow": [
+                    "Mobile-First, Responsive Design",
+                    "Cross Browser Testing & Debugging",
+                    "Cross Functional Teams",
+                    "Agile Development & Scrum"
+                ]
+            },
+            {
+                "category": "Other Skills",
+                "skills": [
+                    "Problem Solving",
+                    "Project Management",
+                    "Team Leadership",
+                    "Effective Communication",
+                    "Time Management",
+                    "Multitasking",
+                    "Teaching & Mentoring"
+                ]
+            }
+        ]
+    },
+    "ja": {
+        "title": "スキル",
+        "list": [
+            {
+                "category": "プログラミング言語とツール",
+                "icons": [
+                    "fab fa-html5",
+                    "fab fa-css3-alt",
+                    "fab fa-js-square",
+                    "fab fa-angular",
+                    "fab fa-react",
+                    "fab fa-node-js",
+                    "fab fa-sass",
+                    "fab fa-less",
+                    "fab fa-wordpress",
+                    "fab fa-gulp",
+                    "fab fa-grunt",
+                    "fab fa-npm",
+                    "fab fa-python",
+                    "fab fa-java",
+                    "fab fa-docker"
+                ]
+            },
+            {
+                "category": "ワークフロー",
+                "workflow": [
+                    "モバイルファースト、レスポンシブデザイン",
+                    "クロスブラウザテストとデバッグ",
+                    "クロスファンクショナルチーム",
+                    "アジャイル開発とスクラム"
+                ]
+            },
+            {
+                "category": "その他のスキル",
+                "skills": [
+                    "問題解決",
+                    "プロジェクト管理",
+                    "チームリーダーシップ",
+                    "効果的なコミュニケーション",
+                    "時間管理",
+                    "マルチタスク",
+                    "教育と指導"
+                ]
+            }
+        ]
+    }
+}

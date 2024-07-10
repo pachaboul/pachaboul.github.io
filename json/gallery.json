@@ -1,0 +1,36 @@
+{
+    "en": {
+        "title": "Gallery",
+        "list": [
+            {
+                "title": "Event 1",
+                "category": "Conference",
+                "src": "path/to/image1.jpg",
+                "link": "path/to/image1.jpg"
+            },
+            {
+                "title": "Event 2",
+                "category": "Activity",
+                "src": "path/to/image2.jpg",
+                "link": "path/to/image2.jpg"
+            }
+        ]
+    },
+    "fr": {
+        "title": "Galerie",
+        "list": [
+            {
+                "title": "Événement 1",
+                "category": "Conférence",
+                "src": "path/to/image1.jpg",
+                "link": "path/to/image1.jpg"
+            },
+            {
+                "title": "Événement 2",
+                "category": "Activité",
+                "src": "path/to/image2.jpg",
+                "link": "path/to/image2.jpg"
+            }
+        ]
+    }
+}
