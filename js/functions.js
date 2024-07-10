@@ -285,7 +285,7 @@ function changeLanguage() {
                 document.querySelectorAll('#navbar-menu .nav-link').forEach(link => {
                     const key = link.getAttribute('data-key');
                     if (data[lang][key]) {
-                        link.innerText = data[lang][key];
+                        link.innerHTML = `<i class="${link.querySelector('i').className}"></i> ${data[lang][key]}`;
                     }
                 });
             }

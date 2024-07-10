@@ -9,7 +9,9 @@
         "awards": "Awards",
         "services": "Services",
         "contact": "Contact",
-        "gallery": "Gallery"
+        "gallery": "Gallery",
+        "map": "Around the World",
+        "download": "Download as PDF"
     },
     "fr": {
         "about": "À propos",
@@ -21,6 +23,22 @@
         "awards": "Prix",
         "services": "Services",
         "contact": "Contact",
-        "gallery": "Galerie"
+        "gallery": "Galerie",
+        "map": "Mes empreintes dans le monde",
+        "download": "Télécharger en PDF"
+    },
+    "jp": {
+        "about": "約",
+        "interests": "興味",
+        "publications": "出版物",
+        "experience": "経験",
+        "skills": "スキル",
+        "education": "教育",
+        "awards": "賞",
+        "services": "サービス",
+        "contact": "接触",
+        "gallery": "ギャラリー",
+        "map": "世界中",
+        "download": "PDFとしてダウンロード"
     }
 }
