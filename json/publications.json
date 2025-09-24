@@ -17,8 +17,89 @@
                         "language": "en",
                         "link": "#"
                     }
+                    {
+                        "id": "WP2",
+                        "title": "Enhancing Hybrid Learning: The Role of Multimodal Adaptive Feedback in Human-AI Collaboration",
+                        "abstract": "Explores how multimodal adaptive feedback can support hybrid learning environments by leveraging real-time biometric and behavioral data.",
+                        "keywords": "Hybrid Learning, Multimodal Feedback, Human-AI Collaboration, Adaptive Systems",
+                        "event": "Joint Proceedings of LAK 2025 Workshops",
+                        "date": "2025-03-10",
+                        "category": "Workshop",
+                        "contributors": [
+                          "Cisse, A."
+                        ],
+                        "language": "en",
+                        "link": "urn:nbn:de:0074-3995-X"
+                      },
+                      {
+                        "id": "WP3",
+                        "title": "Adaptive Feedback in Learning Environments: A Multimodal Approach to Enhancing Feedback Sensitivity and Learner Engagement",
+                        "abstract": "Doctoral consortium paper examining how multimodal data streams improve feedback design for enhancing learner engagement.",
+                        "keywords": "Adaptive Feedback, Learner Engagement, Multimodal Data, Doctoral Consortium",
+                        "event": "LAK25 Doctoral Consortium",
+                        "date": "2025-03-11",
+                        "category": "Workshop",
+                        "contributors": [
+                          "Cisse, A."
+                        ],
+                        "language": "en",
+                        "link": "#"
+                      }
                 ]
             },
+            {
+                "type": "Conferences",
+                "publications": [
+                  {
+                    "id": "CP1",
+                    "title": "Generative AI and Multimodal Profiling in Programming Education: A Systematic Review of Tools, Pedagogical Impacts, and Future Competencies",
+                    "abstract": "A systematic review analyzing how generative AI and multimodal profiling tools reshape programming education by identifying impacts on pedagogy and future competencies.",
+                    "keywords": "Generative AI, Programming Education, Multimodal Profiling, Systematic Review",
+                    "event": "ICCE 2025 (Chennai, India)",
+                    "date": "2025-12-01",
+                    "category": "Conference",
+                    "contributors": [
+                      "Cisse, A.",
+                      "Ishimaru, S."
+                    ],
+                    "language": "en",
+                    "link": "#"
+                  },
+                  {
+                    "id": "CP2",
+                    "title": "From Signals to Cognition: Self-Supervised Multimodal Learning for Cognitive State Inference from Wearable Sensor Streams",
+                    "abstract": "Introduces a self-supervised approach to infer cognitive states using wearable sensor data streams.",
+                    "keywords": "Self-Supervised Learning, Multimodal Sensors, Cognitive State, Wearables",
+                    "event": "UbiComp Companion 2025 (Espoo, Finland)",
+                    "date": "2025-10-12",
+                    "category": "Conference",
+                    "contributors": [
+                      "Cisse, A.",
+                      "Ishimaru, S."
+                    ],
+                    "language": "en",
+                    "link": "https://doi.org/10.1145/3714394.3754403"
+                  }
+                ]
+              },
+                        {
+            "type": "Books",
+            "publications": [
+              {
+                "id": "BK1",
+                "title": "Vers une éducation innovante au Mali: Vision et stratégie",
+                "abstract": "Proposes a vision and strategies to modernize education in Mali using innovative approaches, ICT, and inclusive policies.",
+                "keywords": "Education, Innovation, Mali, ICT",
+                "date": "2025-01-15",
+                "category": "Book",
+                "contributors": [
+                  "Cisse, A. H."
+                ],
+                "language": "fr",
+                "link": "#"
+              }
+            ]
+          },
             {
                 "type": "Blogs",
                 "publications": [
@@ -94,8 +175,89 @@
                         "language": "en",
                         "link": "#"
                     }
+                              {
+            "id": "WP2",
+            "title": "Enhancing Hybrid Learning: The Role of Multimodal Adaptive Feedback in Human-AI Collaboration",
+            "abstract": "Explores how multimodal adaptive feedback can support hybrid learning environments by leveraging real-time biometric and behavioral data.",
+            "keywords": "Hybrid Learning, Multimodal Feedback, Human-AI Collaboration, Adaptive Systems",
+            "event": "Joint Proceedings of LAK 2025 Workshops",
+            "date": "2025-03-10",
+            "category": "Atelier",
+            "contributors": [
+              "Cisse, A."
+            ],
+            "language": "en",
+            "link": "urn:nbn:de:0074-3995-X"
+          },
+          {
+            "id": "WP3",
+            "title": "Adaptive Feedback in Learning Environments: A Multimodal Approach to Enhancing Feedback Sensitivity and Learner Engagement",
+            "abstract": "Doctoral consortium paper examining how multimodal data streams improve feedback design for enhancing learner engagement.",
+            "keywords": "Adaptive Feedback, Learner Engagement, Multimodal Data, Doctoral Consortium",
+            "event": "LAK25 Doctoral Consortium",
+            "date": "2025-03-11",
+            "category": "Atelier",
+            "contributors": [
+              "Cisse, A."
+            ],
+            "language": "en",
+            "link": "#"
+          }
                 ]
             },
+                  {
+        "type": "Conférences",
+        "publications": [
+          {
+            "id": "CP1",
+            "title": "Generative AI and Multimodal Profiling in Programming Education: A Systematic Review of Tools, Pedagogical Impacts, and Future Competencies",
+            "abstract": "A systematic review analyzing how generative AI and multimodal profiling tools reshape programming education by identifying impacts on pedagogy and future competencies.",
+            "keywords": "Generative AI, Programming Education, Multimodal Profiling, Systematic Review",
+            "event": "ICCE 2025 (Chennai, India)",
+            "date": "2025-12-01",
+            "category": "Conférence",
+            "contributors": [
+              "Cisse, A.",
+              "Ishimaru, S."
+            ],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "CP2",
+            "title": "From Signals to Cognition: Self-Supervised Multimodal Learning for Cognitive State Inference from Wearable Sensor Streams",
+            "abstract": "Introduces a self-supervised approach to infer cognitive states using wearable sensor data streams.",
+            "keywords": "Self-Supervised Learning, Multimodal Sensors, Cognitive State, Wearables",
+            "event": "UbiComp Companion 2025 (Espoo, Finland)",
+            "date": "2025-10-12",
+            "category": "Conférence",
+            "contributors": [
+              "Cisse, A.",
+              "Ishimaru, S."
+            ],
+            "language": "en",
+            "link": "https://doi.org/10.1145/3714394.3754403"
+          }
+        ]
+      },
+      {
+        "type": "Livres",
+        "publications": [
+          {
+            "id": "BK1",
+            "title": "Vers une éducation innovante au Mali: Vision et stratégie",
+            "abstract": "Proposes a vision and strategies to modernize education in Mali using innovative approaches, ICT, and inclusive policies.",
+            "keywords": "Education, Innovation, Mali, ICT",
+            "date": "2025-01-15",
+            "category": "Livre",
+            "contributors": [
+              "Cisse, A. H."
+            ],
+            "language": "fr",
+            "link": "#"
+          }
+        ]
+      },
             {
                 "type": "Blogs",
                 "publications": [
