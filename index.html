@@ -7,28 +7,24 @@
   <meta name="author" content="Aboul Hassane Cisse" />
   <title>Resume - Aboul Hassane Cisse</title>
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-  <!-- Font Awesome -->
+
+  <!-- Fonts & Icons -->
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
-  <!-- Google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
-  <!-- Bootstrap -->
+
+  <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
-  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <!-- jsPDF -->
+
+  <!-- Libs -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>emailjs.init('h49ZLZln8LyVHj8n7');</script>
-
 </head>
 <body id="page-top">
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <div>
-      <!-- removed inline onchange; handled in JS -->
       <select id="language-select" class="form-select mt-3" aria-label="Language">
         <option value="en" selected>English</option>
         <option value="fr">French</option>
@@ -207,12 +203,604 @@
     </section>
   </div>
 
-  <!-- Bootstrap core JS-->
+  <!-- JS libs (defer) -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
-  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
-  <!-- App JS (put AFTER libs) -->
-  <script src="js/scripts.js" defer></script>
-  <script src="js/functions.js" defer></script>
+
+  <!-- App Script (all-in-one) -->
+  <script>
+  (() => {
+    'use strict';
+
+    // ========== EmailJS init ==========
+    window.addEventListener('load', () => {
+      if (window.emailjs?.init) {
+        // Keep your public key or replace with your own
+        emailjs.init('h49ZLZln8LyVHj8n7');
+      }
+    });
+
+    // ========== i18n (labels only) ==========
+    const I18N = {
+      en: {
+        nav: { about: 'About', interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact', download: 'Download as PDF' },
+        about: { lead: 'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+        section: { interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards & Scholarships', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact' },
+        contact: { name: 'Name:', email: 'Email:', message: 'Message:', send: 'Send', name_req: 'Please enter your name.', email_req: 'Please enter a valid email.', message_req: 'Please write a message.' },
+        interests: 'Multimodal learning analytics, human-AI interaction, eye-tracking, wearable sensing, inclusive education.'
+      },
+      fr: {
+        nav: { about: 'À propos', interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact', download: 'Télécharger en PDF' },
+        about: { lead: 'Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l’apprentissage.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+        section: { interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix & Bourses', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact' },
+        contact: { name: 'Nom :', email: 'Email :', message: 'Message :', send: 'Envoyer', name_req: 'Veuillez entrer votre nom.', email_req: 'Veuillez saisir un email valide.', message_req: 'Veuillez écrire un message.' },
+        interests: 'Analytique d’apprentissage multimodale, interaction humain-IA, eye-tracking, capteurs portables, éducation inclusive.'
+      },
+      ja: {
+        nav: { about: '自己紹介', interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先', download: 'PDF をダウンロード' },
+        about: { lead: 'AI と教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location: '大阪府堺市堺区 590-0976 · ' },
+        section: { interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞・奨学金', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先' },
+        contact: { name: 'お名前：', email: 'メール：', message: 'メッセージ：', send: '送信', name_req: 'お名前を入力してください。', email_req: '有効なメールを入力してください。', message_req: 'メッセージを入力してください。' },
+        interests: 'マルチモーダル学習分析、人間とAIのインタラクション、視線計測、ウェアラブル計測、インクルーシブ教育。'
+      }
+    };
+
+    function applyI18n(lang) {
+      const dict = I18N[lang] || I18N.en;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const keys = el.getAttribute('data-i18n').split('.');
+        let v = dict;
+        for (const k of keys) v = v?.[k];
+        if (typeof v === 'string') el.textContent = v;
+      });
+      const aboutLead = document.getElementById('about-lead');
+      if (aboutLead) aboutLead.textContent = dict.about.lead;
+      const interests = document.getElementById('interests-content');
+      if (interests) interests.textContent = dict.interests;
+    }
+
+    // ========== Local fallback data ==========
+    const LOCAL_DATA = {
+      publications: [
+        {
+          title: 'Integrative Analysis of Multimodal Interaction Data: Predicting Communication Dynamics and WtC',
+          venue: 'CEUR-WS, 2024',
+          link: 'https://ceur-ws.org/Vol-3738/paper4.pdf'
+        }
+      ],
+      experience: [
+        {
+          role: 'Doctoral Researcher',
+          org: 'Osaka Metropolitan University',
+          dates: '2022 – Present',
+          bullets: ['Multimodal learning analytics', 'Human–AI interaction', 'Eye-tracking & wearables']
+        }
+      ],
+      skills: ['Python','Django','PyTorch','Docker','MySQL','Leaflet','Vue','React','Data Viz'],
+      education: [
+        { program: 'Ph.D. in Informatics', inst: 'Osaka Metropolitan University', dates: '2022 – Present' },
+        { program: 'MSc in ICT4D', inst: 'Kobe Institute of Computing', dates: '2018 – 2020' }
+      ],
+      awards: ['Rotary Yoneyama Scholarship (candidate)'],
+      services: ['Reviewer (ICCE/LAK workshops)', 'Community building: Mali–Japan'],
+      gallery: [
+        // 'assets/img/gallery/1.jpg',
+      ],
+      visited: [
+        { name: 'Japan', lat: 36.2048, lng: 138.2529 },
+        { name: 'Mali', lat: 17.5707, lng: -3.9962 },
+        { name: 'Finland', lat: 61.9241, lng: 25.7482 }
+      ]
+    };
+
+    // ========== JSON helpers ==========
+    const JSON_PATHS = {
+      about: 'json/about.json',
+      interests: 'json/interests.json',
+      publications: 'json/publications.json',
+      experience: 'json/experience.json',
+      skills: 'json/skills.json',
+      education: 'json/education.json',
+      awards: 'json/awards.json',
+      services: 'json/services.json',
+      gallery: 'json/gallery.json',
+      map: 'json/map.json',
+      menu: 'json/menu.json'
+    };
+    const cache = new Map();
+    async function fetchJSON(url) {
+      if (cache.has(url)) return cache.get(url);
+      const p = fetch(url).then(r => {
+        if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + url);
+        return r.json();
+      });
+      cache.set(url, p);
+      return p;
+    }
+
+    // ========== Painters from LOCAL_DATA ==========
+    function populateFromLocal() {
+      // Publications
+      const pubs = document.getElementById('publications-list');
+      if (pubs) {
+        pubs.innerHTML = '';
+        LOCAL_DATA.publications.forEach(p => {
+          const item = document.createElement('div');
+          item.className = 'mb-3';
+          item.innerHTML = `<strong>${p.title}</strong><br><span class="text-muted">${p.venue}</span>${p.link ? ` · <a href="${p.link}" target="_blank" rel="noopener">PDF</a>` : ''}`;
+          pubs.appendChild(item);
+        });
+      }
+      // Experience
+      const exp = document.getElementById('experience-list');
+      if (exp) {
+        exp.innerHTML = '';
+        LOCAL_DATA.experience.forEach(e => {
+          const block = document.createElement('div');
+          block.className = 'mb-3';
+          block.innerHTML = `
+            <h5 class="mb-1">${e.role} · <span class="text-primary">${e.org}</span></h5>
+            <div class="text-muted small mb-2">${e.dates}</div>
+            <ul class="mb-0">${(e.bullets||[]).map(b => `<li>${b}</li>`).join('')}</ul>
+          `;
+          exp.appendChild(block);
+        });
+      }
+      // Skills
+      const skills = document.getElementById('skills-list');
+      if (skills) {
+        skills.innerHTML = '';
+        LOCAL_DATA.skills.forEach(s => {
+          const col = document.createElement('div');
+          col.className = 'col-6 col-md-4 col-lg-3';
+          col.innerHTML = `<span class="badge bg-light text-dark border w-100 py-2">${s}</span>`;
+          skills.appendChild(col);
+        });
+      }
+      // Education
+      const edu = document.getElementById('education-list');
+      if (edu) {
+        edu.innerHTML = '';
+        LOCAL_DATA.education.forEach(ed => {
+          const item = document.createElement('div');
+          item.className = 'mb-2';
+          item.innerHTML = `<strong>${ed.program}</strong> — <span class="text-primary">${ed.inst}</span><div class="text-muted small">${ed.dates}</div>`;
+          edu.appendChild(item);
+        });
+      }
+      // Awards
+      const awards = document.getElementById('awards-list');
+      if (awards) {
+        awards.innerHTML = '';
+        LOCAL_DATA.awards.forEach(a => {
+          const li = document.createElement('li');
+          li.innerHTML = `<span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>${a}`;
+          awards.appendChild(li);
+        });
+      }
+      // Services
+      const services = document.getElementById('services-list');
+      if (services) {
+        services.innerHTML = '';
+        LOCAL_DATA.services.forEach(s => {
+          const li = document.createElement('li');
+          li.innerHTML = `<span class="fa-li"><i class="fas fa-check"></i></span>${s}`;
+          services.appendChild(li);
+        });
+      }
+      // Gallery
+      const gallery = document.getElementById('gallery-list');
+      if (gallery) {
+        gallery.innerHTML = '';
+        LOCAL_DATA.gallery.forEach((src, i) => {
+          const col = document.createElement('div');
+          col.className = 'col-6 col-md-4 col-lg-3 mb-3';
+          col.innerHTML = `<img class="img-fluid rounded shadow-sm" src="${src}" alt="Gallery image ${i + 1}" loading="lazy">`;
+          gallery.appendChild(col);
+        });
+      }
+    }
+
+    // Expose for dev
+    window.populateLists = populateFromLocal;
+
+    // ========== Map ==========
+    window.initMap = function initMap() {
+      if (!window.L) return;
+      const el = document.getElementById('map-container');
+      if (!el) return;
+
+      const map = L.map('map-container');
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+      }).addTo(map);
+
+      const markers = (LOCAL_DATA.visited || []).map(v =>
+        L.marker([v.lat, v.lng]).bindPopup(v.name)
+      );
+      const group = L.featureGroup(markers).addTo(map);
+      try { map.fitBounds(group.getBounds().pad(0.2)); }
+      catch { map.setView([20, 0], 2); }
+    };
+
+    // ========== Contact Form ==========
+    window.handleContactSubmit = function handleContactSubmit(e) {
+      e.preventDefault();
+      const form = e.currentTarget;
+      const siteField = document.getElementById('website');
+      const status = document.getElementById('contact-status');
+
+      form.classList.add('was-validated');
+      if (!form.checkValidity()) return;
+      if (siteField?.value) return; // bot
+
+      const name = document.getElementById('name')?.value?.trim();
+      const email = document.getElementById('email')?.value?.trim();
+      const message = document.getElementById('message')?.value?.trim();
+
+      if (window.emailjs && typeof emailjs.send === 'function') {
+        emailjs.send('service_0yhlrii', 'template_3bvruq2', {
+          from_name: name,
+          from_email: email,
+          message
+        })
+        .then(() => {
+          status.innerHTML = '<div class="alert alert-success" role="alert">Message sent successfully!</div>';
+          form.reset();
+          form.classList.remove('was-validated');
+        })
+        .catch(() => {
+          status.innerHTML = '<div class="alert alert-danger" role="alert">Failed to send message. Please try again later.</div>';
+        });
+      } else {
+        status.innerHTML = '<div class="alert alert-success" role="alert">Thanks! Your message has been recorded.</div>';
+        form.reset();
+        form.classList.remove('was-validated');
+      }
+    };
+
+    // ========== PDF ==========
+    window.downloadPDF = async function downloadPDF() {
+      try {
+        const { jsPDF } = window.jspdf || {};
+        if (!jsPDF) throw new Error('jsPDF not loaded');
+        const doc = new jsPDF({ unit: 'pt', format: 'a4' });
+        const pageWidth = doc.internal.pageSize.getWidth();
+        const margin = 40;
+        let y = margin + 8;
+
+        function addLine(txt, size = 12, gap = 18, bold = false) {
+          doc.setFont('helvetica', bold ? 'bold' : 'normal');
+          doc.setFontSize(size);
+          const lines = doc.splitTextToSize(txt, pageWidth - margin * 2);
+          doc.text(lines, margin, y);
+          y += lines.length * gap;
+          if (y > doc.internal.pageSize.getHeight() - margin) { doc.addPage(); y = margin; }
+        }
+
+        addLine('Aboul Hassane Cisse', 20, 22, true);
+        const loc = document.getElementById('about-location')?.textContent.trim() || '';
+        addLine(`${loc} Email: aboulhcisse@gmail.com`);
+        const lead = document.getElementById('about-lead')?.textContent.trim() || '';
+        addLine(lead);
+
+        function section(title) {
+          y += 6; addLine(title, 14, 16, true);
+          doc.setDrawColor(30, 136, 229);
+          doc.line(margin, y, pageWidth - margin, y);
+          y += 10;
+        }
+
+        section(document.getElementById('publications-title')?.textContent || 'Publications');
+        (LOCAL_DATA.publications || []).forEach(p => addLine(`• ${p.title} — ${p.venue}`));
+
+        section(document.getElementById('experience-title')?.textContent || 'Experience');
+        (LOCAL_DATA.experience || []).forEach(e => {
+          addLine(`${e.role} · ${e.org} (${e.dates})`);
+          (e.bullets || []).forEach(b => addLine(`   - ${b}`));
+        });
+
+        section(document.getElementById('skills-title')?.textContent || 'Skills');
+        addLine((LOCAL_DATA.skills || []).join(', '));
+
+        section(document.getElementById('education-title')?.textContent || 'Education');
+        (LOCAL_DATA.education || []).forEach(ed => addLine(`${ed.program} — ${ed.inst} (${ed.dates})`));
+
+        section(document.getElementById('awards-title')?.textContent || 'Awards');
+        (LOCAL_DATA.awards || []).forEach(a => addLine(`• ${a}`));
+
+        doc.save('resume_Aboul-Hassane-CISSE.pdf');
+        const status = document.getElementById('download-status');
+        if (status) status.textContent = 'PDF downloaded.';
+      } catch (err) {
+        const status = document.getElementById('download-status');
+        if (status) status.textContent = 'PDF export failed.';
+        console.error(err);
+      }
+    };
+
+    // ========== JSON Overlay (optional) ==========
+    window.changeLanguage = async function changeLanguage() {
+      const langSel = document.getElementById('language-select');
+      const lang = langSel?.value || 'en';
+
+      // About & Interests (simple helper)
+      async function fetchAndSetContent(url, titleId, elementId, propertyKey) {
+        try {
+          const data = await fetchJSON(url);
+          const byLang = data?.[lang];
+          if (!byLang) return;
+          if (byLang.title && titleId) {
+            const t = document.getElementById(titleId);
+            if (t) t.textContent = byLang.title;
+          }
+          const el = document.getElementById(elementId);
+          const val = byLang[propertyKey];
+          if (!el) return;
+          if (typeof val === 'string') el.textContent = val;
+        } catch { /* optional */ }
+      }
+
+      await fetchAndSetContent(JSON_PATHS.about, 'about-title', 'about-lead', 'lead');
+      await fetchAndSetContent(JSON_PATHS.interests, 'interests-title', 'interests-content', 'content');
+
+      // Publications
+      try {
+        const data = await fetchJSON(JSON_PATHS.publications);
+        const list = document.getElementById('publications-list');
+        const title = document.getElementById('publications-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(type => {
+            const typeDiv = document.createElement('div');
+            typeDiv.innerHTML = `<h3>${type.type || ''}</h3>`;
+            (type.publications || []).forEach(pub => {
+              const div = document.createElement('div');
+              div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
+              const open = pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener">` : '';
+              const close = pub.link ? `</a>` : '';
+              div.innerHTML = `
+                <div class="flex-grow-1">
+                  ${open}<h4 class="mb-0">${pub.id ? pub.id + ' - ' : ''}${pub.title || ''}${pub.language ? ' - version ' + pub.language : ''}</h4>${close}
+                  <p>${pub.abstract || ''} ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener">...</a>` : ''}</p>
+                  ${pub.keywords ? `<p><b>${pub.keywords}</b></p>` : ''}
+                  <div class="subheading mb-3">${pub.event || pub.journal || pub.conference || ''}</div>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">${pub.date || ''}</span></div>
+              `;
+              typeDiv.appendChild(div);
+            });
+            list.appendChild(typeDiv);
+          });
+        }
+      } catch {}
+
+      // Experience
+      try {
+        const data = await fetchJSON(JSON_PATHS.experience);
+        const list = document.getElementById('experience-list');
+        const title = document.getElementById('experience-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(ex => {
+            const div = document.createElement('div');
+            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
+            div.innerHTML = `
+              <div class="flex-grow-1">
+                <h3 class="mb-0">${ex.title || ''}</h3>
+                <div class="subheading mb-3">${ex.company || ''}</div>
+                <p>${ex.description || ''}</p>
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">${ex.date || ''}</span></div>
+            `;
+            list.appendChild(div);
+          });
+        }
+      } catch {}
+
+      // Skills
+      try {
+        const data = await fetchJSON(JSON_PATHS.skills);
+        const list = document.getElementById('skills-list');
+        const title = document.getElementById('skills-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(skillBlock => {
+            const div = document.createElement('div');
+            if (skillBlock.skills?.length) {
+              div.innerHTML += `
+                <div class="subheading mb-3">${skillBlock.category || ''}</div>
+                <ul class="fa-ul mb-3">
+                  ${skillBlock.skills.map(s => `<li><span class="fa-li"><i class="fas fa-check"></i></span>${s}</li>`).join('')}
+                </ul>
+              `;
+            }
+            if (skillBlock.workflow?.length) {
+              div.innerHTML += `
+                <div class="subheading mb-3">${skillBlock.category || ''}</div>
+                <ul class="fa-ul mb-3">
+                  ${skillBlock.workflow.map(flow => `<li><span class="fa-li"><i class="fas fa-check"></i></span>${flow}</li>`).join('')}
+                </ul>
+              `;
+            }
+            if (skillBlock.icons?.length) {
+              div.innerHTML += `
+                <div class="subheading mb-3">${skillBlock.category || ''}</div>
+                <ul class="list-inline dev-icons">
+                  ${skillBlock.icons.map(icon => `<li class="list-inline-item"><i class="${icon}"></i></li>`).join('')}
+                </ul>
+              `;
+            }
+            list.appendChild(div);
+          });
+        }
+      } catch {}
+
+      // Education
+      try {
+        const data = await fetchJSON(JSON_PATHS.education);
+        const list = document.getElementById('education-list');
+        const title = document.getElementById('education-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(ed => {
+            const div = document.createElement('div');
+            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
+            div.innerHTML = `
+              <div class="flex-grow-1">
+                <h3 class="mb-0">${ed.school || ''}</h3>
+                <div class="subheading mb-3">${ed.degree || ''}</div>
+                <p>${ed.description || ''}</p>
+              </div>
+              <div class="flex-shrink-0"><span class="text-primary">${ed.date || ''}</span></div>
+            `;
+            list.appendChild(div);
+          });
+        }
+      } catch {}
+
+      // Awards
+      try {
+        const data = await fetchJSON(JSON_PATHS.awards);
+        const list = document.getElementById('awards-list');
+        const title = document.getElementById('awards-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(a => {
+            const li = document.createElement('li');
+            li.innerHTML = `<span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>${a.date || ''}</b> : ${a.title || ''}`;
+            list.appendChild(li);
+          });
+        }
+      } catch {}
+
+      // Services
+      try {
+        const data = await fetchJSON(JSON_PATHS.services);
+        const list = document.getElementById('services-list');
+        const title = document.getElementById('services-title');
+        const block = data?.[lang];
+        if (list && block) {
+          if (block.title) title.textContent = block.title;
+          list.innerHTML = '';
+          (block.list || []).forEach(s => {
+            const li = document.createElement('li');
+            li.innerHTML = `<span class="fa-li"><i class="fas fa-check"></i></span>${s}`;
+            list.appendChild(li);
+          });
+        }
+      } catch {}
+
+      // Gallery
+      try {
+        const data = await fetchJSON(JSON_PATHS.gallery);
+        const grid = document.getElementById('gallery-list');
+        const title = document.getElementById('gallery-title');
+        const block = data?.[lang];
+        if (grid && block) {
+          if (block.title) title.textContent = block.title;
+          grid.innerHTML = '';
+          (block.list || []).forEach(photo => {
+            const col = document.createElement('div');
+            col.className = 'col-lg-4 col-sm-6 mb-3';
+            col.innerHTML = `
+              <a class="portfolio-box" href="${photo.link || photo.src}" title="${photo.title || ''}">
+                <img class="img-fluid" src="${photo.src}" alt="${photo.title || ''}">
+                <div class="portfolio-box-caption">
+                  <div class="project-category text-white-50">${photo.category || ''}</div>
+                  <div class="project-name">${photo.title || ''}</div>
+                </div>
+              </a>
+            `;
+            grid.appendChild(col);
+          });
+        }
+      } catch {}
+
+      // Map from JSON (optional)
+      try {
+        const data = await fetchJSON(JSON_PATHS.map);
+        const mapEl = document.getElementById('map-container');
+        if (mapEl && window.L) {
+          const map = L.map('map-container').setView([0, 0], 2);
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+          }).addTo(map);
+          const items = data?.[lang] || [];
+          const markers = items.map(loc => L.marker([loc.latitude, loc.longitude]).bindPopup(loc.description || ''));
+          const group = L.featureGroup(markers).addTo(map);
+          try { map.fitBounds(group.getBounds().pad(0.2)); } catch {}
+        }
+      } catch {}
+
+      // Menu labels (optional JSON)
+      try {
+        const data = await fetchJSON(JSON_PATHS.menu);
+        const block = data?.[lang];
+        if (block) {
+          document.querySelectorAll('#navbar-menu .nav-link').forEach(link => {
+            const key = link.getAttribute('data-key');
+            const icon = link.querySelector('i')?.className || '';
+            if (block[key]) link.innerHTML = `<i class="${icon}"></i> ${block[key]}`;
+          });
+        }
+      } catch {}
+    };
+
+    // ========== Bootstrap ScrollSpy & navbar collapse ==========
+    document.addEventListener('DOMContentLoaded', () => {
+      const sideNav = document.querySelector('#sideNav');
+      if (sideNav && window.bootstrap?.ScrollSpy) {
+        new bootstrap.ScrollSpy(document.body, { target: '#sideNav', offset: 80 });
+      }
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      document.querySelectorAll('#navbarResponsive .nav-link').forEach(item => {
+        item.addEventListener('click', () => {
+          if (navbarToggler && getComputedStyle(navbarToggler).display !== 'none') {
+            navbarToggler.click();
+          }
+        });
+      });
+    });
+
+    // ========== Boot ==========
+    document.addEventListener('DOMContentLoaded', () => {
+      // i18n default
+      const langSel = document.getElementById('language-select');
+      const initial = localStorage.getItem('lang') || 'en';
+      if (langSel) {
+        langSel.value = initial;
+        langSel.addEventListener('change', () => {
+          localStorage.setItem('lang', langSel.value);
+          applyI18n(langSel.value);
+          window.changeLanguage?.();
+        });
+      }
+      applyI18n(initial);
+
+      // Paint local first (never empty), then overlay JSON
+      populateFromLocal();
+      window.initMap?.();
+      window.changeLanguage?.();
+
+      // Wire form & PDF
+      const form = document.getElementById('contact-form');
+      if (form) form.addEventListener('submit', window.handleContactSubmit);
+      const dl = document.getElementById('download-pdf');
+      if (dl) dl.addEventListener('click', window.downloadPDF);
+    });
+
+  })();
+  </script>
 </body>
 </html>
