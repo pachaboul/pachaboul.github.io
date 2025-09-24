@@ -165,6 +165,16 @@
             "latitude": 12.8628,
             "description": "Koulikoro, Mali"
         }
+        { "longitude": -6.2603,  "latitude": 53.3498, "description": "Dublin, Ireland" },
+        { "longitude": -8.9819,  "latitude": 52.8463, "description": "Ennis, Ireland" },
+        { "longitude": -9.0568,  "latitude": 53.2707, "description": "Galway, Ireland" },
+
+        { "longitude": 120.9842, "latitude": 14.5995, "description": "Manila, Philippines" },
+        
+        { "longitude": 121.5654, "latitude": 25.0330, "description": "Taipei, Taiwan" },
+        
+        { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, China" },
+        { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, China" }
     ],
     "fr": [
         {
@@ -332,6 +342,16 @@
             "latitude": 12.8628,
             "description": "Koulikoro, Mali"
         }
+        { "longitude": -6.2603,  "latitude": 53.3498, "description": "Dublin, Irlande" },
+        { "longitude": -8.9819,  "latitude": 52.8463, "description": "Ennis, Irlande" },
+        { "longitude": -9.0568,  "latitude": 53.2707, "description": "Galway, Irlande" },
+        
+        { "longitude": 120.9842, "latitude": 14.5995, "description": "Manille, Philippines" },
+        
+        { "longitude": 121.5654, "latitude": 25.0330, "description": "Taipei, Taïwan" },
+        
+        { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, Chine" },
+        { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, Chine" }
     ],
     "jp": [
         {
@@ -499,5 +519,15 @@
             "latitude": 12.8628,
             "description": "クリコロ、マリ"
         }
+        { "longitude": -6.2603,  "latitude": 53.3498, "description": "ダブリン、アイルランド" },
+        { "longitude": -8.9819,  "latitude": 52.8463, "description": "エニス、アイルランド" },
+        { "longitude": -9.0568,  "latitude": 53.2707, "description": "ゴールウェイ、アイルランド" },
+        
+        { "longitude": 120.9842, "latitude": 14.5995, "description": "マニラ、フィリピン" },
+        
+        { "longitude": 121.5654, "latitude": 25.0330, "description": "台北、台湾" },
+        
+        { "longitude": 114.3055, "latitude": 30.5928, "description": "武漢、中国" },
+        { "longitude": 121.4737, "latitude": 31.2304, "description": "上海、中国" }
     ]
 }
