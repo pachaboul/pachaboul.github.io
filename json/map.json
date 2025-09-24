@@ -1,533 +1,128 @@
 {
-    "en": [
-        {
-            "longitude": 30.0619,
-            "latitude": -1.9441,
-            "description": "Kigali, Rwanda"
-        },
-        {
-            "longitude": 36.8219,
-            "latitude": -1.2921,
-            "description": "Nairobi, Kenya"
-        },
-        {
-            "longitude": 2.1154,
-            "latitude": 13.5116,
-            "description": "Niamey, Niger"
-        },
-        {
-            "longitude": 2.4333,
-            "latitude": 6.3703,
-            "description": "Cotonou, Benin"
-        },
-        {
-            "longitude": -1.5197,
-            "latitude": 12.3714,
-            "description": "Ouagadougou, Burkina Faso"
-        },
-        {
-            "longitude": -4.2971,
-            "latitude": 11.1784,
-            "description": "Bobo-Dioulasso, Burkina Faso"
-        },
-        {
-            "longitude": -17.4479,
-            "latitude": 14.6928,
-            "description": "Dakar, Senegal"
-        },
-        {
-            "longitude": 4.9041,
-            "latitude": 52.3676,
-            "description": "Amsterdam, Netherlands"
-        },
-        {
-            "longitude": 38.7578,
-            "latitude": 9.0340,
-            "description": "Addis-Ababa, Ethiopia"
-        },
-        {
-            "longitude": 2.3522,
-            "latitude": 48.8566,
-            "description": "Paris, France"
-        },
-        {
-            "longitude": -9.5978,
-            "latitude": 30.4278,
-            "description": "Agadir, Morocco"
-        },
-        {
-            "longitude": -7.5898,
-            "latitude": 33.5731,
-            "description": "Casablanca, Morocco"
-        },
-        {
-            "longitude": -6.8498,
-            "latitude": 34.0209,
-            "description": "Rabat, Morocco"
-        },
-        {
-            "longitude": -5.7997,
-            "latitude": 35.7595,
-            "description": "Tanger, Morocco"
-        },
-        {
-            "longitude": -8.009,
-            "latitude": 31.6315,
-            "description": "Marrakech, Morocco"
-        },
-        {
-            "longitude": -7.6164,
-            "latitude": 33.0011,
-            "description": "Settat, Morocco"
-        },
-        {
-            "longitude": 135.1955,
-            "latitude": 34.6901,
-            "description": "Kobe, Japan"
-        },
-        {
-            "longitude": 135.5023,
-            "latitude": 34.6937,
-            "description": "Osaka, Japan"
-        },
-        {
-            "longitude": 135.7681,
-            "latitude": 35.0116,
-            "description": "Kyoto, Japan"
-        },
-        {
-            "longitude": 139.6917,
-            "latitude": 35.6895,
-            "description": "Tokyo, Japan"
-        },
-        {
-            "longitude": 143.3896,
-            "latitude": 43.8508,
-            "description": "Urahoro, Japan"
-        },
-        {
-            "longitude": 130.4017,
-            "latitude": 33.5902,
-            "description": "Fukuoka, Japan"
-        },
-        {
-            "longitude": 132.4553,
-            "latitude": 34.3853,
-            "description": "Hiroshima, Japan"
-        },
-        {
-            "longitude": 132.7661,
-            "latitude": 35.4723,
-            "description": "Shimane, Japan"
-        },
-        {
-            "longitude": 114.1694,
-            "latitude": 22.3193,
-            "description": "Hong Kong"
-        },
-        {
-            "longitude": 100.5018,
-            "latitude": 13.7563,
-            "description": "Bangkok, Thailand"
-        },
-        {
-            "longitude": -7.9922,
-            "latitude": 12.6392,
-            "description": "Bamako, Mali"
-        },
-        {
-            "longitude": -3.0026,
-            "latitude": 16.7735,
-            "description": "Timbuktu, Mali"
-        },
-        {
-            "longitude": -4.1931,
-            "latitude": 14.4946,
-            "description": "Mopti, Mali"
-        },
-        {
-            "longitude": -5.6666,
-            "latitude": 11.3177,
-            "description": "Sikasso, Mali"
-        },
-        {
-            "longitude": -6.2670,
-            "latitude": 13.4317,
-            "description": "Segou, Mali"
-        },
-        {
-            "longitude": -8.0807,
-            "latitude": 12.7481,
-            "description": "Kati, Mali"
-        },
-        {
-            "longitude": -7.5528,
-            "latitude": 12.8628,
-            "description": "Koulikoro, Mali"
-        }
-        { "longitude": -6.2603,  "latitude": 53.3498, "description": "Dublin, Ireland" },
-        { "longitude": -8.9819,  "latitude": 52.8463, "description": "Ennis, Ireland" },
-        { "longitude": -9.0568,  "latitude": 53.2707, "description": "Galway, Ireland" },
-
-        { "longitude": 120.9842, "latitude": 14.5995, "description": "Manila, Philippines" },
-        
-        { "longitude": 121.5654, "latitude": 25.0330, "description": "Taipei, Taiwan" },
-        
-        { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, China" },
-        { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, China" }
-    ],
-    "fr": [
-        {
-            "longitude": 30.0619,
-            "latitude": -1.9441,
-            "description": "Kigali, Rwanda"
-        },
-        {
-            "longitude": 36.8219,
-            "latitude": -1.2921,
-            "description": "Nairobi, Kenya"
-        },
-        {
-            "longitude": 2.1154,
-            "latitude": 13.5116,
-            "description": "Niamey, Niger"
-        },
-        {
-            "longitude": 2.4333,
-            "latitude": 6.3703,
-            "description": "Cotonou, Bénin"
-        },
-        {
-            "longitude": -1.5197,
-            "latitude": 12.3714,
-            "description": "Ouagadougou, Burkina Faso"
-        },
-        {
-            "longitude": -4.2971,
-            "latitude": 11.1784,
-            "description": "Bobo-Dioulasso, Burkina Faso"
-        },
-        {
-            "longitude": -17.4479,
-            "latitude": 14.6928,
-            "description": "Dakar, Sénégal"
-        },
-        {
-            "longitude": 4.9041,
-            "latitude": 52.3676,
-            "description": "Amsterdam, Pays-Bas"
-        },
-        {
-            "longitude": 38.7578,
-            "latitude": 9.0340,
-            "description": "Addis-Abeba, Éthiopie"
-        },
-        {
-            "longitude": 2.3522,
-            "latitude": 48.8566,
-            "description": "Paris, France"
-        },
-        {
-            "longitude": -9.5978,
-            "latitude": 30.4278,
-            "description": "Agadir, Maroc"
-        },
-        {
-            "longitude": -7.5898,
-            "latitude": 33.5731,
-            "description": "Casablanca, Maroc"
-        },
-        {
-            "longitude": -6.8498,
-            "latitude": 34.0209,
-            "description": "Rabat, Maroc"
-        },
-        {
-            "longitude": -5.7997,
-            "latitude": 35.7595,
-            "description": "Tanger, Maroc"
-        },
-        {
-            "longitude": -8.009,
-            "latitude": 31.6315,
-            "description": "Marrakech, Maroc"
-        },
-        {
-            "longitude": -7.6164,
-            "latitude": 33.0011,
-            "description": "Settat, Maroc"
-        },
-        {
-            "longitude": 135.1955,
-            "latitude": 34.6901,
-            "description": "Kobe, Japon"
-        },
-        {
-            "longitude": 135.5023,
-            "latitude": 34.6937,
-            "description": "Osaka, Japon"
-        },
-        {
-            "longitude": 135.7681,
-            "latitude": 35.0116,
-            "description": "Kyoto, Japon"
-        },
-        {
-            "longitude": 139.6917,
-            "latitude": 35.6895,
-            "description": "Tokyo, Japon"
-        },
-        {
-            "longitude": 143.3896,
-            "latitude": 43.8508,
-            "description": "Urahoro, Japon"
-        },
-        {
-            "longitude": 130.4017,
-            "latitude": 33.5902,
-            "description": "Fukuoka, Japon"
-        },
-        {
-            "longitude": 132.4553,
-            "latitude": 34.3853,
-            "description": "Hiroshima, Japon"
-        },
-        {
-            "longitude": 132.7661,
-            "latitude": 35.4723,
-            "description": "Shimane, Japon"
-        },
-        {
-            "longitude": 114.1694,
-            "latitude": 22.3193,
-            "description": "Hong Kong"
-        },
-        {
-            "longitude": 100.5018,
-            "latitude": 13.7563,
-            "description": "Bangkok, Thaïlande"
-        },
-        {
-            "longitude": -7.9922,
-            "latitude": 12.6392,
-            "description": "Bamako, Mali"
-        },
-        {
-            "longitude": -3.0026,
-            "latitude": 16.7735,
-            "description": "Tombouctou, Mali"
-        },
-        {
-            "longitude": -4.1931,
-            "latitude": 14.4946,
-            "description": "Mopti, Mali"
-        },
-        {
-            "longitude": -5.6666,
-            "latitude": 11.3177,
-            "description": "Sikasso, Mali"
-        },
-        {
-            "longitude": -6.2670,
-            "latitude": 13.4317,
-            "description": "Ségou, Mali"
-        },
-        {
-            "longitude": -8.0807,
-            "latitude": 12.7481,
-            "description": "Kati, Mali"
-        },
-        {
-            "longitude": -7.5528,
-            "latitude": 12.8628,
-            "description": "Koulikoro, Mali"
-        }
-        { "longitude": -6.2603,  "latitude": 53.3498, "description": "Dublin, Irlande" },
-        { "longitude": -8.9819,  "latitude": 52.8463, "description": "Ennis, Irlande" },
-        { "longitude": -9.0568,  "latitude": 53.2707, "description": "Galway, Irlande" },
-        
-        { "longitude": 120.9842, "latitude": 14.5995, "description": "Manille, Philippines" },
-        
-        { "longitude": 121.5654, "latitude": 25.0330, "description": "Taipei, Taïwan" },
-        
-        { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, Chine" },
-        { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, Chine" }
-    ],
-    "jp": [
-        {
-            "longitude": 30.0619,
-            "latitude": -1.9441,
-            "description": "キガリ、ルワンダ"
-        },
-        {
-            "longitude": 36.8219,
-            "latitude": -1.2921,
-            "description": "ナイロビ、ケニア"
-        },
-        {
-            "longitude": 2.1154,
-            "latitude": 13.5116,
-            "description": "ニアメ、ニジェール"
-        },
-        {
-            "longitude": 2.4333,
-            "latitude": 6.3703,
-            "description": "コトヌー、ベニン"
-        },
-        {
-            "longitude": -1.5197,
-            "latitude": 12.3714,
-            "description": "ワガドゥグ、ブルキナファソ"
-        },
-        {
-            "longitude": -4.2971,
-            "latitude": 11.1784,
-            "description": "ボボ・ディウラッソ、ブルキナファソ"
-        },
-        {
-            "longitude": -17.4479,
-            "latitude": 14.6928,
-            "description": "ダカール、セネガル"
-        },
-        {
-            "longitude": 4.9041,
-            "latitude": 52.3676,
-            "description": "アムステルダム、オランダ"
-        },
-        {
-            "longitude": 38.7578,
-            "latitude": 9.0340,
-            "description": "アディスアベバ、エチオピア"
-        },
-        {
-            "longitude": 2.3522,
-            "latitude": 48.8566,
-            "description": "パリ、フランス"
-        },
-        {
-            "longitude": -9.5978,
-            "latitude": 30.4278,
-            "description": "アガディール、モロッコ"
-        },
-        {
-            "longitude": -7.5898,
-            "latitude": 33.5731,
-            "description": "カサブランカ、モロッコ"
-        },
-        {
-            "longitude": -6.8498,
-            "latitude": 34.0209,
-            "description": "ラバト、モロッコ"
-        },
-        {
-            "longitude": -5.7997,
-            "latitude": 35.7595,
-            "description": "タンジェ、モロッコ"
-        },
-        {
-            "longitude": -8.009,
-            "latitude": 31.6315,
-            "description": "マラケシュ、モロッコ"
-        },
-        {
-            "longitude": -7.6164,
-            "latitude": 33.0011,
-            "description": "セッタ、モロッコ"
-        },
-        {
-            "longitude": 135.1955,
-            "latitude": 34.6901,
-            "description": "神戸、日本"
-        },
-        {
-            "longitude": 135.5023,
-            "latitude": 34.6937,
-            "description": "大阪、日本"
-        },
-        {
-            "longitude": 135.7681,
-            "latitude": 35.0116,
-            "description": "京都、日本"
-        },
-        {
-            "longitude": 139.6917,
-            "latitude": 35.6895,
-            "description": "東京、日本"
-        },
-        {
-            "longitude": 143.3896,
-            "latitude": 43.8508,
-            "description": "浦幌、日本"
-        },
-        {
-            "longitude": 130.4017,
-            "latitude": 33.5902,
-            "description": "福岡、日本"
-        },
-        {
-            "longitude": 132.4553,
-            "latitude": 34.3853,
-            "description": "広島、日本"
-        },
-        {
-            "longitude": 132.7661,
-            "latitude": 35.4723,
-            "description": "島根、日本"
-        },
-        {
-            "longitude": 114.1694,
-            "latitude": 22.3193,
-            "description": "香港"
-        },
-        {
-            "longitude": 100.5018,
-            "latitude": 13.7563,
-            "description": "バンコク、タイ"
-        },
-        {
-            "longitude": -7.9922,
-            "latitude": 12.6392,
-            "description": "バマコ、マリ"
-        },
-        {
-            "longitude": -3.0026,
-            "latitude": 16.7735,
-            "description": "トンブクトゥ、マリ"
-        },
-        {
-            "longitude": -4.1931,
-            "latitude": 14.4946,
-            "description": "モプティ、マリ"
-        },
-        {
-            "longitude": -5.6666,
-            "latitude": 11.3177,
-            "description": "シカソ、マリ"
-        },
-        {
-            "longitude": -6.2670,
-            "latitude": 13.4317,
-            "description": "セグー、マリ"
-        },
-        {
-            "longitude": -8.0807,
-            "latitude": 12.7481,
-            "description": "カティ、マリ"
-        },
-        {
-            "longitude": -7.5528,
-            "latitude": 12.8628,
-            "description": "クリコロ、マリ"
-        }
-        { "longitude": -6.2603,  "latitude": 53.3498, "description": "ダブリン、アイルランド" },
-        { "longitude": -8.9819,  "latitude": 52.8463, "description": "エニス、アイルランド" },
-        { "longitude": -9.0568,  "latitude": 53.2707, "description": "ゴールウェイ、アイルランド" },
-        
-        { "longitude": 120.9842, "latitude": 14.5995, "description": "マニラ、フィリピン" },
-        
-        { "longitude": 121.5654, "latitude": 25.0330, "description": "台北、台湾" },
-        
-        { "longitude": 114.3055, "latitude": 30.5928, "description": "武漢、中国" },
-        { "longitude": 121.4737, "latitude": 31.2304, "description": "上海、中国" }
-    ]
+  "en": [
+    { "longitude": 30.0619, "latitude": -1.9441, "description": "Kigali, Rwanda" },
+    { "longitude": 36.8219, "latitude": -1.2921, "description": "Nairobi, Kenya" },
+    { "longitude": 2.1154, "latitude": 13.5116, "description": "Niamey, Niger" },
+    { "longitude": 2.4333, "latitude": 6.3703, "description": "Cotonou, Benin" },
+    { "longitude": -1.5197, "latitude": 12.3714, "description": "Ouagadougou, Burkina Faso" },
+    { "longitude": -4.2971, "latitude": 11.1784, "description": "Bobo-Dioulasso, Burkina Faso" },
+    { "longitude": -17.4479, "latitude": 14.6928, "description": "Dakar, Senegal" },
+    { "longitude": 4.9041, "latitude": 52.3676, "description": "Amsterdam, Netherlands" },
+    { "longitude": 38.7578, "latitude": 9.034, "description": "Addis-Ababa, Ethiopia" },
+    { "longitude": 2.3522, "latitude": 48.8566, "description": "Paris, France" },
+    { "longitude": -9.5978, "latitude": 30.4278, "description": "Agadir, Morocco" },
+    { "longitude": -7.5898, "latitude": 33.5731, "description": "Casablanca, Morocco" },
+    { "longitude": -6.8498, "latitude": 34.0209, "description": "Rabat, Morocco" },
+    { "longitude": -5.7997, "latitude": 35.7595, "description": "Tanger, Morocco" },
+    { "longitude": -8.009, "latitude": 31.6315, "description": "Marrakech, Morocco" },
+    { "longitude": -7.6164, "latitude": 33.0011, "description": "Settat, Morocco" },
+    { "longitude": 135.1955, "latitude": 34.6901, "description": "Kobe, Japan" },
+    { "longitude": 135.5023, "latitude": 34.6937, "description": "Osaka, Japan" },
+    { "longitude": 135.7681, "latitude": 35.0116, "description": "Kyoto, Japan" },
+    { "longitude": 139.6917, "latitude": 35.6895, "description": "Tokyo, Japan" },
+    { "longitude": 143.3896, "latitude": 43.8508, "description": "Urahoro, Japan" },
+    { "longitude": 130.4017, "latitude": 33.5902, "description": "Fukuoka, Japan" },
+    { "longitude": 132.4553, "latitude": 34.3853, "description": "Hiroshima, Japan" },
+    { "longitude": 132.7661, "latitude": 35.4723, "description": "Shimane, Japan" },
+    { "longitude": 114.1694, "latitude": 22.3193, "description": "Hong Kong" },
+    { "longitude": 100.5018, "latitude": 13.7563, "description": "Bangkok, Thailand" },
+    { "longitude": -7.9922, "latitude": 12.6392, "description": "Bamako, Mali" },
+    { "longitude": -3.0026, "latitude": 16.7735, "description": "Timbuktu, Mali" },
+    { "longitude": -4.1931, "latitude": 14.4946, "description": "Mopti, Mali" },
+    { "longitude": -5.6666, "latitude": 11.3177, "description": "Sikasso, Mali" },
+    { "longitude": -6.267, "latitude": 13.4317, "description": "Segou, Mali" },
+    { "longitude": -8.0807, "latitude": 12.7481, "description": "Kati, Mali" },
+    { "longitude": -7.5528, "latitude": 12.8628, "description": "Koulikoro, Mali" },
+    { "longitude": -6.2603, "latitude": 53.3498, "description": "Dublin, Ireland" },
+    { "longitude": -8.9819, "latitude": 52.8463, "description": "Ennis, Ireland" },
+    { "longitude": -9.0568, "latitude": 53.2707, "description": "Galway, Ireland" },
+    { "longitude": 120.9842, "latitude": 14.5995, "description": "Manila, Philippines" },
+    { "longitude": 121.5654, "latitude": 25.033, "description": "Taipei, Taiwan" },
+    { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, China" },
+    { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, China" }
+  ],
+  "fr": [
+    { "longitude": 30.0619, "latitude": -1.9441, "description": "Kigali, Rwanda" },
+    { "longitude": 36.8219, "latitude": -1.2921, "description": "Nairobi, Kenya" },
+    { "longitude": 2.1154, "latitude": 13.5116, "description": "Niamey, Niger" },
+    { "longitude": 2.4333, "latitude": 6.3703, "description": "Cotonou, Bénin" },
+    { "longitude": -1.5197, "latitude": 12.3714, "description": "Ouagadougou, Burkina Faso" },
+    { "longitude": -4.2971, "latitude": 11.1784, "description": "Bobo-Dioulasso, Burkina Faso" },
+    { "longitude": -17.4479, "latitude": 14.6928, "description": "Dakar, Sénégal" },
+    { "longitude": 4.9041, "latitude": 52.3676, "description": "Amsterdam, Pays-Bas" },
+    { "longitude": 38.7578, "latitude": 9.034, "description": "Addis-Abeba, Éthiopie" },
+    { "longitude": 2.3522, "latitude": 48.8566, "description": "Paris, France" },
+    { "longitude": -9.5978, "latitude": 30.4278, "description": "Agadir, Maroc" },
+    { "longitude": -7.5898, "latitude": 33.5731, "description": "Casablanca, Maroc" },
+    { "longitude": -6.8498, "latitude": 34.0209, "description": "Rabat, Maroc" },
+    { "longitude": -5.7997, "latitude": 35.7595, "description": "Tanger, Maroc" },
+    { "longitude": -8.009, "latitude": 31.6315, "description": "Marrakech, Maroc" },
+    { "longitude": -7.6164, "latitude": 33.0011, "description": "Settat, Maroc" },
+    { "longitude": 135.1955, "latitude": 34.6901, "description": "Kobe, Japon" },
+    { "longitude": 135.5023, "latitude": 34.6937, "description": "Osaka, Japon" },
+    { "longitude": 135.7681, "latitude": 35.0116, "description": "Kyoto, Japon" },
+    { "longitude": 139.6917, "latitude": 35.6895, "description": "Tokyo, Japon" },
+    { "longitude": 143.3896, "latitude": 43.8508, "description": "Urahoro, Japon" },
+    { "longitude": 130.4017, "latitude": 33.5902, "description": "Fukuoka, Japon" },
+    { "longitude": 132.4553, "latitude": 34.3853, "description": "Hiroshima, Japon" },
+    { "longitude": 132.7661, "latitude": 35.4723, "description": "Shimane, Japon" },
+    { "longitude": 114.1694, "latitude": 22.3193, "description": "Hong Kong" },
+    { "longitude": 100.5018, "latitude": 13.7563, "description": "Bangkok, Thaïlande" },
+    { "longitude": -7.9922, "latitude": 12.6392, "description": "Bamako, Mali" },
+    { "longitude": -3.0026, "latitude": 16.7735, "description": "Tombouctou, Mali" },
+    { "longitude": -4.1931, "latitude": 14.4946, "description": "Mopti, Mali" },
+    { "longitude": -5.6666, "latitude": 11.3177, "description": "Sikasso, Mali" },
+    { "longitude": -6.267, "latitude": 13.4317, "description": "Ségou, Mali" },
+    { "longitude": -8.0807, "latitude": 12.7481, "description": "Kati, Mali" },
+    { "longitude": -7.5528, "latitude": 12.8628, "description": "Koulikoro, Mali" },
+    { "longitude": -6.2603, "latitude": 53.3498, "description": "Dublin, Irlande" },
+    { "longitude": -8.9819, "latitude": 52.8463, "description": "Ennis, Irlande" },
+    { "longitude": -9.0568, "latitude": 53.2707, "description": "Galway, Irlande" },
+    { "longitude": 120.9842, "latitude": 14.5995, "description": "Manille, Philippines" },
+    { "longitude": 121.5654, "latitude": 25.033, "description": "Taipei, Taïwan" },
+    { "longitude": 114.3055, "latitude": 30.5928, "description": "Wuhan, Chine" },
+    { "longitude": 121.4737, "latitude": 31.2304, "description": "Shanghai, Chine" }
+  ],
+  "jp": [
+    { "longitude": 30.0619, "latitude": -1.9441, "description": "キガリ、ルワンダ" },
+    { "longitude": 36.8219, "latitude": -1.2921, "description": "ナイロビ、ケニア" },
+    { "longitude": 2.1154, "latitude": 13.5116, "description": "ニアメ、ニジェール" },
+    { "longitude": 2.4333, "latitude": 6.3703, "description": "コトヌー、ベニン" },
+    { "longitude": -1.5197, "latitude": 12.3714, "description": "ワガドゥグ、ブルキナファソ" },
+    { "longitude": -4.2971, "latitude": 11.1784, "description": "ボボ・ディウラッソ、ブルキナファソ" },
+    { "longitude": -17.4479, "latitude": 14.6928, "description": "ダカール、セネガル" },
+    { "longitude": 4.9041, "latitude": 52.3676, "description": "アムステルダム、オランダ" },
+    { "longitude": 38.7578, "latitude": 9.034, "description": "アディスアベバ、エチオピア" },
+    { "longitude": 2.3522, "latitude": 48.8566, "description": "パリ、フランス" },
+    { "longitude": -9.5978, "latitude": 30.4278, "description": "アガディール、モロッコ" },
+    { "longitude": -7.5898, "latitude": 33.5731, "description": "カサブランカ、モロッコ" },
+    { "longitude": -6.8498, "latitude": 34.0209, "description": "ラバト、モロッコ" },
+    { "longitude": -5.7997, "latitude": 35.7595, "description": "タンジェ、モロッコ" },
+    { "longitude": -8.009, "latitude": 31.6315, "description": "マラケシュ、モロッコ" },
+    { "longitude": -7.6164, "latitude": 33.0011, "description": "セッタ、モロッコ" },
+    { "longitude": 135.1955, "latitude": 34.6901, "description": "神戸、日本" },
+    { "longitude": 135.5023, "latitude": 34.6937, "description": "大阪、日本" },
+    { "longitude": 135.7681, "latitude": 35.0116, "description": "京都、日本" },
+    { "longitude": 139.6917, "latitude": 35.6895, "description": "東京、日本" },
+    { "longitude": 143.3896, "latitude": 43.8508, "description": "浦幌、日本" },
+    { "longitude": 130.4017, "latitude": 33.5902, "description": "福岡、日本" },
+    { "longitude": 132.4553, "latitude": 34.3853, "description": "広島、日本" },
+    { "longitude": 132.7661, "latitude": 35.4723, "description": "島根、日本" },
+    { "longitude": 114.1694, "latitude": 22.3193, "description": "香港" },
+    { "longitude": 100.5018, "latitude": 13.7563, "description": "バンコク、タイ" },
+    { "longitude": -7.9922, "latitude": 12.6392, "description": "バマコ、マリ" },
+    { "longitude": -3.0026, "latitude": 16.7735, "description": "トンブクトゥ、マリ" },
+    { "longitude": -4.1931, "latitude": 14.4946, "description": "モプティ、マリ" },
+    { "longitude": -5.6666, "latitude": 11.3177, "description": "シカソ、マリ" },
+    { "longitude": -6.267, "latitude": 13.4317, "description": "セグー、マリ" },
+    { "longitude": -8.0807, "latitude": 12.7481, "description": "カティ、マリ" },
+    { "longitude": -7.5528, "latitude": 12.8628, "description": "クリコロ、マリ" },
+    { "longitude": -6.2603, "latitude": 53.3498, "description": "ダブリン、アイルランド" },
+    { "longitude": -8.9819, "latitude": 52.8463, "description": "エニス、アイルランド" },
+    { "longitude": -9.0568, "latitude": 53.2707, "description": "ゴールウェイ、アイルランド" },
+    { "longitude": 120.9842, "latitude": 14.5995, "description": "マニラ、フィリピン" },
+    { "longitude": 121.5654, "latitude": 25.033, "description": "台北、台湾" },
+    { "longitude": 114.3055, "latitude": 30.5928, "description": "武漢、中国" },
+    { "longitude": 121.4737, "latitude": 31.2304, "description": "上海、中国" }
+  ]
 }
