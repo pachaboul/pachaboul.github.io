@@ -1,0 +1,7 @@
+
+
+Link : https://dashboard.emailjs.com/admin
+Service ID : service_1c5ct6a
+
+Public Key : h49ZLZln8LyVHj8n7
+Private Key : 3VnEkiM7NcFWz2eFK9V4c
