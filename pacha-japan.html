@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="PACHA-Japan — Programme de mentorat stratégique pour étudiants et jeunes diplômés internationaux souhaitant réussir académiquement et professionnellement au Japon." />
+  <meta name="author" content="Aboul Hassane Cisse" />
+  <title>PACHA-Japan — Program for Academic & Career High-level Achievement</title>
+  <link rel="canonical" href="https://aboulhassane.com/pacha-japan" />
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+  <!-- SEO -->
+  <meta property="og:title" content="PACHA-Japan — Programme de mentorat stratégique au Japon" />
+  <meta property="og:description" content="Mentorat de haut niveau pour étudiants internationaux en Computer Science, Data Science et IA au Japon." />
+  <meta property="og:image" content="https://aboulhassane.com/assets/img/profile.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aboulhassane.com/pacha-japan" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    /* ── Variables ── */
+    :root {
+      --accent:       #bd5d38;
+      --accent-dark:  #a04d2e;
+      --accent-light: #f0916a;
+      --jp-red:       #c0392b;
+      --jp-red-dark:  #a93226;
+      --nav-bg:       rgba(10,18,36,0.97);
+      --nav-height:   64px;
+      --bg:           #f8fafc;
+      --bg-alt:       #ffffff;
+      --text:         #1e293b;
+      --text-muted:   #64748b;
+      --heading:      #0f172a;
+      --border:       #e2e8f0;
+      --card-bg:      #ffffff;
+      --card-shadow:  0 1px 3px rgba(0,0,0,0.07), 0 4px 16px rgba(0,0,0,0.04);
+    }
+    [data-theme="dark"] {
+      --bg:         #0f172a;
+      --bg-alt:     #1e293b;
+      --text:       #e2e8f0;
+      --text-muted: #94a3b8;
+      --heading:    #f1f5f9;
+      --border:     #334155;
+      --card-bg:    #1e293b;
+      --card-shadow:0 1px 3px rgba(0,0,0,0.3), 0 4px 16px rgba(0,0,0,0.2);
+    }
+
+    /* ── Base ── */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding-top: var(--nav-height);
+      transition: background 0.3s, color 0.3s;
+      line-height: 1.75;
+    }
+    h1,h2,h3,h4,h5,h6 { color: var(--heading); font-family: 'Inter', sans-serif; }
+    a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--accent-dark); }
+    [data-theme="dark"] a { color: var(--accent-light); }
+
+    /* ── Navbar ── */
+    .pj-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-height);
+      background: var(--nav-bg);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      box-shadow: 0 2px 24px rgba(0,0,0,0.2);
+      z-index: 1030;
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+      gap: 1rem;
+    }
+    .pj-nav-brand {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff !important;
+      text-decoration: none;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .pj-nav-brand span { color: var(--accent-light); }
+    .pj-nav-back {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6) !important;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.15);
+      margin-left: auto;
+      transition: background 0.2s, color 0.2s;
+    }
+    .pj-nav-back:hover { background: rgba(255,255,255,0.1); color: #fff !important; }
+    #pj-theme-toggle {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      display: flex; align-items: center; gap: 0.35rem;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    #pj-theme-toggle:hover { background: rgba(255,255,255,0.2); }
+
+    /* ── Hero ── */
+    .pj-hero {
+      background: linear-gradient(135deg, #0a1224 0%, #1a2a4a 50%, #0f172a 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 6rem 0 5rem;
+      text-align: center;
+    }
+    .pj-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(189,93,56,0.18) 0%, transparent 70%);
+    }
+    .pj-hero-flag {
+      font-size: 3.5rem;
+      line-height: 1;
+      margin-bottom: 1.5rem;
+    }
+    .pj-hero-badge {
+      display: inline-block;
+      background: rgba(192,57,43,0.18);
+      border: 1px solid rgba(192,57,43,0.5);
+      color: #f4897b;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+    .pj-hero h1 {
+      color: #fff !important;
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .pj-hero h1 span { color: var(--accent-light); }
+    .pj-hero-subtitle {
+      color: rgba(255,255,255,0.7);
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      font-weight: 400;
+      max-width: 680px;
+      margin: 1.2rem auto 2.5rem;
+    }
+    .pj-hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-pj-primary {
+      background: var(--jp-red);
+      color: #fff !important;
+      border: none;
+      padding: 0.85rem 2.2rem;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      box-shadow: 0 4px 20px rgba(192,57,43,0.4);
+    }
+    .btn-pj-primary:hover {
+      background: var(--jp-red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(192,57,43,0.5);
+      color: #fff !important;
+    }
+    .btn-pj-secondary {
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.9) !important;
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 0.85rem 2.2rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+    }
+    .btn-pj-secondary:hover {
+      background: rgba(255,255,255,0.15);
+      transform: translateY(-2px);
+      color: #fff !important;
+    }
+
+    /* ── Stats bar ── */
+    .pj-stats {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 0;
+    }
+    .pj-stat-item {
+      text-align: center;
+      padding: 0.75rem 1rem;
+    }
+    .pj-stat-number {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--jp-red);
+      line-height: 1;
+    }
+    .pj-stat-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-top: 0.3rem;
+    }
+
+    /* ── Sections ── */
+    .pj-section {
+      padding: 5rem 0;
+    }
+    .pj-section:nth-child(even) {
+      background: var(--bg-alt);
+    }
+    .pj-section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--jp-red);
+      margin-bottom: 0.75rem;
+    }
+    .pj-section-title {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+      line-height: 1.2;
+    }
+    .pj-lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      line-height: 1.8;
+    }
+
+    /* ── Cards ── */
+    .pj-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.75rem;
+      box-shadow: var(--card-shadow);
+      height: 100%;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .pj-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+      border-color: var(--jp-red);
+    }
+    .pj-card-icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--jp-red), #e74c3c);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      flex-shrink: 0;
+    }
+    .pj-card h4 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .pj-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* ── Pillars ── */
+    .pj-pillar {
+      display: flex;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+      align-items: flex-start;
+    }
+    .pj-pillar-letter {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 8px;
+      background: var(--jp-red);
+      color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+    .pj-pillar h5 { font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .pj-pillar p { font-size: 0.9rem; color: var(--text-muted); margin: 0; }
+
+    /* ── Formulas / Pricing ── */
+    .pj-formula-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 20px;
+      padding: 2rem;
+      height: 100%;
+      position: relative;
+      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    }
+    .pj-formula-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+    }
+    .pj-formula-card.featured {
+      border-color: var(--jp-red);
+      box-shadow: 0 0 0 1px var(--jp-red), 0 8px 32px rgba(192,57,43,0.2);
+    }
+    .pj-formula-badge {
+      position: absolute;
+      top: -13px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--jp-red);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 1rem;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+    .pj-formula-code {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--jp-red);
+      margin-bottom: 0.5rem;
+    }
+    .pj-formula-name {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+    .pj-formula-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.75rem;
+    }
+    .pj-formula-features li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+    .pj-formula-features li:last-child { border-bottom: none; }
+    .pj-formula-features li i {
+      color: var(--jp-red);
+      margin-top: 0.2rem;
+      flex-shrink: 0;
+    }
+    .pj-formula-includes {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Checklist ── */
+    .pj-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .pj-checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .pj-checklist li:last-child { border-bottom: none; }
+    .pj-checklist li i { color: var(--jp-red); margin-top: 0.2rem; flex-shrink: 0; }
+
+    /* ── Audience tags ── */
+    .pj-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(192,57,43,0.08);
+      border: 1px solid rgba(192,57,43,0.25);
+      color: var(--jp-red);
+      padding: 0.45rem 0.9rem;
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0.3rem;
+    }
+    [data-theme="dark"] .pj-tag {
+      background: rgba(192,57,43,0.15);
+      border-color: rgba(192,57,43,0.4);
+      color: #f4897b;
+    }
+
+    /* ── Quote / highlight box ── */
+    .pj-quote {
+      border-left: 4px solid var(--jp-red);
+      padding: 1.25rem 1.75rem;
+      background: rgba(192,57,43,0.05);
+      border-radius: 0 12px 12px 0;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--text);
+      margin: 2rem 0;
+    }
+    [data-theme="dark"] .pj-quote { background: rgba(192,57,43,0.1); }
+
+    /* ── Warning / conditions box ── */
+    .pj-conditions {
+      background: rgba(192,57,43,0.05);
+      border: 1px solid rgba(192,57,43,0.2);
+      border-radius: 14px;
+      padding: 1.75rem;
+    }
+    [data-theme="dark"] .pj-conditions { background: rgba(192,57,43,0.1); }
+
+    /* ── CTA section ── */
+    .pj-cta {
+      background: linear-gradient(135deg, #0a1224 0%, #1a2a4a 100%);
+      padding: 6rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .pj-cta::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(192,57,43,0.2) 0%, transparent 70%);
+    }
+    .pj-cta h2 { color: #fff !important; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; }
+    .pj-cta p { color: rgba(255,255,255,0.7); font-size: 1.1rem; max-width: 560px; margin: 1rem auto 2.5rem; }
+
+    /* ── Footer ── */
+    .pj-footer {
+      background: #0a1224;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    .pj-footer a { color: rgba(255,255,255,0.6); }
+    .pj-footer a:hover { color: var(--accent-light); }
+
+    /* ── Divider ── */
+    .pj-divider {
+      width: 48px; height: 4px;
+      background: var(--jp-red);
+      border-radius: 4px;
+      margin: 1rem 0 1.75rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .pj-nav { padding: 0 1rem; }
+      .pj-hero { padding: 4rem 0 3rem; }
+      .pj-section { padding: 3.5rem 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="pj-nav">
+    <a class="pj-nav-brand" href="pacha-japan.html">
+      PACHA<span>-Japan</span>
+    </a>
+    <button id="pj-theme-toggle" aria-label="Toggle theme">
+      <i class="fas fa-circle-half-stroke theme-icon"></i>
+      <span class="d-none d-sm-inline">Mode</span>
+    </button>
+    <a href="index.html" class="pj-nav-back">
+      <i class="fas fa-arrow-left"></i>
+      <span class="d-none d-sm-inline">aboulhassane.com</span>
+    </a>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="pj-hero">
+    <div class="container position-relative">
+      <div class="pj-hero-flag">🇯🇵</div>
+      <div class="pj-hero-badge">Programme de mentorat stratégique</div>
+      <h1>PACHA<span>-Japan</span></h1>
+      <p class="pj-hero-subtitle">
+        <strong style="color:rgba(255,255,255,0.9);">Program for Academic &amp; Career High-level Achievement</strong><br>
+        Mentorat de haut niveau pour étudiants et jeunes diplômés internationaux en Computer Science, Data Science et Intelligence Artificielle au Japon.
+      </p>
+      <div class="pj-hero-cta-group">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSefc_NsfreExQLsAIvts5CZ1FwI1-UsBad0IhIC2Q7CcSkmrg/viewform?usp=sharing&ouid=108604851079929078636"
+           target="_blank" rel="noopener" class="btn-pj-primary">
+          <i class="fas fa-paper-plane"></i> Candidater maintenant
+        </a>
+        <a href="#formules" class="btn-pj-secondary">
+          <i class="fas fa-list"></i> Voir les formules
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══ STATS BAR ═══ -->
+  <div class="pj-stats">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-3">
+          <div class="pj-stat-item">
+            <div class="pj-stat-number">4</div>
+            <div class="pj-stat-label">Formules progressives</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="pj-stat-item">
+            <div class="pj-stat-number">3</div>
+            <div class="pj-stat-label">Domaines prioritaires</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="pj-stat-item">
+            <div class="pj-stat-number">100%</div>
+            <div class="pj-stat-label">Accompagnement personnalisé</div>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="pj-stat-item">
+            <div class="pj-stat-number">🎌</div>
+            <div class="pj-stat-label">Expertise Japon</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ PRÉSENTATION ═══ -->
+  <section class="pj-section" id="presentation">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <p class="pj-section-label">01 — Présentation</p>
+          <h2 class="pj-section-title">Qu'est-ce que PACHA-Japan ?</h2>
+          <div class="pj-divider"></div>
+          <p style="color:var(--text-muted); line-height:1.85; margin-bottom:1.25rem;">
+            PACHA-Japan est un programme de <strong>mentorat stratégique et d'accompagnement de haut niveau</strong> destiné aux étudiants et jeunes diplômés internationaux souhaitant atteindre une excellence académique et professionnelle au Japon, notamment dans les domaines de la Computer Science, de la Data Science et de l'Intelligence Artificielle.
+          </p>
+          <p style="color:var(--text-muted); line-height:1.85; margin-bottom:1.25rem;">
+            Conçu à partir d'une compréhension concrète des exigences japonaises et des réalités vécues par les candidats internationaux, PACHA-Japan répond à un besoin central : <strong>transformer le potentiel et l'ambition en résultats concrets</strong>, grâce à une stratégie claire, un ciblage précis et un accompagnement structuré dans la durée.
+          </p>
+          <p style="color:var(--text-muted); line-height:1.85;">
+            Il ne s'agit pas de conseils généraux, mais d'un <strong>partenariat de progression</strong> dans lequel chaque participant est accompagné étape par étape, depuis l'analyse de son profil jusqu'à l'admission académique ou l'intégration professionnelle au Japon.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="pj-card">
+                <div class="pj-card-icon"><i class="fas fa-bullseye"></i></div>
+                <h4>Stratégie ciblée</h4>
+                <p>Chaque décision est orientée vers votre objectif : quoi faire, quand, comment et avec qui.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pj-card">
+                <div class="pj-card-icon"><i class="fas fa-user-tie"></i></div>
+                <h4>Mentorat actif</h4>
+                <p>Le mentor analyse, valide, ajuste et accompagne activement chaque étape de votre parcours.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pj-card">
+                <div class="pj-card-icon"><i class="fas fa-chart-line"></i></div>
+                <h4>Performance durable</h4>
+                <p>Approche orientée vers des résultats durables, respectant vos contraintes personnelles et culturelles.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="pj-card">
+                <div class="pj-card-icon"><i class="fas fa-torii-gate"></i></div>
+                <h4>Expertise Japon</h4>
+                <p>Compréhension concrète du système académique et professionnel japonais, vécue de l'intérieur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISION ═══ -->
+  <section class="pj-section" id="vision">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="pj-section-label">02 — Vision &amp; Philosophie</p>
+          <h2 class="pj-section-title">Notre conviction fondamentale</h2>
+          <div class="pj-divider mx-auto"></div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-lg-9">
+          <div class="pj-quote">
+            La réussite académique et professionnelle internationale est le résultat d'une stratégie maîtrisée, d'une préparation rigoureuse et d'un accompagnement adapté.
+          </div>
+          <p style="color:var(--text-muted); line-height:1.85; margin-bottom:1.5rem;">
+            Dans un environnement aussi compétitif que le Japon, <strong>le talent seul ne suffit pas</strong>. PACHA-Japan vise à combiner :
+          </p>
+          <div class="row g-3">
+            <div class="col-sm-6 col-lg-3">
+              <div class="pj-card text-center">
+                <div class="pj-card-icon mx-auto mb-2"><i class="fas fa-graduation-cap"></i></div>
+                <h4 style="font-size:0.9rem;">Exigence académique</h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="pj-card text-center">
+                <div class="pj-card-icon mx-auto mb-2"><i class="fas fa-chess"></i></div>
+                <h4 style="font-size:0.9rem;">Réalisme stratégique</h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="pj-card text-center">
+                <div class="pj-card-icon mx-auto mb-2"><i class="fas fa-clipboard-check"></i></div>
+                <h4 style="font-size:0.9rem;">Préparation méthodique</h4>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <div class="pj-card text-center">
+                <div class="pj-card-icon mx-auto mb-2"><i class="fas fa-handshake"></i></div>
+                <h4 style="font-size:0.9rem;">Mentorat humain</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OBJECTIFS ═══ -->
+  <section class="pj-section" id="objectifs">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <p class="pj-section-label">03 — Objectifs</p>
+          <h2 class="pj-section-title">Ce que le programme vous permet d'atteindre</h2>
+          <div class="pj-divider"></div>
+          <p style="color:var(--text-muted); line-height:1.85;">
+            PACHA-Japan est conçu pour vous emmener de là où vous êtes à là où vous voulez être — avec une stratégie claire, des actions concrètes, et un suivi jusqu'au résultat final.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <ul class="pj-checklist">
+            <li><i class="fas fa-circle-check"></i><span>Clarifier votre projet académique et/ou professionnel au Japon</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Évaluer de manière réaliste la faisabilité de votre projet</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Construire une stratégie cohérente et adaptée à votre profil</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Cibler efficacement les universités, laboratoires et professeurs</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Préparer des dossiers solides et crédibles</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Réussir les entretiens académiques et professionnels</span></li>
+            <li><i class="fas fa-circle-check"></i><span>Bénéficier d'un accompagnement continu jusqu'à l'atteinte de résultats concrets</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PUBLIC CONCERNÉ ═══ -->
+  <section class="pj-section" id="public">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <p class="pj-section-label">04 — Public concerné</p>
+          <h2 class="pj-section-title">Ce programme est fait pour vous si…</h2>
+          <div class="pj-divider mx-auto"></div>
+          <p style="color:var(--text-muted); line-height:1.85; max-width:600px; margin: 0 auto 2.5rem;">
+            PACHA-Japan s'adresse à des profils ambitieux, engagés et prêts à investir sérieusement dans leur avenir.
+          </p>
+          <div>
+            <span class="pj-tag"><i class="fas fa-laptop-code"></i> Étudiant en Computer Science</span>
+            <span class="pj-tag"><i class="fas fa-database"></i> Data Science &amp; IA</span>
+            <span class="pj-tag"><i class="fas fa-graduation-cap"></i> Candidat Master / PhD</span>
+            <span class="pj-tag"><i class="fas fa-globe"></i> Profil international</span>
+            <span class="pj-tag"><i class="fas fa-briefcase"></i> Jeune diplômé</span>
+            <span class="pj-tag"><i class="fas fa-flask"></i> Chercheur en devenir</span>
+            <span class="pj-tag"><i class="fas fa-building"></i> Candidat industrie Japon</span>
+            <span class="pj-tag"><i class="fas fa-fire"></i> Haut potentiel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ MÉTHODOLOGIE ═══ -->
+  <section class="pj-section" id="methodologie">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <p class="pj-section-label">05 — Méthodologie</p>
+          <h2 class="pj-section-title">Les 4 piliers de l'accompagnement</h2>
+          <div class="pj-divider"></div>
+          <p style="color:var(--text-muted); line-height:1.85;">
+            L'approche PACHA-Japan repose sur quatre piliers complémentaires qui garantissent un accompagnement à la fois rigoureux, humain et efficace.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="pj-pillar">
+            <div class="pj-pillar-letter">A</div>
+            <div>
+              <h5>Personnalisation</h5>
+              <p>Chaque parcours est unique. Les stratégies sont adaptées au niveau académique, à l'expérience, aux objectifs et aux contraintes du participant.</p>
+            </div>
+          </div>
+          <div class="pj-pillar">
+            <div class="pj-pillar-letter">B</div>
+            <div>
+              <h5>Progressivité</h5>
+              <p>Le programme est structuré en formules inclusives, permettant une montée en puissance graduelle, du diagnostic initial au mentorat premium.</p>
+            </div>
+          </div>
+          <div class="pj-pillar">
+            <div class="pj-pillar-letter">C</div>
+            <div>
+              <h5>Orientation stratégique</h5>
+              <p>L'accent est mis sur les décisions clés : quoi faire, quand, comment et avec qui, afin d'optimiser le temps et les ressources.</p>
+            </div>
+          </div>
+          <div class="pj-pillar">
+            <div class="pj-pillar-letter">D</div>
+            <div>
+              <h5>Mentorat actif</h5>
+              <p>Le participant n'est jamais seul. Le mentor analyse, valide, ajuste et accompagne activement chaque étape du parcours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTENU ═══ -->
+  <section class="pj-section" id="contenu">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center">
+          <p class="pj-section-label">06 — Contenu global</p>
+          <h2 class="pj-section-title">Ce que couvre l'accompagnement</h2>
+          <div class="pj-divider mx-auto"></div>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-folder-open"></i></div>
+            <h4>Analyse du dossier</h4>
+            <p>CV académique &amp; professionnel, diplômes, relevés de notes, projets techniques, cohérence globale du profil.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <h4>Feuille de route personnalisée</h4>
+            <p>Définition d'objectifs clairs (Master, PhD, Industrie) avec planification à court, moyen et long terme.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-university"></i></div>
+            <h4>Orientation universitaire</h4>
+            <p>Sélection des universités japonaises pertinentes, analyse des programmes et stratégie de candidatures réaliste.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>Ciblage de professeurs</h4>
+            <p>Identification de professeurs compatibles, analyse de leurs axes de recherche et stratégie de prise de contact.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-comments"></i></div>
+            <h4>Préparation aux entretiens</h4>
+            <p>Simulations d'entretiens académiques &amp; professionnels, structuration du discours, communication interculturelle.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="pj-card">
+            <div class="pj-card-icon"><i class="fas fa-infinity"></i></div>
+            <h4>Suivi &amp; mentorat continu</h4>
+            <p>Sessions de suivi régulières, ajustement de stratégie, support décisionnel et accompagnement moral jusqu'au résultat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FORMULES ═══ -->
+  <section class="pj-section" id="formules">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-7 text-center">
+          <p class="pj-section-label">07 — Formules</p>
+          <h2 class="pj-section-title">4 formules progressives et inclusives</h2>
+          <div class="pj-divider mx-auto"></div>
+          <p style="color:var(--text-muted);">Chaque formule supérieure inclut l'ensemble des services de la formule précédente.</p>
+        </div>
+      </div>
+      <div class="row g-4 align-items-start">
+
+        <!-- F1 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="pj-formula-card">
+            <div class="pj-formula-code">F1DS</div>
+            <div class="pj-formula-name">Diagnostic &amp; Strategy</div>
+            <ul class="pj-formula-features">
+              <li><i class="fas fa-check"></i>Analyse complète de votre profil</li>
+              <li><i class="fas fa-check"></i>Évaluation réaliste de la faisabilité</li>
+              <li><i class="fas fa-check"></i>Plan stratégique initial</li>
+              <li><i class="fas fa-check"></i>Orientation universités / labs</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- F2 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="pj-formula-card">
+            <div class="pj-formula-code">F2AI</div>
+            <div class="pj-formula-name">Action Intensive</div>
+            <div class="pj-formula-includes">✦ Inclut F1DS</div>
+            <ul class="pj-formula-features">
+              <li><i class="fas fa-check"></i>Ciblage précis de professeurs</li>
+              <li><i class="fas fa-check"></i>Préparation des emails de contact</li>
+              <li><i class="fas fa-check"></i>Révision CV &amp; documents</li>
+              <li><i class="fas fa-check"></i>Sessions de travail intensif</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- F3 (featured) -->
+        <div class="col-md-6 col-xl-3">
+          <div class="pj-formula-card featured">
+            <div class="pj-formula-badge">Populaire</div>
+            <div class="pj-formula-code">F3AS</div>
+            <div class="pj-formula-name">Structured Accompaniment</div>
+            <div class="pj-formula-includes">✦ Inclut F1DS + F2AI</div>
+            <ul class="pj-formula-features">
+              <li><i class="fas fa-check"></i>Suivi structuré sur la durée</li>
+              <li><i class="fas fa-check"></i>Préparation aux entretiens</li>
+              <li><i class="fas fa-check"></i>Simulations et débriefing</li>
+              <li><i class="fas fa-check"></i>Ajustement continu de stratégie</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- F4 -->
+        <div class="col-md-6 col-xl-3">
+          <div class="pj-formula-card">
+            <div class="pj-formula-code">F4AP</div>
+            <div class="pj-formula-name">Advanced / Premium</div>
+            <div class="pj-formula-includes">✦ Inclut F1DS + F2AI + F3AS</div>
+            <ul class="pj-formula-features">
+              <li><i class="fas fa-check"></i>Accompagnement jusqu'au résultat final</li>
+              <li><i class="fas fa-check"></i>Support décisionnel prioritaire</li>
+              <li><i class="fas fa-check"></i>Accompagnement moral et motivationnel</li>
+              <li><i class="fas fa-check"></i>Accès mentor illimité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <a href="https://docs.google.com/document/d/19KqoJcHM2Fx4DL7OuWhAb00gDJcYLg_fNbzK5q670tY/"
+           target="_blank" rel="noopener" style="color:var(--jp-red); font-weight:600; font-size:0.95rem;">
+          <i class="fas fa-file-alt me-1"></i> Voir le détail complet des formules
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONDITIONS ═══ -->
+  <section class="pj-section" id="conditions">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="pj-section-label">08 — Cadre &amp; Conditions</p>
+          <h2 class="pj-section-title">Ce qu'il faut savoir</h2>
+          <div class="pj-divider"></div>
+          <div class="pj-conditions">
+            <ul class="pj-checklist" style="margin:0;">
+              <li>
+                <i class="fas fa-triangle-exclamation" style="color:#e67e22;"></i>
+                <span>PACHA-Japan est un programme d'<strong>accompagnement stratégique</strong>, sans garantie automatique d'admission.</span>
+              </li>
+              <li>
+                <i class="fas fa-triangle-exclamation" style="color:#e67e22;"></i>
+                <span>La réussite dépend également de <strong>l'implication, du sérieux et de la régularité du participant</strong>.</span>
+              </li>
+              <li>
+                <i class="fas fa-triangle-exclamation" style="color:#e67e22;"></i>
+                <span>Les paiements conditionnent l'accès aux différentes phases du programme.</span>
+              </li>
+              <li>
+                <i class="fas fa-triangle-exclamation" style="color:#e67e22;"></i>
+                <span>Le non-respect des engagements peut entraîner la <strong>suspension de l'accompagnement</strong>.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="pj-cta" id="candidature">
+    <div class="container position-relative">
+      <p class="pj-section-label" style="color:rgba(192,57,43,0.8);">Prêt à commencer ?</p>
+      <h2>Transformez votre trajectoire</h2>
+      <p>
+        PACHA-Japan s'adresse aux profils ambitieux et engagés, prêts à investir du temps, de l'énergie et de la discipline pour atteindre un haut niveau de réussite au Japon.
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSefc_NsfreExQLsAIvts5CZ1FwI1-UsBad0IhIC2Q7CcSkmrg/viewform?usp=sharing&ouid=108604851079929078636"
+         target="_blank" rel="noopener" class="btn-pj-primary" style="font-size:1.05rem; padding: 1rem 2.5rem;">
+        <i class="fas fa-paper-plane"></i> Soumettre ma candidature
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="pj-footer">
+    <p>
+      PACHA-Japan — Programme by <a href="index.html">Aboul Hassane Cisse</a> &nbsp;·&nbsp;
+      <a href="https://aboulhassane.com" target="_blank" rel="noopener">aboulhassane.com</a>
+    </p>
+  </footer>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script>
+    // Theme toggle
+    const root = document.documentElement;
+    const btn  = document.getElementById('pj-theme-toggle');
+    const saved = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    root.setAttribute('data-theme', saved);
+
+    btn.addEventListener('click', () => {
+      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // Scroll fade-in
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.pj-card, .pj-pillar, .pj-formula-card, .pj-checklist li').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(20px)';
+      el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>

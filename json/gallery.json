@@ -2,245 +2,118 @@
     "en": {
         "title": "Gallery",
         "list": [
-            {
-                "title": "Event 1",
-                "category": "Conference",
-                "src": "assets/gallery/gallery1.jpeg",
-                "link": "assets/gallery/gallery1.jpeg"
-            },
-            {
-                "title": "Event 2",
-                "category": "Activity",
-                "src": "assets/gallery/gallery2.jpeg",
-                "link": "assets/gallery/gallery2.jpeg"
-            },
-            {
-                "title": "Event 4",
-                "category": "Activity",
-                "src": "assets/gallery/gallery4.jpeg",
-                "link": "assets/gallery/gallery4.jpeg"
-            },
-            {
-                "title": "Event 9",
-                "category": "Conference",
-                "src": "assets/gallery/gallery9.jpeg",
-                "link": "assets/gallery/gallery9.jpeg"
-            },
-            {
-                "title": "Event 5",
-                "category": "Conference",
-                "src": "assets/gallery/gallery5.jpeg",
-                "link": "assets/gallery/gallery5.jpeg"
-            },
-            {
-                "title": "Event 14",
-                "category": "Conference",
-                "src": "assets/gallery/gallery14.jpeg",
-                "link": "assets/gallery/gallery14.jpeg"
-            },
-            {
-                "title": "IGF Kyoto 2024",
-                "category": "Conference",
-                "src": "assets/gallery/gallery15.jpeg",
-                "link": "assets/gallery/gallery15.jpeg"
-            },
-            {
-                "title": "Graduation Ceremony 2023 - KIS",
-                "category": "Ceremony",
-                "src": "assets/gallery/gallery16.jpeg",
-                "link": "assets/gallery/gallery16.jpeg"
-            },
-            {
-                "title": "Event 26",
-                "category": "Conference",
-                "src": "assets/gallery/gallery26.jpeg",
-                "link": "assets/gallery/gallery26.jpeg"
-            },
-            {
-                "title": "Event 12",
-                "category": "Conference",
-                "src": "assets/gallery/gallery12.jpeg",
-                "link": "assets/gallery/gallery12.jpeg"
-            },
-            {
-                "title": "Event 19",
-                "category": "Activity",
-                "src": "assets/gallery/gallery19.jpeg",
-                "link": "assets/gallery/gallery19.jpeg"
-            },
-            {
-                "title": "Event 17",
-                "category": "Conference",
-                "src": "assets/gallery/gallery17.jpeg",
-                "link": "assets/gallery/gallery17.jpeg"
-            },
-            {
-                "title": "Event 10",
-                "category": "Conference",
-                "src": "assets/gallery/gallery10.jpeg",
-                "link": "assets/gallery/gallery10.jpeg"
-            },
-            {
-                "title": "Event 11",
-                "category": "Conference",
-                "src": "assets/gallery/gallery11.jpeg",
-                "link": "assets/gallery/gallery11.jpeg"
-            },
-            {
-                "title": "Event 18",
-                "category": "Conference",
-                "src": "assets/gallery/gallery18.jpeg",
-                "link": "assets/gallery/gallery18.jpeg"
-            },
-            {
-                "title": "Event 6",
-                "category": "Activity",
-                "src": "assets/gallery/gallery6.jpeg",
-                "link": "assets/gallery/gallery6.jpeg"
-            },
-            {
-                "title": "Event 3",
-                "category": "Conference",
-                "src": "assets/gallery/gallery3.jpeg",
-                "link": "assets/gallery/gallery3.jpeg"
-            },
-            {
-                "title": "Event 7",
-                "category": "Conference",
-                "src": "assets/gallery/gallery7.jpeg",
-                "link": "assets/gallery/gallery7.jpeg"
-            },
-            {
-                "title": "Event 20",
-                "category": "Conference",
-                "src": "assets/gallery/gallery20.jpeg",
-                "link": "assets/gallery/gallery20.jpeg"
-            },
-            {
-                "title": "Event 21",
-                "category": "Conference",
-                "src": "assets/gallery/gallery21.jpeg",
-                "link": "assets/gallery/gallery21.jpeg"
-            },
-            {
-                "title": "Event 22",
-                "category": "Conference",
-                "src": "assets/gallery/gallery22.jpeg",
-                "link": "assets/gallery/gallery22.jpeg"
-            },
-            {
-                "title": "Event 23",
-                "category": "Conference",
-                "src": "assets/gallery/gallery23.jpeg",
-                "link": "assets/gallery/gallery23.jpeg"
-            },
-            {
-                "title": "Event 24",
-                "category": "Conference",
-                "src": "assets/gallery/gallery24.jpeg",
-                "link": "assets/gallery/gallery24.jpeg"
-            },
-            {
-                "title": "Osaka Africa Business Forum 2022",
-                "category": "Forum",
-                "src": "assets/gallery/gallery31.jpeg",
-                "link": "assets/gallery/gallery31.jpeg"
-            },
-            {
-                "title": "Event 27",
-                "category": "Conference",
-                "src": "assets/gallery/gallery27.jpeg",
-                "link": "assets/gallery/gallery27.jpeg"
-            },
-            {
-                "title": "Event 28",
-                "category": "Conference",
-                "src": "assets/gallery/gallery28.jpeg",
-                "link": "assets/gallery/gallery28.jpeg"
-            },
-            {
-                "title": "Event 32",
-                "category": "Conference",
-                "src": "assets/gallery/gallery32.jpeg",
-                "link": "assets/gallery/gallery32.jpeg"
-            },
-            {
-                "title": "Doctoral Consortium - LASI EUROPE 2024 - Spain",
-                "category": "Conference",
-                "src": "assets/gallery/gallery25.jpeg",
-                "link": "assets/gallery/gallery25.jpeg"
-            },
-            {
-                "title": "Program Sakura - KIS Lab 2023",
-                "category": "Program",
-                "src": "assets/gallery/gallery33.jpeg",
-                "link": "assets/gallery/gallery33.jpeg"
-            },
-            {
-                "title": "Event 34",
-                "category": "Conference",
-                "src": "assets/gallery/gallery34.jpeg",
-                "link": "assets/gallery/gallery34.jpeg"
-            },
-            {
-                "title": "Event 29",
-                "category": "Conference",
-                "src": "assets/gallery/gallery29.jpeg",
-                "link": "assets/gallery/gallery29.jpeg"
-            },
-            {
-                "title": "Event 30",
-                "category": "Conference",
-                "src": "assets/gallery/gallery30.jpeg",
-                "link": "assets/gallery/gallery30.jpeg"
-            },
-            {
-                "title": "Event 8",
-                "category": "Conference",
-                "src": "assets/gallery/gallery8.jpeg",
-                "link": "assets/gallery/gallery8.jpeg"
-            },
-            {
-                "title": "Event 35",
-                "category": "Conference",
-                "src": "assets/gallery/gallery35.jpeg",
-                "link": "assets/gallery/gallery35.jpeg"
-            }
+            { "title": "Event 1",                                      "category": "Conference", "src": "assets/gallery/gallery1.jpeg",  "link": "assets/gallery/gallery1.jpeg"  },
+            { "title": "Event 2",                                      "category": "Activity",   "src": "assets/gallery/gallery2.jpeg",  "link": "assets/gallery/gallery2.jpeg"  },
+            { "title": "Event 4",                                      "category": "Activity",   "src": "assets/gallery/gallery4.jpeg",  "link": "assets/gallery/gallery4.jpeg"  },
+            { "title": "Event 9",                                      "category": "Conference", "src": "assets/gallery/gallery9.jpeg",  "link": "assets/gallery/gallery9.jpeg"  },
+            { "title": "Event 5",                                      "category": "Conference", "src": "assets/gallery/gallery5.jpeg",  "link": "assets/gallery/gallery5.jpeg"  },
+            { "title": "Event 14",                                     "category": "Conference", "src": "assets/gallery/gallery14.jpeg", "link": "assets/gallery/gallery14.jpeg" },
+            { "title": "IGF Kyoto 2024",                               "category": "Conference", "src": "assets/gallery/gallery15.jpeg", "link": "assets/gallery/gallery15.jpeg" },
+            { "title": "Graduation Ceremony 2023 - KIS",               "category": "Ceremony",   "src": "assets/gallery/gallery16.jpeg", "link": "assets/gallery/gallery16.jpeg" },
+            { "title": "Event 26",                                     "category": "Conference", "src": "assets/gallery/gallery26.jpeg", "link": "assets/gallery/gallery26.jpeg" },
+            { "title": "Event 12",                                     "category": "Conference", "src": "assets/gallery/gallery12.jpeg", "link": "assets/gallery/gallery12.jpeg" },
+            { "title": "Event 19",                                     "category": "Activity",   "src": "assets/gallery/gallery19.jpeg", "link": "assets/gallery/gallery19.jpeg" },
+            { "title": "Event 17",                                     "category": "Conference", "src": "assets/gallery/gallery17.jpeg", "link": "assets/gallery/gallery17.jpeg" },
+            { "title": "Event 10",                                     "category": "Conference", "src": "assets/gallery/gallery10.jpeg", "link": "assets/gallery/gallery10.jpeg" },
+            { "title": "Event 11",                                     "category": "Conference", "src": "assets/gallery/gallery11.jpeg", "link": "assets/gallery/gallery11.jpeg" },
+            { "title": "Event 18",                                     "category": "Conference", "src": "assets/gallery/gallery18.jpeg", "link": "assets/gallery/gallery18.jpeg" },
+            { "title": "Event 6",                                      "category": "Activity",   "src": "assets/gallery/gallery6.jpeg",  "link": "assets/gallery/gallery6.jpeg"  },
+            { "title": "Event 3",                                      "category": "Conference", "src": "assets/gallery/gallery3.jpeg",  "link": "assets/gallery/gallery3.jpeg"  },
+            { "title": "Event 7",                                      "category": "Conference", "src": "assets/gallery/gallery7.jpeg",  "link": "assets/gallery/gallery7.jpeg"  },
+            { "title": "Event 20",                                     "category": "Conference", "src": "assets/gallery/gallery20.jpeg", "link": "assets/gallery/gallery20.jpeg" },
+            { "title": "Event 21",                                     "category": "Conference", "src": "assets/gallery/gallery21.jpeg", "link": "assets/gallery/gallery21.jpeg" },
+            { "title": "Event 22",                                     "category": "Conference", "src": "assets/gallery/gallery22.jpeg", "link": "assets/gallery/gallery22.jpeg" },
+            { "title": "Event 23",                                     "category": "Conference", "src": "assets/gallery/gallery23.jpeg", "link": "assets/gallery/gallery23.jpeg" },
+            { "title": "Event 24",                                     "category": "Conference", "src": "assets/gallery/gallery24.jpeg", "link": "assets/gallery/gallery24.jpeg" },
+            { "title": "Osaka Africa Business Forum 2022",             "category": "Forum",      "src": "assets/gallery/gallery31.jpeg", "link": "assets/gallery/gallery31.jpeg" },
+            { "title": "Event 27",                                     "category": "Conference", "src": "assets/gallery/gallery27.jpeg", "link": "assets/gallery/gallery27.jpeg" },
+            { "title": "Event 28",                                     "category": "Conference", "src": "assets/gallery/gallery28.jpeg", "link": "assets/gallery/gallery28.jpeg" },
+            { "title": "Event 32",                                     "category": "Conference", "src": "assets/gallery/gallery32.jpeg", "link": "assets/gallery/gallery32.jpeg" },
+            { "title": "Doctoral Consortium - LASI EUROPE 2024 - Spain","category": "Conference", "src": "assets/gallery/gallery25.jpeg", "link": "assets/gallery/gallery25.jpeg" },
+            { "title": "Program Sakura - KIS Lab 2023",                "category": "Program",    "src": "assets/gallery/gallery33.jpeg", "link": "assets/gallery/gallery33.jpeg" },
+            { "title": "Event 34",                                     "category": "Conference", "src": "assets/gallery/gallery34.jpeg", "link": "assets/gallery/gallery34.jpeg" },
+            { "title": "Event 29",                                     "category": "Conference", "src": "assets/gallery/gallery29.jpeg", "link": "assets/gallery/gallery29.jpeg" },
+            { "title": "Event 30",                                     "category": "Conference", "src": "assets/gallery/gallery30.jpeg", "link": "assets/gallery/gallery30.jpeg" },
+            { "title": "Event 8",                                      "category": "Conference", "src": "assets/gallery/gallery8.jpeg",  "link": "assets/gallery/gallery8.jpeg"  },
+            { "title": "Event 35",                                     "category": "Conference", "src": "assets/gallery/gallery35.jpeg", "link": "assets/gallery/gallery35.jpeg" }
         ]
     },
     "fr": {
         "title": "Galerie",
         "list": [
-            {
-                "title": "Événement 1",
-                "category": "Conférence",
-                "src": "assets/gallery/gallery1.jpeg",
-                "link": "assets/gallery/gallery1.jpeg"
-            },
-            {
-                "title": "Événement 2",
-                "category": "Activité",
-                "src": "assets/gallery/gallery2.jpeg",
-                "link": "assets/gallery/gallery2.jpeg"
-            }
+            { "title": "Événement 1",                                         "category": "Conférence", "src": "assets/gallery/gallery1.jpeg",  "link": "assets/gallery/gallery1.jpeg"  },
+            { "title": "Événement 2",                                         "category": "Activité",   "src": "assets/gallery/gallery2.jpeg",  "link": "assets/gallery/gallery2.jpeg"  },
+            { "title": "Événement 4",                                         "category": "Activité",   "src": "assets/gallery/gallery4.jpeg",  "link": "assets/gallery/gallery4.jpeg"  },
+            { "title": "Événement 9",                                         "category": "Conférence", "src": "assets/gallery/gallery9.jpeg",  "link": "assets/gallery/gallery9.jpeg"  },
+            { "title": "Événement 5",                                         "category": "Conférence", "src": "assets/gallery/gallery5.jpeg",  "link": "assets/gallery/gallery5.jpeg"  },
+            { "title": "Événement 14",                                        "category": "Conférence", "src": "assets/gallery/gallery14.jpeg", "link": "assets/gallery/gallery14.jpeg" },
+            { "title": "IGF Kyoto 2024",                                      "category": "Conférence", "src": "assets/gallery/gallery15.jpeg", "link": "assets/gallery/gallery15.jpeg" },
+            { "title": "Cérémonie de Remise des Diplômes 2023 - KIS",         "category": "Cérémonie",  "src": "assets/gallery/gallery16.jpeg", "link": "assets/gallery/gallery16.jpeg" },
+            { "title": "Événement 26",                                        "category": "Conférence", "src": "assets/gallery/gallery26.jpeg", "link": "assets/gallery/gallery26.jpeg" },
+            { "title": "Événement 12",                                        "category": "Conférence", "src": "assets/gallery/gallery12.jpeg", "link": "assets/gallery/gallery12.jpeg" },
+            { "title": "Événement 19",                                        "category": "Activité",   "src": "assets/gallery/gallery19.jpeg", "link": "assets/gallery/gallery19.jpeg" },
+            { "title": "Événement 17",                                        "category": "Conférence", "src": "assets/gallery/gallery17.jpeg", "link": "assets/gallery/gallery17.jpeg" },
+            { "title": "Événement 10",                                        "category": "Conférence", "src": "assets/gallery/gallery10.jpeg", "link": "assets/gallery/gallery10.jpeg" },
+            { "title": "Événement 11",                                        "category": "Conférence", "src": "assets/gallery/gallery11.jpeg", "link": "assets/gallery/gallery11.jpeg" },
+            { "title": "Événement 18",                                        "category": "Conférence", "src": "assets/gallery/gallery18.jpeg", "link": "assets/gallery/gallery18.jpeg" },
+            { "title": "Événement 6",                                         "category": "Activité",   "src": "assets/gallery/gallery6.jpeg",  "link": "assets/gallery/gallery6.jpeg"  },
+            { "title": "Événement 3",                                         "category": "Conférence", "src": "assets/gallery/gallery3.jpeg",  "link": "assets/gallery/gallery3.jpeg"  },
+            { "title": "Événement 7",                                         "category": "Conférence", "src": "assets/gallery/gallery7.jpeg",  "link": "assets/gallery/gallery7.jpeg"  },
+            { "title": "Événement 20",                                        "category": "Conférence", "src": "assets/gallery/gallery20.jpeg", "link": "assets/gallery/gallery20.jpeg" },
+            { "title": "Événement 21",                                        "category": "Conférence", "src": "assets/gallery/gallery21.jpeg", "link": "assets/gallery/gallery21.jpeg" },
+            { "title": "Événement 22",                                        "category": "Conférence", "src": "assets/gallery/gallery22.jpeg", "link": "assets/gallery/gallery22.jpeg" },
+            { "title": "Événement 23",                                        "category": "Conférence", "src": "assets/gallery/gallery23.jpeg", "link": "assets/gallery/gallery23.jpeg" },
+            { "title": "Événement 24",                                        "category": "Conférence", "src": "assets/gallery/gallery24.jpeg", "link": "assets/gallery/gallery24.jpeg" },
+            { "title": "Forum d'Affaires Osaka-Afrique 2022",                 "category": "Forum",      "src": "assets/gallery/gallery31.jpeg", "link": "assets/gallery/gallery31.jpeg" },
+            { "title": "Événement 27",                                        "category": "Conférence", "src": "assets/gallery/gallery27.jpeg", "link": "assets/gallery/gallery27.jpeg" },
+            { "title": "Événement 28",                                        "category": "Conférence", "src": "assets/gallery/gallery28.jpeg", "link": "assets/gallery/gallery28.jpeg" },
+            { "title": "Événement 32",                                        "category": "Conférence", "src": "assets/gallery/gallery32.jpeg", "link": "assets/gallery/gallery32.jpeg" },
+            { "title": "Consortium Doctoral - LASI EUROPE 2024 - Espagne",    "category": "Conférence", "src": "assets/gallery/gallery25.jpeg", "link": "assets/gallery/gallery25.jpeg" },
+            { "title": "Programme Sakura - KIS Lab 2023",                     "category": "Programme",  "src": "assets/gallery/gallery33.jpeg", "link": "assets/gallery/gallery33.jpeg" },
+            { "title": "Événement 34",                                        "category": "Conférence", "src": "assets/gallery/gallery34.jpeg", "link": "assets/gallery/gallery34.jpeg" },
+            { "title": "Événement 29",                                        "category": "Conférence", "src": "assets/gallery/gallery29.jpeg", "link": "assets/gallery/gallery29.jpeg" },
+            { "title": "Événement 30",                                        "category": "Conférence", "src": "assets/gallery/gallery30.jpeg", "link": "assets/gallery/gallery30.jpeg" },
+            { "title": "Événement 8",                                         "category": "Conférence", "src": "assets/gallery/gallery8.jpeg",  "link": "assets/gallery/gallery8.jpeg"  },
+            { "title": "Événement 35",                                        "category": "Conférence", "src": "assets/gallery/gallery35.jpeg", "link": "assets/gallery/gallery35.jpeg" }
         ]
     },
-    "jp": {
-        "title": "Galerie",
+    "ja": {
+        "title": "ギャラリー",
         "list": [
-            {
-                "title": "Événement 1",
-                "category": "Conférence",
-                "src": "assets/gallery/gallery1.jpeg",
-                "link": "assets/gallery/gallery1.jpeg"
-            },
-            {
-                "title": "Événement 2",
-                "category": "Activité",
-                "src": "assets/gallery/gallery2.jpeg",
-                "link": "assets/gallery/gallery2.jpeg"
-            }
+            { "title": "イベント 1",                                    "category": "会議",       "src": "assets/gallery/gallery1.jpeg",  "link": "assets/gallery/gallery1.jpeg"  },
+            { "title": "イベント 2",                                    "category": "活動",       "src": "assets/gallery/gallery2.jpeg",  "link": "assets/gallery/gallery2.jpeg"  },
+            { "title": "イベント 4",                                    "category": "活動",       "src": "assets/gallery/gallery4.jpeg",  "link": "assets/gallery/gallery4.jpeg"  },
+            { "title": "イベント 9",                                    "category": "会議",       "src": "assets/gallery/gallery9.jpeg",  "link": "assets/gallery/gallery9.jpeg"  },
+            { "title": "イベント 5",                                    "category": "会議",       "src": "assets/gallery/gallery5.jpeg",  "link": "assets/gallery/gallery5.jpeg"  },
+            { "title": "イベント 14",                                   "category": "会議",       "src": "assets/gallery/gallery14.jpeg", "link": "assets/gallery/gallery14.jpeg" },
+            { "title": "IGF 京都 2024",                                 "category": "会議",       "src": "assets/gallery/gallery15.jpeg", "link": "assets/gallery/gallery15.jpeg" },
+            { "title": "卒業式 2023 - KIS",                             "category": "式典",       "src": "assets/gallery/gallery16.jpeg", "link": "assets/gallery/gallery16.jpeg" },
+            { "title": "イベント 26",                                   "category": "会議",       "src": "assets/gallery/gallery26.jpeg", "link": "assets/gallery/gallery26.jpeg" },
+            { "title": "イベント 12",                                   "category": "会議",       "src": "assets/gallery/gallery12.jpeg", "link": "assets/gallery/gallery12.jpeg" },
+            { "title": "イベント 19",                                   "category": "活動",       "src": "assets/gallery/gallery19.jpeg", "link": "assets/gallery/gallery19.jpeg" },
+            { "title": "イベント 17",                                   "category": "会議",       "src": "assets/gallery/gallery17.jpeg", "link": "assets/gallery/gallery17.jpeg" },
+            { "title": "イベント 10",                                   "category": "会議",       "src": "assets/gallery/gallery10.jpeg", "link": "assets/gallery/gallery10.jpeg" },
+            { "title": "イベント 11",                                   "category": "会議",       "src": "assets/gallery/gallery11.jpeg", "link": "assets/gallery/gallery11.jpeg" },
+            { "title": "イベント 18",                                   "category": "会議",       "src": "assets/gallery/gallery18.jpeg", "link": "assets/gallery/gallery18.jpeg" },
+            { "title": "イベント 6",                                    "category": "活動",       "src": "assets/gallery/gallery6.jpeg",  "link": "assets/gallery/gallery6.jpeg"  },
+            { "title": "イベント 3",                                    "category": "会議",       "src": "assets/gallery/gallery3.jpeg",  "link": "assets/gallery/gallery3.jpeg"  },
+            { "title": "イベント 7",                                    "category": "会議",       "src": "assets/gallery/gallery7.jpeg",  "link": "assets/gallery/gallery7.jpeg"  },
+            { "title": "イベント 20",                                   "category": "会議",       "src": "assets/gallery/gallery20.jpeg", "link": "assets/gallery/gallery20.jpeg" },
+            { "title": "イベント 21",                                   "category": "会議",       "src": "assets/gallery/gallery21.jpeg", "link": "assets/gallery/gallery21.jpeg" },
+            { "title": "イベント 22",                                   "category": "会議",       "src": "assets/gallery/gallery22.jpeg", "link": "assets/gallery/gallery22.jpeg" },
+            { "title": "イベント 23",                                   "category": "会議",       "src": "assets/gallery/gallery23.jpeg", "link": "assets/gallery/gallery23.jpeg" },
+            { "title": "イベント 24",                                   "category": "会議",       "src": "assets/gallery/gallery24.jpeg", "link": "assets/gallery/gallery24.jpeg" },
+            { "title": "大阪アフリカビジネスフォーラム 2022",           "category": "フォーラム", "src": "assets/gallery/gallery31.jpeg", "link": "assets/gallery/gallery31.jpeg" },
+            { "title": "イベント 27",                                   "category": "会議",       "src": "assets/gallery/gallery27.jpeg", "link": "assets/gallery/gallery27.jpeg" },
+            { "title": "イベント 28",                                   "category": "会議",       "src": "assets/gallery/gallery28.jpeg", "link": "assets/gallery/gallery28.jpeg" },
+            { "title": "イベント 32",                                   "category": "会議",       "src": "assets/gallery/gallery32.jpeg", "link": "assets/gallery/gallery32.jpeg" },
+            { "title": "博士コンソーシアム - LASI EUROPE 2024 - スペイン", "category": "会議",   "src": "assets/gallery/gallery25.jpeg", "link": "assets/gallery/gallery25.jpeg" },
+            { "title": "さくらプログラム - KISラボ 2023",               "category": "プログラム", "src": "assets/gallery/gallery33.jpeg", "link": "assets/gallery/gallery33.jpeg" },
+            { "title": "イベント 34",                                   "category": "会議",       "src": "assets/gallery/gallery34.jpeg", "link": "assets/gallery/gallery34.jpeg" },
+            { "title": "イベント 29",                                   "category": "会議",       "src": "assets/gallery/gallery29.jpeg", "link": "assets/gallery/gallery29.jpeg" },
+            { "title": "イベント 30",                                   "category": "会議",       "src": "assets/gallery/gallery30.jpeg", "link": "assets/gallery/gallery30.jpeg" },
+            { "title": "イベント 8",                                    "category": "会議",       "src": "assets/gallery/gallery8.jpeg",  "link": "assets/gallery/gallery8.jpeg"  },
+            { "title": "イベント 35",                                   "category": "会議",       "src": "assets/gallery/gallery35.jpeg", "link": "assets/gallery/gallery35.jpeg" }
         ]
     }
-
 }

@@ -10,21 +10,21 @@
   const I18N = {
     en: {
       nav: { about: 'About', interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact', download: 'Download as PDF' },
-      about: { lead: 'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+      about: { lead: 'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location: 'SAKAI-SHI, OSAKA' },
       section: { interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards & Scholarships', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact' },
       contact: { name: 'Name:', email: 'Email:', message: 'Message:', send: 'Send', name_req: 'Please enter your name.', email_req: 'Please enter a valid email.', message_req: 'Please write a message.' },
       interests: 'Multimodal learning analytics, human-AI interaction, eye-tracking, wearable sensing, inclusive education.'
     },
     fr: {
       nav: { about: 'À propos', interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact', download: 'Télécharger en PDF' },
-      about: { lead: 'Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l’apprentissage.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+      about: { lead: 'Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l’apprentissage.', location: 'SAKAI-SHI, OSAKA' },
       section: { interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix & Bourses', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact' },
       contact: { name: 'Nom :', email: 'Email :', message: 'Message :', send: 'Envoyer', name_req: 'Veuillez entrer votre nom.', email_req: 'Veuillez saisir un email valide.', message_req: 'Veuillez écrire un message.' },
       interests: 'Analytique d’apprentissage multimodale, interaction humain-IA, eye-tracking, capteurs portables, éducation inclusive.'
     },
     ja: {
       nav: { about: '自己紹介', interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先', download: 'PDF をダウンロード' },
-      about: { lead: 'AI と教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location: '大阪府堺市堺区 590-0976 · ' },
+      about: { lead: 'AI と教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location: '大阪府堺市' },
       section: { interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞・奨学金', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先' },
       contact: { name: 'お名前：', email: 'メール：', message: 'メッセージ：', send: '送信', name_req: 'お名前を入力してください。', email_req: '有効なメールを入力してください。', message_req: 'メッセージを入力してください。' },
       interests: 'マルチモーダル学習分析、人間とAIのインタラクション、視線計測、ウェアラブル計測、インクルーシブ教育。'
@@ -43,6 +43,22 @@
     if (aboutLead) aboutLead.textContent = dict.about.lead;
     const interests = document.getElementById('interests-content');
     if (interests) interests.textContent = dict.interests;
+  }
+
+  // ===== Dark / Light mode =====
+  function applyTheme(theme) {
+    document.body.setAttribute('data-theme', theme);
+    const btn = document.getElementById('theme-toggle');
+    if (!btn) return;
+    const icon  = btn.querySelector('.theme-icon');
+    const label = btn.querySelector('.theme-label');
+    if (theme === 'dark') {
+      if (icon)  { icon.className = 'fas fa-sun theme-icon'; }
+      if (label) label.textContent = 'Light';
+    } else {
+      if (icon)  { icon.className = 'fas fa-moon theme-icon'; }
+      if (label) label.textContent = 'Dark';
+    }
   }
 
   // One DOMContentLoaded for everything
@@ -69,6 +85,19 @@
         }
       });
     });
+
+    // ===== Theme toggle =====
+    const savedTheme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(savedTheme);
+    const themeBtn = document.getElementById('theme-toggle');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
+    }
 
     // ===== i18n wiring =====
     const langSel = document.getElementById('language-select');

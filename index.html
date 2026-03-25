@@ -2,246 +2,513 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Resume of Aboul Hassane Cisse" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aboul Hassane Cisse — PhD Researcher, Developer & Entrepreneur in AI and Educational Technology." />
   <meta name="author" content="Aboul Hassane Cisse" />
-  <title>Resume - Aboul Hassane Cisse</title>
+  <title>Aboul Hassane Cisse</title>
+  <link rel="canonical" href="https://aboulhassane.com/" />
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-  <!-- Fonts & Icons -->
+  <!-- SEO -->
+  <meta property="og:title" content="Aboul Hassane Cisse" />
+  <meta property="og:description" content="PhD Researcher, Developer & Entrepreneur in AI & Educational Technology." />
+  <meta property="og:image" content="https://aboulhassane.com/assets/img/profile.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aboulhassane.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aboul Hassane Cisse" />
+  <meta name="twitter:description" content="PhD Researcher, Developer & Entrepreneur in AI & Educational Technology." />
+  <meta name="twitter:image" content="https://aboulhassane.com/assets/img/profile.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous" defer></script>
-  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" />
 
   <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/redesign.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
   <!-- Libs -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Aboul Hassane Cisse",
+    "alternateName": "Pacha",
+    "url": "https://aboulhassane.com",
+    "image": "https://aboulhassane.com/assets/img/profile.png",
+    "jobTitle": "PhD Researcher",
+    "worksFor": { "@type": "Organization", "name": "Osaka Metropolitan University" },
+    "alumniOf": [
+      { "@type": "Organization", "name": "Osaka Metropolitan University" },
+      { "@type": "Organization", "name": "Kobe Institute of Computing" }
+    ],
+    "email": "aboulhcisse@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/pachaboul/",
+      "https://github.com/pachaboul",
+      "https://twitter.com/pachaboul"
+    ],
+    "knowsAbout": ["AI", "Educational Technology", "Multimodal Learning Analytics", "Human-Computer Interaction"],
+    "knowsLanguage": ["English", "French", "Japanese", "Bambara", "Songhoy"]
+  }
+  </script>
 </head>
 <body id="page-top">
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-    <div>
-      <select id="language-select" class="form-select mt-3" aria-label="Language">
-        <option value="en" selected>English</option>
-        <option value="fr">French</option>
-        <option value="ja">Japanese</option>
-      </select>
-    </div>
 
-    <a class="navbar-brand js-scroll-trigger" href="#page-top">
-      <span class="d-block d-lg-none">Aboul Hassane Cisse</span>
-      <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-             src="assets/img/profile.png" alt="Profile photo" loading="lazy" />
-      </span>
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+  <!-- Skip link -->
+  <a href="#about" class="skip-link">Skip to main content</a>
+
+  <!-- Reading progress bar -->
+  <div id="reading-progress" role="progressbar" aria-label="Reading progress"></div>
+
+  <!-- Section progress dots -->
+  <nav id="section-dots" aria-label="Section navigation">
+    <button class="dot" data-target="about"        title="About"></button>
+    <button class="dot" data-target="interests"    title="Interests"></button>
+    <button class="dot" data-target="publications" title="Publications"></button>
+    <button class="dot" data-target="experience"   title="Experience"></button>
+    <button class="dot" data-target="skills"       title="Skills"></button>
+    <button class="dot" data-target="education"    title="Education"></button>
+    <button class="dot" data-target="awards"       title="Awards"></button>
+    <button class="dot" data-target="services"     title="Services"></button>
+    <button class="dot" data-target="gallery"      title="Gallery"></button>
+    <button class="dot" data-target="map"          title="Map"></button>
+    <button class="dot" data-target="contact"      title="Contact"></button>
+  </nav>
+
+  <!-- Toast container -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <button id="lightbox-prev" aria-label="Previous">&#8249;</button>
+    <button id="lightbox-next" aria-label="Next">&#8250;</button>
+    <img id="lightbox-img" src="" alt="" />
+    <p id="lightbox-caption"></p>
+  </div>
+
+  <!-- Mobile nav backdrop -->
+  <div id="nav-backdrop"></div>
+
+  <!-- ======= TOP NAVBAR ======= -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">AHC</a>
+
+    <button class="navbar-toggler" id="nav-drawer-toggle" type="button"
             aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarResponsive">
+      <!-- Drawer header (mobile only) -->
+      <div class="drawer-header">
+        <span class="drawer-brand-text">AHC &mdash; Menu</span>
+        <button id="nav-drawer-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+      </div>
+
       <ul class="navbar-nav" id="navbar-menu">
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" data-key="about"><i class="fas fa-user"></i> <span data-i18n="nav.about">About</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" data-key="interests"><i class="fas fa-heart"></i> <span data-i18n="nav.interests">Interests</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications" data-key="publications"><i class="fas fa-book"></i> <span data-i18n="nav.publications">Publications</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" data-key="experience"><i class="fas fa-briefcase"></i> <span data-i18n="nav.experience">Experience</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" data-key="skills"><i class="fas fa-tools"></i> <span data-i18n="nav.skills">Skills</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" data-key="education"><i class="fas fa-graduation-cap"></i> <span data-i18n="nav.education">Education</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards" data-key="awards"><i class="fas fa-award"></i> <span data-i18n="nav.awards">Awards</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services" data-key="services"><i class="fas fa-concierge-bell"></i> <span data-i18n="nav.services">Services</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery" data-key="gallery"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">Gallery</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map" data-key="map"><i class="fas fa-globe"></i> <span data-i18n="nav.map">Around the World</span></a></li>
-        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact" data-key="contact"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">Contact</span></a></li>
-        <li class="nav-item">
-          <button id="download-pdf" class="nav-link btn btn-link p-0"><i class="fas fa-download"></i> <span data-i18n="nav.download">Download as PDF</span></button>
-        </li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications" data-key="publications"><i class="fas fa-book-open nav-icon"></i><span data-i18n="nav.publications">Publications</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience"   data-key="experience"><i class="fas fa-briefcase nav-icon"></i><span   data-i18n="nav.experience">Experience</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills"       data-key="skills"><i class="fas fa-code nav-icon"></i><span       data-i18n="nav.skills">Skills</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education"    data-key="education"><i class="fas fa-graduation-cap nav-icon"></i><span    data-i18n="nav.education">Education</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services"     data-key="services"><i class="fas fa-handshake nav-icon"></i><span     data-i18n="nav.services">Services</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery"      data-key="gallery"><i class="fas fa-images nav-icon"></i><span      data-i18n="nav.gallery">Gallery</span></a></li>
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact"      data-key="contact"><i class="fas fa-envelope nav-icon"></i><span      data-i18n="nav.contact">Contact</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="pacha-japan.html" target="_blank" rel="noopener" style="color:#f4897b !important; font-weight:700;"><i class="fas fa-torii-gate nav-icon"></i><span>PACHA-Japan</span></a></li>
       </ul>
+
+      <div class="nav-controls-wrap">
+        <select id="language-select" aria-label="Language">
+          <option value="en">🇬🇧 EN</option>
+          <option value="fr">🇫🇷 FR</option>
+          <option value="ja">🇯🇵 JA</option>
+        </select>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon theme-icon"></i>
+          <span class="theme-label">Dark</span>
+        </button>
+      </div>
     </div>
   </nav>
 
-  <!-- Page Content-->
-  <div class="container-fluid p-0">
-    <!-- About-->
-    <section class="resume-section" id="about">
-      <div class="resume-section-content">
-        <h1>
-          Aboul Hassane (Pacha)
-          <span class="text-primary">Cisse</span>
-        </h1>
-        <div class="subheading mb-3" id="about-location" data-i18n="about.location">
-          SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 ·
+  <!-- ======= HERO (About) ======= -->
+  <section id="about" class="hero-section">
+    <div class="hero-inner">
+      <div class="hero-photo-col">
+        <div class="hero-photo-ring">
+          <img src="assets/img/profile.png" alt="Aboul Hassane Cisse" class="hero-photo" loading="eager" />
+        </div>
+      </div>
+      <div class="hero-text-col">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Aboul Hassane <span class="accent">(Pacha)</span> CISSE</h1>
+        <p class="hero-role"><span id="typewriter"></span><span class="typewriter-cursor">|</span></p>
+        <p id="about-lead" class="hero-bio"></p>
+        <p id="about-location" class="hero-location">
+          <i class="fas fa-map-marker-alt"></i>
+          SAKAI-KU, SAKAI-SHI, OSAKA &nbsp;·&nbsp;
           <a href="mailto:aboulhcisse@gmail.com">aboulhcisse@gmail.com</a>
+        </p>
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/pachaboul/"                             target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/pachaboul"                                        target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://twitter.com/pachaboul"                                       target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.facebook.com/aboulhassanec"                             target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.researchgate.net/profile/Aboul-Cisse/research"          target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+          <a href="https://scholar.google.com/citations?user=AJpUwxMAAAAJ&hl=fr"      target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+          <a href="https://orcid.org/0009-0009-2196-7898"                              target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
         </div>
-        <p id="about-lead" class="lead mb-4" data-i18n="about.lead"></p>
-        <div class="social-icons">
-          <a class="social-icon" href="https://www.linkedin.com/in/pachaboul/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
-          <a class="social-icon" href="https://github.com/pachaboul" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-          <a class="social-icon" href="https://twitter.com/pachaboul" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-          <a class="social-icon" href="https://www.facebook.com/aboulhassanec" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+        <div class="hero-actions-row">
+          <button id="download-pdf" class="btn-accent">
+            <i class="fas fa-download"></i>
+            <span data-i18n="nav.download">Download CV</span>
+          </button>
+          <span class="last-updated-badge"><i class="fas fa-clock"></i> Updated March 2025</span>
         </div>
-        <div id="download-status" class="small text-muted mt-2" aria-live="polite"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
+        <p id="download-status" class="download-status" aria-live="polite"></p>
 
-    <!-- Interests-->
-    <section class="resume-section" id="interests">
-      <div class="resume-section-content">
-        <h2 id="interests-title" class="mb-4" data-i18n="section.interests">Interests</h2>
-        <p id="interests-content" class="mb-5"></p>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Publications-->
-    <section class="resume-section" id="publications">
-      <div class="resume-section-content">
-        <h2 id="publications-title" class="mb-4" data-i18n="section.publications">Publications</h2>
-        <div id="publications-list"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Experience-->
-    <section class="resume-section" id="experience">
-      <div class="resume-section-content">
-        <h2 id="experience-title" class="mb-4" data-i18n="section.experience">Experience</h2>
-        <div id="experience-list"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Skills-->
-    <section class="resume-section" id="skills">
-      <div class="resume-section-content">
-        <h2 id="skills-title" class="mb-4" data-i18n="section.skills">Skills</h2>
-        <div id="skills-list" class="row g-2"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Education-->
-    <section class="resume-section" id="education">
-      <div class="resume-section-content">
-        <h2 id="education-title" class="mb-4" data-i18n="section.education">Education</h2>
-        <div id="education-list"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Awards-->
-    <section class="resume-section" id="awards">
-      <div class="resume-section-content">
-        <h2 id="awards-title" class="mb-4" data-i18n="section.awards">Awards & Scholarships</h2>
-        <ul id="awards-list" class="fa-ul mb-0"></ul>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Services-->
-    <section class="resume-section" id="services">
-      <div class="resume-section-content">
-        <h2 id="services-title" class="mb-4" data-i18n="section.services">Services</h2>
-        <ul id="services-list" class="fa-ul mb-0"></ul>
-      </div>
-    </section>
-    <hr class="m-0" />
-
-    <!-- Contact-->
-    <section class="resume-section" id="contact">
-      <div class="resume-section-content">
-        <h2 id="contact-title" class="mb-4" data-i18n="section.contact">Contact</h2>
-        <form id="contact-form" class="needs-validation" novalidate>
-          <div class="form-group mb-3">
-            <label for="name" data-i18n="contact.name">Name:</label>
-            <input type="text" class="form-control" id="name" required autocomplete="name">
-            <div class="invalid-feedback" data-i18n="contact.name_req">Please enter your name.</div>
+        <!-- Featured highlights -->
+        <div class="hero-highlights">
+          <div class="hero-highlight">
+            <i class="fas fa-graduation-cap"></i>
+            <div>
+              <span class="hl-label">Current Role</span>
+              <span class="hl-value">PhD Researcher · OMU</span>
+            </div>
           </div>
-          <div class="form-group mb-3">
-            <label for="email" data-i18n="contact.email">Email:</label>
-            <input type="email" class="form-control" id="email" required autocomplete="email">
-            <div class="invalid-feedback" data-i18n="contact.email_req">Please enter a valid email.</div>
+          <div class="hero-highlight">
+            <i class="fas fa-book-open"></i>
+            <div>
+              <span class="hl-label">Latest Venue</span>
+              <span class="hl-value">ICCE 2025 India - Chennai</span>
+            </div>
           </div>
-          <div class="form-group mb-3">
-            <label for="message" data-i18n="contact.message">Message:</label>
-            <textarea class="form-control" id="message" rows="5" required></textarea>
-            <div class="invalid-feedback" data-i18n="contact.message_req">Please write a message.</div>
+          <div class="hero-highlight">
+            <i class="fas fa-language"></i>
+            <div>
+              <span class="hl-label">Languages</span>
+              <span class="hl-value">EN · FR · JA · BM · SON </span>
+            </div>
           </div>
-          <!-- honeypot -->
-          <div class="d-none">
-            <label>Website</label>
-            <input type="text" id="website" autocomplete="off">
+        </div>
+
+        <!-- Hero quick-nav -->
+        <nav class="hero-quick-nav" aria-label="Jump to section">
+          <a href="#publications" class="hero-quick-link" data-key="publications"><span data-i18n="nav.publications">Publications</span></a>
+          <a href="#experience"   class="hero-quick-link" data-key="experience"><span   data-i18n="nav.experience">Experience</span></a>
+          <a href="#skills"       class="hero-quick-link" data-key="skills"><span       data-i18n="nav.skills">Skills</span></a>
+          <a href="#education"    class="hero-quick-link" data-key="education"><span    data-i18n="nav.education">Education</span></a>
+          <a href="#services"     class="hero-quick-link" data-key="services"><span     data-i18n="nav.services">Services</span></a>
+          <a href="#gallery"      class="hero-quick-link" data-key="gallery"><span      data-i18n="nav.gallery">Gallery</span></a>
+          <a href="#contact"      class="hero-quick-link" data-key="contact"><span      data-i18n="nav.contact">Contact</span></a>
+        </nav>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= STATS STRIP ======= -->
+  <section id="stats-strip">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <span class="stat-num" data-target="5" data-suffix="+">5+</span>
+        <span class="stat-lbl">Publications</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="3" data-suffix="+">3+</span>
+        <span class="stat-lbl">Years Research</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="17" data-suffix="+">17+</span>
+        <span class="stat-lbl">Countries</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="4" data-suffix="+">4+</span>
+        <span class="stat-lbl">Languages</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= INTERESTS ======= -->
+  <section class="page-section" id="interests">
+    <div class="section-inner fade-up">
+      <div class="row g-5 align-items-start">
+
+        <!-- Left: Interests content -->
+        <div class="col-lg-7">
+          <h2 id="interests-title" class="section-title" data-i18n="section.interests">Interests</h2>
+          <div id="interests-content" style="line-height:1.8;"></div>
+        </div>
+
+        <!-- Right: Social network stats -->
+        <div class="col-lg-5">
+          <h2 class="section-title" data-i18n="section.social">Follow Me</h2>
+          <div class="social-stats-grid">
+
+            <a href="https://www.facebook.com/aboulhassanec" target="_blank" rel="noopener" class="social-stat-card" style="--sc:#1877F2">
+              <span class="social-stat-icon"><i class="fab fa-facebook-f"></i></span>
+              <div class="social-stat-info">
+                <span class="social-stat-number" data-social="facebook">—</span>
+                <span class="social-stat-name">Facebook</span>
+                <span class="social-stat-label" data-i18n="social.followers">Followers</span>
+              </div>
+            </a>
+
+            <a href="https://twitter.com/pachaboul" target="_blank" rel="noopener" class="social-stat-card" style="--sc:#1da1f2">
+              <span class="social-stat-icon"><i class="fab fa-twitter"></i></span>
+              <div class="social-stat-info">
+                <span class="social-stat-number" data-social="twitter">—</span>
+                <span class="social-stat-name">Twitter / X</span>
+                <span class="social-stat-label" data-i18n="social.followers">Followers</span>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pachaboul/" target="_blank" rel="noopener" class="social-stat-card" style="--sc:#0A66C2">
+              <span class="social-stat-icon"><i class="fab fa-linkedin-in"></i></span>
+              <div class="social-stat-info">
+                <span class="social-stat-number" data-social="linkedin">—</span>
+                <span class="social-stat-name">LinkedIn</span>
+                <span class="social-stat-label" data-i18n="social.connections">Connections</span>
+              </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@pachaboul" target="_blank" rel="noopener" class="social-stat-card" style="--sc:#010101">
+              <span class="social-stat-icon"><i class="fab fa-tiktok"></i></span>
+              <div class="social-stat-info">
+                <span class="social-stat-number" data-social="tiktok">—</span>
+                <span class="social-stat-name">TikTok</span>
+                <span class="social-stat-label" data-i18n="social.followers">Followers</span>
+              </div>
+            </a>
+
           </div>
-          <button type="submit" class="btn btn-primary" id="contact-send"><i class="fas fa-paper-plane me-2"></i><span data-i18n="contact.send">Send</span></button>
-        </form>
-        <div id="contact-status" class="mt-2"></div>
-      </div>
-    </section>
-    <hr class="m-0" />
+        </div>
 
-    <!-- Map-->
-    <section class="resume-section" id="map">
-      <div class="resume-section-content">
-        <h2 id="map-title" class="mb-4" data-i18n="section.map">Around the World</h2>
-        <div id="map-container" style="width: 100%; height: 500px;"></div>
       </div>
-    </section>
-    <hr class="m-0" />
+    </div>
+  </section>
 
-    <!-- Gallery-->
-    <section class="resume-section" id="gallery">
-      <div class="resume-section-content">
-        <h2 id="gallery-title" class="mb-4" data-i18n="section.gallery">Gallery</h2>
-        <div id="gallery-list" class="row"></div>
+  <!-- ======= PUBLICATIONS ======= -->
+  <section class="page-section alt" id="publications">
+    <div class="section-inner fade-up">
+      <h2 id="publications-title" class="section-title" data-i18n="section.publications">Publications</h2>
+      <div id="pub-filter-tabs" class="pub-filter-tabs" role="tablist"></div>
+      <div id="publications-list"></div>
+    </div>
+  </section>
+
+  <!-- ======= EXPERIENCE ======= -->
+  <section class="page-section" id="experience">
+    <div class="section-inner fade-up">
+      <h2 id="experience-title" class="section-title" data-i18n="section.experience">Experience</h2>
+      <div id="experience-list"></div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS ======= -->
+  <section class="page-section alt" id="skills">
+    <div class="section-inner fade-up">
+      <h2 id="skills-title" class="section-title" data-i18n="section.skills">Skills</h2>
+      <div id="skills-list" class="row g-2"></div>
+    </div>
+  </section>
+
+  <!-- ======= EDUCATION ======= -->
+  <section class="page-section" id="education">
+    <div class="section-inner fade-up">
+      <h2 id="education-title" class="section-title" data-i18n="section.education">Education</h2>
+      <div id="education-list"></div>
+    </div>
+  </section>
+
+  <!-- ======= AWARDS ======= -->
+  <section class="page-section alt" id="awards">
+    <div class="section-inner fade-up">
+      <h2 id="awards-title" class="section-title" data-i18n="section.awards">Awards &amp; Scholarships</h2>
+      <ul id="awards-list" class="fa-ul mb-0"></ul>
+    </div>
+  </section>
+
+  <!-- ======= SERVICES ======= -->
+  <section class="page-section" id="services">
+    <div class="section-inner fade-up">
+      <h2 id="services-title" class="section-title" data-i18n="section.services">Services</h2>
+      <ul id="services-list" class="fa-ul mb-0"></ul>
+    </div>
+  </section>
+
+  <!-- ======= GALLERY ======= -->
+  <section class="page-section alt" id="gallery">
+    <div class="section-inner fade-up">
+      <h2 id="gallery-title" class="section-title" data-i18n="section.gallery">Gallery</h2>
+      <div id="gallery-list" class="row g-3"></div>
+    </div>
+  </section>
+
+  <!-- ======= MAP ======= -->
+  <section class="page-section" id="map">
+    <div class="section-inner fade-up">
+      <h2 id="map-title" class="section-title" data-i18n="section.map">Around the World</h2>
+      <div id="map-container" class="map-box"></div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT ======= -->
+  <section class="page-section alt" id="contact">
+    <div class="section-inner fade-up">
+      <h2 id="contact-title" class="section-title" data-i18n="section.contact">Contact</h2>
+      <div class="contact-split">
+
+        <!-- Left: info -->
+        <div class="contact-info">
+          <h3>Let's connect</h3>
+          <p>Whether it's a research collaboration, a project idea, or just a hello — I'd love to hear from you.</p>
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Sakai-shi, Osaka, Japan</span>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:aboulhcisse@gmail.com">aboulhcisse@gmail.com</a>
+            <button class="copy-email-btn" data-email="aboulhcisse@gmail.com" title="Copy email" aria-label="Copy email address">
+              <i class="fas fa-copy"></i>
+            </button>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Osaka Metropolitan University</span>
+          </div>
+          <div class="contact-info-socials">
+            <a href="https://www.linkedin.com/in/pachaboul/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/pachaboul"           target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/pachaboul"          target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/aboulhassanec" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form-col">
+          <form id="contact-form" class="contact-form needs-validation" novalidate>
+            <div class="form-group mb-3">
+              <label for="name" data-i18n="contact.name">Name:</label>
+              <input type="text" class="form-control" id="name" required autocomplete="name">
+              <div class="invalid-feedback" data-i18n="contact.name_req">Please enter your name.</div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="email" data-i18n="contact.email">Email:</label>
+              <input type="email" class="form-control" id="email" required autocomplete="email">
+              <div class="invalid-feedback" data-i18n="contact.email_req">Please enter a valid email.</div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="message" data-i18n="contact.message">Message:</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+              <div class="invalid-feedback" data-i18n="contact.message_req">Please write a message.</div>
+            </div>
+            <!-- Honeypot -->
+            <div class="d-none" aria-hidden="true">
+              <label>Website</label>
+              <input type="text" id="website" autocomplete="off">
+            </div>
+            <button type="submit" class="btn-accent" id="contact-send">
+              <i class="fas fa-paper-plane"></i>
+              <span data-i18n="contact.send">Send</span>
+            </button>
+          </form>
+          <div id="contact-status" class="mt-3" aria-live="polite"></div>
+        </div>
+
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 
-  <!-- JS libs (defer) -->
+  <!-- ======= SCROLL TO TOP ======= -->
+  <button id="scroll-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/pachaboul/"                           target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/pachaboul"                                      target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/pachaboul"                                     target="_blank" rel="noopener" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/aboulhassanec"                           target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.researchgate.net/profile/Aboul-Cisse/research"        target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+        <a href="https://scholar.google.com/citations?user=AJpUwxMAAAAJ&hl=fr"    target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://orcid.org/0009-0009-2196-7898"                            target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+      </div>
+      <p>© 2025 Aboul Hassane CISSE &nbsp;·&nbsp; Osaka, Japan &nbsp;·&nbsp;
+        <a href="mailto:aboulhcisse@gmail.com">aboulhcisse@gmail.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
 
-  <!-- App Script (all-in-one) -->
+  <!-- Inline JSON data — loaded directly so the page works with file:// protocol -->
+  <script>
+  window.INLINE_JSON = {
+    "json/about.json": {"en":{"title":"About","lead":"Experienced IT Developer, Social Entrepreneur, and Trainer with a strong understanding of web platforms and course management systems. Demonstrated leadership and project management skills in the technology and education sectors. Proficient in multitasking, problem-solving, and working collaboratively in diverse teams."},"fr":{"title":"À propos","lead":"Développeur IT expérimenté, entrepreneur social et formateur avec une solide compréhension des plateformes web et des systèmes de gestion de cours. Compétences démontrées en leadership et en gestion de projets dans les secteurs de la technologie et de l'éducation. Compétent en multitâche, en résolution de problèmes et en travail collaboratif au sein d'équipes diversifiées."},"ja":{"title":"自己紹介","lead":"AIと教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。ウェブプラットフォームおよびコース管理システムに精通しており、テクノロジーと教育分野でリーダーシップとプロジェクト管理スキルを発揮しています。"}},
+    "json/interests.json": {"en":{"title":"Interests","content":[{"category":"Academic and Professional Growth","items":["Engaged in advanced research on real-time adaptive learning environments using gaze and emotion recognition to improve engagement and learning outcomes."]},{"category":"Technology and Innovation","items":["Active blogger on technology and daily life, contributing to platforms like malitechblog.wordpress.com and pachapic.wordpress.com.","Interest in programming, network wiring, and computer graphics.","Owner and manager of the Facebook page 'Bonjour Tombouctou,' promoting the culture and values of Timbuktu."]},{"category":"Community Involvement","items":["President-Founder of Smart YIRIBA Association, focusing on entrepreneurship and technology in Mali.","Co-founder of Yermatoun, a collective citizen group.","Member of the Internet Society Mali Chapter and DoniBlog, the community of Malian bloggers.","Head of Relations for the Youth Movement of Bintagoungou."]},{"category":"Sports","items":["Passionate about basketball, football, swimming, and jogging."]},{"category":"Personal Development","items":["Avid reader and traveler, continually seeking to expand knowledge and experience."]}]},"fr":{"title":"Intérêts","content":[{"category":"Croissance Académique et Professionnelle","items":["Engagé dans des recherches avancées sur les environnements d'apprentissage adaptatif en temps réel utilisant la reconnaissance du regard et des émotions pour améliorer l'engagement et les résultats d'apprentissage."]},{"category":"Technologie et Innovation","items":["Blogueur actif sur la technologie et la vie quotidienne, contribuant à des plateformes telles que malitechblog.wordpress.com et pachapic.wordpress.com.","Intérêt pour la programmation, le câblage réseau et les graphismes informatiques.","Propriétaire et gestionnaire de la page Facebook 'Bonjour Tombouctou', promouvant la culture et les valeurs de Tombouctou."]},{"category":"Engagement Communautaire","items":["Président-fondateur de l'association Smart YIRIBA, axée sur l'entrepreneuriat et la technologie au Mali.","Co-fondateur de Yermatoun, un groupe de citoyens collectifs.","Membre de l'Internet Society Mali Chapter et de DoniBlog, la communauté des blogueurs maliens.","Responsable des relations pour le Mouvement des Jeunes de Bintagoungou."]},{"category":"Sports","items":["Passionné de basket-ball, de football, de natation et de jogging."]},{"category":"Développement Personnel","items":["Lecteur avide et voyageur, cherchant continuellement à élargir ses connaissances et son expérience."]}]},"ja":{"title":"興味","content":[{"category":"地域貢献","items":["マリで起業と技術に焦点を当てたSmart YIRIBA協会の創設者・会長。","市民グループYermatounの共同創設者。","インターネットソサエティマリ支部およびマリのブロガーコミュニティDoniBlogのメンバー。","ビンタゴンゴ青年運動の関係責任者。"]},{"category":"スポーツ","items":["バスケットボール、サッカー、水泳、ジョギングが大好き。"]},{"category":"技術とイノベーション","items":["技術と日常生活についての積極的なブロガーであり、malitechblog.wordpress.comやpachapic.wordpress.comなどのプラットフォームに貢献しています。","プログラミング、ネットワーク配線、コンピュータグラフィックスに興味があります。","ティンブクトゥの文化と価値を促進するFacebookページ「Bonjour Tombouctou」の所有者兼管理者。"]},{"category":"自己啓発","items":["熱心な読書家であり旅行者であり、知識と経験を常に拡大しようとしています。"]},{"category":"学問と専門的成長","items":["注視と感情認識を使用してエンゲージメントと学習成果を改善するリアルタイム適応学習環境に関する高度な研究に従事しています。"]}]}},
+    "json/publications.json": {"en":{"title":"Publications","readMore":"Read more →","cite":"Cite","all":"All","list":[{"type":"Workshop","publications":[{"id":"WP1","title":"Workshop - Remote Area Education: A Hybrid University for Collaboration and Inclusion through ICT in Timbuktu","abstract":"The study environment in Malian universities has been considerably degraded in recent decades,and at the same time a digital divide between urban and rural area is also being observed, howeverother developing countries continue to offer or deploy new solutions to cope with the significantincrease of the number of new students. To cope with this issue, deploying an integrated ICT inEducation can be a better option to improve the quality of education and reduce the unemploymentrate in the Malian youth. Our case study is focused on Timbuktu town located at 930 kilometersfrom the capital city Bamako, although Timbuktu has no public university. In 2019, 2456 students(from Timbuktu region, source Academia of Timbuktu) enrolled at the various universities in Mali.95% of them had to move to Bamako because Timbuktu has only 2 private universities. Toinvestigate the efficiency of our proposed solution, this research study explored the potentialbenefits and challenges towards the utilization of the Khadas [1], Raspberry PI 4[2] and refurbishedold Laptop computers for the use of projected university in Timbuktu. While we encountered somechallenges, we were able to test and understand the possibility of integrating and associatingexisting tools for our proposed solution for improving access to higher education for an increasingneed of higher education and reducing the digital divide in Mali.","keywords":"Digital pedagogy, e-learning, Technology leapfrogging, Digital Transforming, ICT in Education","event":"CROMSSMMLA + SLE at LAK22 Workshop","date":"2022-03-21","category":"Workshop","contributors":["AboulHassane, C","Takahara Toshiro"],"language":"en","link":"#"},{"id":"WP2","title":"Enhancing Hybrid Learning: The Role of Multimodal Adaptive Feedback in Human-AI Collaboration","abstract":"Explores how multimodal adaptive feedback can support hybrid learning environments by leveraging real-time biometric and behavioral data.","keywords":"Hybrid Learning, Multimodal Feedback, Human-AI Collaboration, Adaptive Systems","event":"Joint Proceedings of LAK 2025 Workshops","date":"2025-03-10","category":"Workshop","contributors":["Cisse, A."],"language":"en","link":"urn:nbn:de:0074-3995-X"},{"id":"WP3","title":"Adaptive Feedback in Learning Environments: A Multimodal Approach to Enhancing Feedback Sensitivity and Learner Engagement","abstract":"Doctoral consortium paper examining how multimodal data streams improve feedback design for enhancing learner engagement.","keywords":"Adaptive Feedback, Learner Engagement, Multimodal Data, Doctoral Consortium","event":"LAK25 Doctoral Consortium","date":"2025-03-11","category":"Workshop","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"Conferences","publications":[{"id":"CP1","title":"Generative AI and Multimodal Profiling in Programming Education: A Systematic Review of Tools, Pedagogical Impacts, and Future Competencies","abstract":"A systematic review analyzing how generative AI and multimodal profiling tools reshape programming education by identifying impacts on pedagogy and future competencies.","keywords":"Generative AI, Programming Education, Multimodal Profiling, Systematic Review","event":"ICCE 2025 (Chennai, India)","date":"2025-12-01","category":"Conference","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"#"},{"id":"CP2","title":"From Signals to Cognition: Self-Supervised Multimodal Learning for Cognitive State Inference from Wearable Sensor Streams","abstract":"Introduces a self-supervised approach to infer cognitive states using wearable sensor data streams.","keywords":"Self-Supervised Learning, Multimodal Sensors, Cognitive State, Wearables","event":"UbiComp Companion 2025 (Espoo, Finland)","date":"2025-10-12","category":"Conference","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"https://doi.org/10.1145/3714394.3754403"},{"id":"CP3","title":"Real-time Adaptive Learning Environments Using Gaze and Emotion Recognition Engagement and Learning Outcomes","abstract":"Investigates real-time adaptive learning environments that leverage gaze and emotion recognition to monitor and dynamically improve learner engagement and learning outcomes.","keywords":"Real-time, Adaptive Learning, Gaze Recognition, Emotion Recognition, Engagement, Learning Outcomes","event":"ICCE 2024 (International Conference on Computers in Education)","date":"2024-11-01","category":"Conference","contributors":["Cisse, A."],"language":"en","link":"#"},{"id":"CP4","title":"Integrative Analysis of Multimodal Interaction Data for Enhancing Communication and Engagement in Adaptive Learning Environments","abstract":"Poster presenting an integrative analysis of multimodal interaction data aimed at enhancing communication and engagement within adaptive learning environments.","keywords":"Multimodal Interaction, Adaptive Learning, Communication, Engagement, Data Analysis","event":"ICCE 2024","date":"2024-11-01","category":"Poster","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"Articles","publications":[{"id":"AR1","title":"Integrative Analysis of Multimodal Interaction Data: Predicting Communication Dynamics and Willingness to Communicate (WtC) in Human-Agent Interaction","abstract":"Presents an integrative analysis of multimodal interaction data to predict communication dynamics and willingness to communicate (WtC) in human-agent interaction contexts.","keywords":"Multimodal Interaction, Human-Agent Interaction, Communication Dynamics, Willingness to Communicate, WtC","event":"","date":"2024-08-01","category":"Article","contributors":["Cisse, A. H.","Seta, K.","Hayashi, Y."],"language":"en","link":"#"}]},{"type":"Books","publications":[{"id":"BK1","title":"Vers une éducation innovante au Mali: Vision et stratégie","abstract":"Proposes a vision and strategies to modernize education in Mali using innovative approaches, ICT, and inclusive policies.","keywords":"Education, Innovation, Mali, ICT","date":"2025-01-15","category":"Book","contributors":["Cisse, A. H."],"language":"fr","link":"#"}]},{"type":"Blogs","publications":[{"id":"BP5","title":"Coronavirus : 5 conseils pour renforcer le système immunitaire","abstract":"Dans ce billet, le blogueur Malizé prodigue 5 conseils pour renforcer son système immunitaire contre la maladie du coronavirus présente au Mali.","keywords":"","date":"2020-03-30","category":"Blog","language":"fr","link":"https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"},{"id":"BP4","title":"En plus d'une médaille, Mamoutou Diarra mérite une bourse d'études","abstract":"Le jeune Mamoutou Diarra, qui a sauvé des adolescents durant les inondations qui ont endeuillé Bamako le 16 mai dernier, sera décoré par le président de la République, Ibrahim Boubacar Keïta. Pour le blogueur Pacha Malizé, une bourse d'études pour l'étranger serait un cadeau encore plus significatif que cette médaille.","keywords":"","date":"2019-05-21","category":"Blog","language":"fr","link":"https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"},{"id":"BP3","title":"La non-transparence encourage les « fake news »","abstract":"Dans une situation post électorale tendue comme la nôtre, une rumeur peut être source d'une profonde crise. Or, si les autorités continuent de cacher les vraies informations sur les affaires sensibles, ce sont les rumeurs qui prendront le dessus, écrit le blogueur Malize.","keywords":"","date":"2018-08-31","category":"Blog","language":"fr","link":"https://benbere.org/au-grin/non-transparence-encourage-fake-news/"},{"id":"BP2","title":"Ce que j'ai aimé de l'élection présidentielle","abstract":"L'élection présidentielle que nous venons de terminer a déçu beaucoup de gens, moi y compris. Mais j'ai aimé la façon dont les populations du Nord se sont comportées, écrit le blogueur Malize.","keywords":"","date":"2018-08-24","category":"Blog","language":"fr","link":"https://benbere.org/politique/aime-election-presidentielle-mali/"},{"id":"BP1","title":"Religion : Après le Ramadan, bonjour les mauvaises habitudes","abstract":"Aussitôt le Ramadan terminé, les jeunes se remettent à consommer de l'alcool, les boîtes de nuit sont bondées et les chambres de passes pleines. Comment peut-on obtenir le pardon d'Allah alors que nous reprenons nos bêtises le jour même de la fête, se demande le blogueur Malizé.","keywords":"","date":"2018-06-16","category":"Blog","language":"fr","link":"https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"}]}]},"ja":{"title":"業績","readMore":"続きを読む →","cite":"引用","all":"すべて","list":[{"type":"ワークショップ","publications":[{"id":"WP1","title":"遠隔地教育：ICTを活用したティンブクトゥにおける協働とインクルージョンのためのハイブリッド大学","abstract":"マリの大学における学習環境は近年著しく悪化しており、都市と農村の間のデジタルデバイドも拡大しています。本研究では、ティンブクトゥにおける高等教育アクセス向上のためのICT活用ハイブリッド大学構想を提案し、Khadas、Raspberry Pi 4、リファービッシュPCの活用可能性を検証しました。","keywords":"デジタル教授法、eラーニング、ICT教育、デジタル変革","event":"LAK22 ワークショップ (CROMSSMMLA + SLE)","date":"2022-03-21","category":"ワークショップ","contributors":["AboulHassane, C","Takahara Toshiro"],"language":"en","link":"#"},{"id":"WP2","title":"ハイブリッド学習の強化：人間とAIの協働におけるマルチモーダル適応フィードバックの役割","abstract":"リアルタイムの生体・行動データを活用したマルチモーダル適応フィードバックがハイブリッド学習環境をどのように支援するかを探ります。","keywords":"ハイブリッド学習、マルチモーダルフィードバック、人間-AI協働、適応システム","event":"LAK 2025 ワークショップ合同予稿集","date":"2025-03-10","category":"ワークショップ","contributors":["Cisse, A."],"language":"en","link":"urn:nbn:de:0074-3995-X"},{"id":"WP3","title":"学習環境における適応フィードバック：フィードバック感度と学習者エンゲージメント向上のためのマルチモーダルアプローチ","abstract":"マルチモーダルデータストリームがフィードバック設計と学習者エンゲージメント向上にどう貢献するかを研究する博士コンソーシアム論文。","keywords":"適応フィードバック、学習者エンゲージメント、マルチモーダルデータ、博士コンソーシアム","event":"LAK25 博士コンソーシアム","date":"2025-03-11","category":"ワークショップ","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"国際会議","publications":[{"id":"CP1","title":"���ログラミング教育における生成AIとマルチモーダルプロファイリング：ツール・教育的影響・将来的コンピテンシーの体系的レビュー","abstract":"生成AIとマルチモーダルプロファイリングツールがプログラミング教育をどのように再構築しているかを分析する体系的レビュー。","keywords":"生成AI、プログラミング教育、マルチモーダルプロファイリング、体系的レビュー","event":"ICCE 2025（インド・チェンナイ）","date":"2025-12-01","category":"会議","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"#"},{"id":"CP2","title":"シグナルから認知へ：ウェアラブルセンサーストリームからの認知状態推定のための自己教師あり学習","abstract":"ウェアラブルセンサーデータから認知状態を推定する自己教師ありアプローチを提案。","keywords":"自己教師あり学習、マルチモーダルセンサー、認知状態、ウェアラブル","event":"UbiComp Companion 2025（フィンランド・エスポー）","date":"2025-10-12","category":"会議","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"https://doi.org/10.1145/3714394.3754403"},{"id":"CP3","title":"視線・感情認識を活用したリアルタイム適応学習環境：エンゲージメントと学習成果","abstract":"視線・感情認識を活用してリアルタイムで学習者のエンゲージメントと学習成果を動的に向上させる適応学習環境を研究します。","keywords":"リアルタイム、適応学習、視線認識、感情認識、エンゲージメント、学習成果","event":"ICCE 2024（コンピュータと教育に関する国際会議）","date":"2024-11-01","category":"会議","contributors":["Cisse, A."],"language":"en","link":"#"},{"id":"CP4","title":"適応学習環境におけるコミュニケーションとエンゲージメント向上のためのマルチモーダル相互作用データの統合分析","abstract":"適応学習環境内でのコミュニケーションとエンゲージメントを強化することを目的としたマルチモーダル相互作用データの統合分析を提示するポスター。","keywords":"マルチモーダル相互作用、適応学習、コミュニケーション、エンゲージメント、データ分析","event":"ICCE 2024","date":"2024-11-01","category":"ポスター","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"論文","publications":[{"id":"AR1","title":"ヒューマンエージェント相互作用におけるコミュニケーションダイナミクスと意思疎通意欲（WtC）予測のためのマルチモーダル相互作用データの統合分析","abstract":"ヒューマンエージェント相互作用におけるコミュニケーションダイナミクスと意思疎通意欲（WtC）を予測するためのマルチモーダル相互作用データの統合分析を提示。","keywords":"マルチモーダル相互作用、ヒューマンエージェント相互作用、コミュニケーションダイナミクス、意思疎通意欲、WtC","event":"","date":"2024-08-01","category":"論文","contributors":["Cisse, A. H.","Seta, K.","Hayashi, Y."],"language":"en","link":"#"}]},{"type":"書籍","publications":[{"id":"BK1","title":"マリにおける革新的教育に向けて：ビジョンと戦略","abstract":"ICTとインクルーシブ政策を活用してマリの教育を近代化するためのビジョンと戦略を提案する書籍。","keywords":"教育、イノベーション、マリ、ICT","date":"2025-01-15","category":"書籍","contributors":["Cisse, A. H."],"language":"fr","link":"#"}]},{"type":"ブログ","publications":[{"id":"BP5","title":"コロナウイルス：免疫力を高める5つのアドバイス","abstract":"ブロガーMalizéがマリにおけるコロナウイルス感染症に対して免疫力を高めるための5つのアドバイスを紹介。","keywords":"","date":"2020-03-30","category":"ブログ","language":"fr","link":"https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"},{"id":"BP4","title":"メダルの他に、Mamoutou Diarraは奨学金に値する","abstract":"洪水で溺れかけた若者たちを救ったMamoutou Diarraへの、メダルより意義深い留学奨学金を求める論説。","keywords":"","date":"2019-05-21","category":"ブログ","language":"fr","link":"https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"},{"id":"BP3","title":"不透明さがフェイクニュースを助長する","abstract":"当局が敏感な情報を隠し続ければ、選挙後の緊張した状況下では噂が優勢になるとブロガーMalizéが論じる。","keywords":"","date":"2018-08-31","category":"ブログ","language":"fr","link":"https://benbere.org/au-grin/non-transparence-encourage-fake-news/"}]}]},"fr":{"title":"Publications","readMore":"Lire la suite →","cite":"Citer","all":"Tous","list":[{"type":"Ateliers","publications":[{"id":"WP1","title":"Atelier — Éducation en zone éloignée : une université hybride pour la collaboration et l'inclusion par les TIC à Tombouctou","abstract":"L'environnement d'étude dans les universités maliennes s'est considérablement dégradé ces dernières décennies, tandis qu'une fracture numérique entre zones urbaines et rurales se creuse. Notre étude de cas, centrée sur Tombouctou (à 930 km de Bamako), explore le potentiel du Khadas, du Raspberry Pi 4 et d'ordinateurs portables reconditionnés pour déployer une université hybride inclusive, améliorer l'accès à l'enseignement supérieur et réduire la fracture numérique au Mali.","keywords":"Pédagogie numérique, e-learning, TIC en éducation, transformation numérique","event":"Atelier CROMSSMMLA + SLE à LAK22","date":"2022-03-21","category":"Atelier","contributors":["AboulHassane, C","Takahara Toshiro"],"language":"en","link":"#"},{"id":"WP2","title":"Améliorer l'apprentissage hybride : le rôle du retour d'information adaptatif multimodal dans la collaboration humain-IA","abstract":"Cette étude explore comment le retour d'information adaptatif multimodal peut soutenir les environnements d'apprentissage hybrides en exploitant des données biométriques et comportementales en temps réel.","keywords":"Apprentissage hybride, retour d'information multimodal, collaboration humain-IA, systèmes adaptatifs","event":"Actes conjoints des ateliers LAK 2025","date":"2025-03-10","category":"Atelier","contributors":["Cisse, A."],"language":"en","link":"urn:nbn:de:0074-3995-X"},{"id":"WP3","title":"Retour d'information adaptatif dans les environnements d'apprentissage : une approche multimodale pour améliorer la sensibilité au retour et l'engagement des apprenants","abstract":"Article de consortium doctoral examinant comment les flux de données multimodaux améliorent la conception du retour d'information et renforcent l'engagement des apprenants.","keywords":"Retour adaptatif, engagement des apprenants, données multimodales, consortium doctoral","event":"Consortium doctoral LAK25","date":"2025-03-11","category":"Atelier","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"Conférences","publications":[{"id":"CP1","title":"IA générative et profilage multimodal dans l'enseignement de la programmation : une revue systématique des outils, impacts pédagogiques et compétences futures","abstract":"Une revue systématique analysant comment l'IA générative et les outils de profilage multimodal transforment l'enseignement de la programmation, en identifiant les impacts pédagogiques et les compétences requises pour l'avenir.","keywords":"IA générative, enseignement de la programmation, profilage multimodal, revue systématique","event":"ICCE 2025 (Chennai, Inde)","date":"2025-12-01","category":"Conférence","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"#"},{"id":"CP2","title":"Des signaux à la cognition : apprentissage multimodal auto-supervisé pour l'inférence d'états cognitifs à partir de capteurs portables","abstract":"Présente une approche auto-supervisée pour inférer les états cognitifs à partir de flux de données de capteurs portables en temps réel.","keywords":"Apprentissage auto-supervisé, capteurs multimodaux, état cognitif, informatique portable","event":"UbiComp Companion 2025 (Espoo, Finlande)","date":"2025-10-12","category":"Conférence","contributors":["Cisse, A.","Ishimaru, S."],"language":"en","link":"https://doi.org/10.1145/3714394.3754403"},{"id":"CP3","title":"Environnements d'apprentissage adaptatifs en temps réel utilisant la reconnaissance du regard et des émotions pour l'engagement et les résultats d'apprentissage","abstract":"Explore les environnements d'apprentissage adaptatifs en temps réel qui exploitent la reconnaissance du regard et des émotions pour surveiller et améliorer dynamiquement l'engagement des apprenants et les résultats d'apprentissage.","keywords":"Temps réel, apprentissage adaptatif, reconnaissance du regard, reconnaissance des émotions, engagement, résultats d'apprentissage","event":"ICCE 2024 (Conférence internationale sur les ordinateurs dans l'éducation)","date":"2024-11-01","category":"Conférence","contributors":["Cisse, A."],"language":"en","link":"#"},{"id":"CP4","title":"Analyse intégrative des données d'interaction multimodales pour améliorer la communication et l'engagement dans les environnements d'apprentissage adaptatifs","abstract":"Poster présentant une analyse intégrative des données d'interaction multimodales visant à améliorer la communication et l'engagement dans les environnements d'apprentissage adaptatifs.","keywords":"Interaction multimodale, apprentissage adaptatif, communication, engagement, analyse de données","event":"ICCE 2024","date":"2024-11-01","category":"Poster","contributors":["Cisse, A."],"language":"en","link":"#"}]},{"type":"Articles","publications":[{"id":"AR1","title":"Analyse intégrative des données d'interaction multimodales : prédire la dynamique de communication et la volonté de communiquer (WtC) dans l'interaction humain-agent","abstract":"Présente une analyse intégrative des données d'interaction multimodales pour prédire la dynamique de communication et la volonté de communiquer (WtC) dans des contextes d'interaction humain-agent.","keywords":"Interaction multimodale, interaction humain-agent, dynamique de communication, volonté de communiquer, WtC","event":"","date":"2024-08-01","category":"Article","contributors":["Cisse, A. H.","Seta, K.","Hayashi, Y."],"language":"en","link":"#"}]},{"type":"Livres","publications":[{"id":"BK1","title":"Vers une éducation innovante au Mali : vision et stratégie","abstract":"Propose une vision et des stratégies pour moderniser l'éducation au Mali grâce aux approches innovantes, aux TIC et aux politiques inclusives, en mettant l'accent sur l'équité et l'accès à l'enseignement supérieur.","keywords":"Éducation, innovation, Mali, TIC, inclusivité","date":"2025-01-15","category":"Livre","contributors":["Cisse, A. H."],"language":"fr","link":"#"}]},{"type":"Blogs","publications":[{"id":"BP5","title":"Coronavirus : 5 conseils pour renforcer le système immunitaire","abstract":"Dans ce billet, le blogueur Malizé prodigue 5 conseils pour renforcer son système immunitaire contre la maladie du coronavirus présente au Mali.","keywords":"","date":"2020-03-30","category":"Blog","language":"fr","link":"https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"},{"id":"BP4","title":"En plus d'une médaille, Mamoutou Diarra mérite une bourse d'études","abstract":"Le jeune Mamoutou Diarra, qui a sauvé des adolescents durant les inondations qui ont endeuillé Bamako le 16 mai dernier, sera décoré par le président de la République, Ibrahim Boubacar Keïta. Pour le blogueur Pacha Malizé, une bourse d'études pour l'étranger serait un cadeau encore plus significatif que cette médaille.","keywords":"","date":"2019-05-21","category":"Blog","language":"fr","link":"https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"},{"id":"BP3","title":"La non-transparence encourage les « fake news »","abstract":"Dans une situation post électorale tendue comme la nôtre, une rumeur peut être source d'une profonde crise. Or, si les autorités continuent de cacher les vraies informations sur les affaires sensibles, ce sont les rumeurs qui prendront le dessus, écrit le blogueur Malize.","keywords":"","date":"2018-08-31","category":"Blog","language":"fr","link":"https://benbere.org/au-grin/non-transparence-encourage-fake-news/"},{"id":"BP2","title":"Ce que j'ai aimé de l'élection présidentielle","abstract":"L'élection présidentielle que nous venons de terminer a déçu beaucoup de gens, moi y compris. Mais j'ai aimé la façon dont les populations du Nord se sont comportées, écrit le blogueur Malize.","keywords":"","date":"2018-08-24","category":"Blog","language":"fr","link":"https://benbere.org/politique/aime-election-presidentielle-mali/"},{"id":"BP1","title":"Religion : Après le Ramadan, bonjour les mauvaises habitudes","abstract":"Aussitôt le Ramadan terminé, les jeunes se remettent à consommer de l'alcool, les boîtes de nuit sont bondées et les chambres de passes pleines. Comment peut-on obtenir le pardon d'Allah alors que nous reprenons nos bêtises le jour même de la fête, se demande le blogueur Malizé.","keywords":"","date":"2018-06-16","category":"Blog","language":"fr","link":"https://benbere.org/cultures-maliennes/religion-ramadan-bonjour-les-mauvaises-habitudes/"}]}]}},
+    "json/experience.json": {"en":{"title":"Experience","list":[{"title":"Co-Founder & Executive Officer","company":"SankoPlus - Japan-Africa Economic, Cultural, and Technological Exchange Initiative","description":"Leading initiatives to foster economic, cultural, and technological exchange between Japan and Africa.","date":"March 13, 2024 - Present"},{"title":"Intern","company":"Kyōiku Jōhō Sābisu - An ICT company focused on Education in Miyazaki (Japan)","description":"Worked on various ICT projects aimed at improving educational services.","date":"September 24, 2021 - March 11, 2022"},{"title":"Founder & Manager","company":"ONG Smart YIRIBA - An incubator center of Technology and Entrepreneurship in Bamako (Mali)","description":"Founded and managed an incubator center focused on technology and entrepreneurship.","date":"May 15, 2018 - Present"},{"title":"Webmaster","company":"Benbere","description":"Managed the Benbere platform, overseeing all web-related activities.","date":"May 2018 - Present"},{"title":"Co-founder and Technical","company":"SankoreLabs - An incubator center of Entrepreneurship, Technology, and Governance in Timbuktu","description":"Co-founded and managed technical operations for an incubator center.","date":"June 2016 - September 2019"},{"title":"Management IT Advisor","company":"DELTA-C - Bamako and Timbuktu (Mali)","description":"Provided IT management and advisory services for a private university.","date":"February 1, 2016 - January 31, 2019"},{"title":"Technology Specialist","company":"ABSIS Technology","description":"Specialized in various technology-related projects and services.","date":"March 1, 2015 - January 31, 2016"},{"title":"IT Trainer","company":"Sup'Management","description":"Trained students in IT at a private higher education institution in Mali.","date":"December 2015 - March 2016"},{"title":"Blogger","company":"malitechblog.wordpress.com and pachapic.wordpress.com","description":"Blogged on topics of new technology and everyday life through images.","date":"December 2015 - Present"},{"title":"IT Trainer","company":"ISFIC - Higher Institute of Training in Information and Commerce in Bamako (Mali)","description":"Provided IT training at a private university.","date":"January 8, 2015 - March 31, 2016"},{"title":"IT Project Manager","company":"BMA Inter - Solar energy and IT company in Bamako (Mali)","description":"Managed IT projects focused on solar energy.","date":"December 1, 2014 - February 28, 2015"},{"title":"Technician","company":"Naima Trading SARL - Cotonou (Benin)","description":"Worked as a technician in the SAV.","date":"March 27 - August 2014"},{"title":"IT Developer","company":"Chic Web Design - Remote Work","description":"Developed IT solutions remotely for various clients.","date":"June 2012 - September 5, 2013"},{"title":"End of Study Internship","company":"Tynex Media - Agadir (Morocco)","description":"Completed an internship focusing on web hosting and media services.","date":"April 6 - May 20, 2012"}]},"fr":{"title":"Expérience","list":[{"title":"Co-fondateur et directeur exécutif","company":"SankoPlus - Initiative d'échange économique, culturel et technologique Japon-Afrique","description":"Dirige des initiatives visant à promouvoir les échanges économiques, culturels et technologiques entre le Japon et l'Afrique.","date":"13 mars 2024 - Présent"},{"title":"Stagiaire","company":"Kyōiku Jōhō Sābisu - Une entreprise TIC axée sur l'éducation à Miyazaki (Japon)","description":"Travaillé sur divers projets TIC visant à améliorer les services éducatifs.","date":"24 septembre 2021 - 11 mars 2022"},{"title":"Fondateur et gérant","company":"ONG Smart YIRIBA - Un centre d'incubation de technologie et d'entrepreneuriat à Bamako (Mali)","description":"Fondé et géré un centre d'incubation axé sur la technologie et l'entrepreneuriat.","date":"15 mai 2018 - Présent"},{"title":"Webmaster","company":"Benbere","description":"Géré la plateforme Benbere, supervisant toutes les activités liées au web.","date":"Mai 2018 - Présent"},{"title":"Cofondateur et technique","company":"SankoreLabs - Un centre d'incubation d'entrepreneuriat, de technologie et de gouvernance à Tombouctou","description":"Cofondé et géré les opérations techniques pour un centre d'incubation.","date":"Juin 2016 - Septembre 2019"},{"title":"Conseiller en gestion informatique","company":"DELTA-C - Bamako et Tombouctou (Mali)","description":"Fournit des services de gestion et de conseil en informatique pour une université privée.","date":"1er février 2016 - 31 janvier 2019"},{"title":"Spécialiste en technologie","company":"ABSIS Technology","description":"Spécialisé dans divers projets et services liés à la technologie.","date":"1er mars 2015 - 31 janvier 2016"},{"title":"Formateur en informatique","company":"Sup'Management","description":"Formé des étudiants en informatique dans une institution d'enseignement supérieur privée au Mali.","date":"Décembre 2015 - Mars 2016"},{"title":"Blogger","company":"malitechblog.wordpress.com et pachapic.wordpress.com","description":"Blogué sur des sujets de nouvelles technologies et de la vie quotidienne à travers des images.","date":"Décembre 2015 - Présent"},{"title":"Formateur en informatique","company":"ISFIC - Institut Supérieur de Formation en Informatique et Commerce à Bamako (Mali)","description":"A dispensé une formation en informatique dans une université privée.","date":"8 janvier 2015 - 31 mars 2016"},{"title":"Chef de projet informatique","company":"BMA Inter - Société d'énergie solaire et informatique à Bamako (Mali)","description":"Géré des projets informatiques axés sur l'énergie solaire.","date":"1er décembre 2014 - 28 février 2015"},{"title":"Technicien","company":"Naima Trading SARL - Cotonou (Bénin)","description":"Travaillé comme technicien dans le SAV.","date":"27 mars - août 2014"},{"title":"Développeur informatique","company":"Chic Web Design - Travail à distance","description":"Développé des solutions informatiques à distance pour divers clients.","date":"Juin 2012 - 5 septembre 2013"},{"title":"Stage de fin d'études","company":"Tynex Media - Agadir (Maroc)","description":"A effectué un stage axé sur l'hébergement web et les services de médias.","date":"6 avril - 20 mai 2012"}]},"ja":{"title":"経験","list":[{"title":"共同創設者兼最高経営責任者","company":"SankoPlus - 日本・アフリカ経済、文化、技術交流イニシアチブ","description":"日本とアフリカ間の経済、文化、技術交流を促進するためのイニシアチブをリードしています。","date":"2024年3月13日 - 現在"},{"title":"インターン","company":"Kyōiku Jōhō Sābisu - 宮崎の教育に焦点を当てたICT企業 (日本)","description":"教育サービスの向上を目指したさまざまなICTプロジェクトに取り組みました。","date":"2021年9月24日 - 2022年3月11日"},{"title":"創設者兼マネージャー","company":"ONG Smart YIRIBA - バマコ（マリ）の技術と起業のインキュベーターセンター","description":"技術と起業に焦点を当てたインキュベーターセンターを創設し、管理しました。","date":"2018年5月15日 - 現在"},{"title":"ウェブマスター","company":"Benbere","description":"Benbereプラットフォームを管理し、すべてのWeb関連活動を監督しました。","date":"2018年5月 - 現在"},{"title":"共同創設者兼技術者","company":"SankoreLabs - トンブクトゥの起業、技術、ガバナンスのインキュベーターセンター","description":"インキュベーターセンターの技術運営を共同創設し、管理しました。","date":"2016年6月 - 2019年9月"},{"title":"IT管理アドバイザー","company":"DELTA-C - バマコとトンブクトゥ (マリ)","description":"私立大学に対し、IT管理およびアドバイザリーサービスを提供しました。","date":"2016年2月1日 - 2019年1月31日"},{"title":"技術専門家","company":"ABSIS Technology","description":"さまざまな技術関連プロジェクトやサービスに特化しています。","date":"2015年3月1日 - 2016年1月31日"},{"title":"ITトレーナー","company":"Sup'Management","description":"マリの私立高等教育機関で学生にITを指導しました。","date":"2015年12月 - 2016年3月"},{"title":"ブロガー","company":"malitechblog.wordpress.com と pachapic.wordpress.com","description":"新技術や日常生活に関するトピックを画像を通じてブログで発信しました。","date":"2015年12月 - 現在"},{"title":"ITトレーナー","company":"ISFIC - バマコ（マリ）の情報と商業の高等訓練研究所","description":"私立大学でITトレーニングを提供しました。","date":"2015年1月8日 - 2016年3月31日"},{"title":"ITプロジェクトマネージャー","company":"BMA Inter - バマコ（マリ）のソーラーエネルギーおよびIT企業","description":"ソーラーエネルギーに焦点を当てたITプロジェクトを管理しました。","date":"2014年12月1日 - 2015年2月28日"},{"title":"技術者","company":"Naima Trading SARL - コトヌー（ベナン）","description":"SAVの技術者として働きました。","date":"2014年3月27日 - 8月"},{"title":"IT開発者","company":"Chic Web Design - リモートワーク","description":"さまざまなクライアントのためにリモートでITソリューションを開発しました。","date":"2012年6月 - 2013年9月5日"},{"title":"卒業論文インターンシップ","company":"Tynex Media - アガディール（モロッコ）","description":"ウェブホスティングとメディアサービスに焦点を当てたインターンシップを完了しました。","date":"2012年4月6日 - 5月20日"}]}},
+    "json/skills.json": {"en":{"title":"Skills","list":[{"category":"Programming Languages & Tools","icons":["fab fa-html5","fab fa-css3-alt","fab fa-js-square","fab fa-angular","fab fa-react","fab fa-node-js","fab fa-sass","fab fa-less","fab fa-wordpress","fab fa-gulp","fab fa-grunt","fab fa-npm","fab fa-python","fab fa-java","fab fa-docker"]},{"category":"Workflow","workflow":["Mobile-First, Responsive Design","Cross Browser Testing & Debugging","Cross Functional Teams","Agile Development & Scrum"]},{"category":"Other Skills","skills":["Problem Solving","Project Management","Team Leadership","Effective Communication","Time Management","Multitasking","Teaching & Mentoring"]}]},"fr":{"title":"Compétences","list":[{"category":"Langages de Programmation & Outils","icons":["fab fa-html5","fab fa-css3-alt","fab fa-js-square","fab fa-angular","fab fa-react","fab fa-node-js","fab fa-sass","fab fa-less","fab fa-wordpress","fab fa-gulp","fab fa-grunt","fab fa-npm","fab fa-python","fab fa-java","fab fa-docker"]},{"category":"Flux de Travail","workflow":["Conception Mobile-First, Responsive","Tests et Débogage Multi-navigateurs","Équipes Multifonctionnelles","Développement Agile & Scrum"]},{"category":"Autres Compétences","skills":["Résolution de Problèmes","Gestion de Projet","Leadership d'Équipe","Communication Efficace","Gestion du Temps","Multitâche","Enseignement & Mentorat"]}]},"ja":{"title":"スキル","list":[{"category":"プログラミング言語とツール","icons":["fab fa-html5","fab fa-css3-alt","fab fa-js-square","fab fa-angular","fab fa-react","fab fa-node-js","fab fa-sass","fab fa-less","fab fa-wordpress","fab fa-gulp","fab fa-grunt","fab fa-npm","fab fa-python","fab fa-java","fab fa-docker"]},{"category":"ワークフロー","workflow":["モバイルファースト、レスポンシブデザイン","クロスブラウザテストとデバッグ","クロスファンクショナルチーム","アジャイル開発とスクラム"]},{"category":"その他のスキル","skills":["問題解決","プロジェクト管理","チームリーダーシップ","効果的なコミュニケーション","時間管理","マルチタスク","教育と指導"]}]}},
+    "json/education.json": {"en":{"title":"Education","list":[{"school":"Osaka Metropolitan University (OMU)","degree":"Ph.D. Student in Educational Technology","date":"2022-2025","description":"Ph.D. program focused on Educational Technology in Japan."},{"school":"Kobe Institute of Computing (KIC)","degree":"Master in ICT Innovator","date":"2019-2021","description":"Master program in ICT Innovator in Japan."},{"school":"Delta-C University","degree":"Master II in Project Cycle Management, Program and Development Policy","date":"2016-2017","description":"Master program focused on project cycle management and development policy in Bamako, Mali."},{"school":"International Polytechnic University - Dr Obiang NGuema M'Basogo (UPI-ONM)","degree":"Master I in Computer Method Applied to Business Management","date":"2013-2014","description":"Master program in business management with a focus on computer methods in Benin."},{"school":"Faculty of Sciences of Agadir (FSA)","degree":"Professional License in Computer Engineering","date":"2012","description":"Professional license in computer engineering in Morocco."},{"school":"Faculty of Sciences of Agadir (FSA)","degree":"Diploma of General University Studies (DEUG) in Applied Mathematics","date":"2011","description":"Diploma in Applied Mathematics in Morocco."},{"school":"Technical High School of Bamako (LTB)","degree":"Technical Baccalaureate in Technical Industry","date":"2008","description":"Technical baccalaureate in technical industry in Mali."}]},"fr":{"title":"Éducation","list":[{"school":"Université Métropolitaine d'Osaka (OMU)","degree":"Doctorant en technologie éducative","date":"2022-2025","description":"Programme de doctorat axé sur la technologie éducative au Japon."},{"school":"Institut d'informatique de Kobe (KIC)","degree":"Master en innovateur TIC","date":"2019-2021","description":"Programme de master en innovateur TIC au Japon."},{"school":"Université Delta-C","degree":"Master II en gestion du cycle de projet, programme et politique de développement","date":"2016-2017","description":"Programme de master axé sur la gestion du cycle de projet et la politique de développement à Bamako, Mali."},{"school":"Université Polytechnique Internationale - Dr Obiang NGuema M'Basogo (UPI-ONM)","degree":"Master I en méthode informatique appliquée à la gestion des affaires","date":"2013-2014","description":"Programme de master en gestion des affaires avec une spécialisation en méthodes informatiques au Bénin."},{"school":"Faculté des sciences d'Agadir (FSA)","degree":"Licence professionnelle en ingénierie informatique","date":"2012","description":"Licence professionnelle en ingénierie informatique au Maroc."},{"school":"Faculté des sciences d'Agadir (FSA)","degree":"Diplôme d'études universitaires générales (DEUG) en mathématiques appliquées","date":"2011","description":"Diplôme en mathématiques appliquées au Maroc."},{"school":"Lycée technique de Bamako (LTB)","degree":"Baccalauréat technique en industrie technique","date":"2008","description":"Baccalauréat technique en industrie technique au Mali."}]},"ja":{"title":"教育","list":[{"school":"大阪都市大学 (OMU)","degree":"教育技術博士課程","date":"2022-2025","description":"日本の教育技術に関する博士課程。"},{"school":"神戸情報大学院大学 (KIC)","degree":"ICTイノベーター修士","date":"2019-2021","description":"日本のICTイノベーター修士課程。"},{"school":"デルタC大学","degree":"プロジェクトサイクル管理、プログラムおよび開発政策の修士","date":"2016-2017","description":"マリのバマコでのプロジェクトサイクル管理と開発政策に関する修士課程。"},{"school":"国際工科大学 - ドクター・オビアン・ンゲマ・ンバソゴ (UPI-ONM)","degree":"ビジネスマネジメントに適用されるコンピュータメソッドの修士","date":"2013-2014","description":"ベナンでのビジネスマネジメントに適用されるコンピュータメソッドに関する修士課程。"},{"school":"アガディール科学部 (FSA)","degree":"コンピュータエンジニアリングの専門ライセンス","date":"2012","description":"モロッコでのコンピュータエンジニアリングの専門ライセンス。"},{"school":"アガディール科学部 (FSA)","degree":"応用数学の総合大学研究の卒業証書 (DEUG)","date":"2011","description":"モロッコでの応用数学の卒業証書。"},{"school":"バマコ技術高校 (LTB)","degree":"技術産業の技術バカロレア","date":"2008","description":"マリでの技術産業の技術バカロレア。"}]}},
+    "json/awards.json": {"en":{"title":"Awards & Scholarships","list":[{"id":"S1","title":"Scholarship from the Moroccan Agency for International Cooperation (AMCI)","date":"2008-2012","category":"Scholarship"},{"id":"S2","title":"Scholarship from the Dr. Obiang Nguema MBASSOGO Foundation","date":"2013-2014","category":"Scholarship"},{"id":"S3","title":"Scholarship from the ABE-Initiative Program of the Japan International Cooperation Agency (JICA)","date":"2019-2021","category":"Scholarship"},{"id":"S4","title":"Research Fellowship Program Scholarship from the Japan Science and Technology Agency (JST)","date":"2022-2025","category":"Scholarship"}]},"fr":{"title":"Prix et Bourses","list":[{"id":"S1","title":"Bourse de l'Agence Marocaine de coopération Internationale (AMCI)","date":"2008-2012","category":"Bourse"},{"id":"S2","title":"Bourse de la fondation Dr Obiang Nguema MBASSOGO","date":"2013-2014","category":"Bourse"},{"id":"S3","title":"Bourse du programme ABE-Initiative de l'Agence Japonaise Coopération Internationale (JICA)","date":"2019-2021","category":"Bourse"},{"id":"S4","title":"Bourse de recherche du Fellowship Program de JST (Japan Science and Technology Agency)","date":"2022-2025","category":"Bourse"}]},"ja":{"title":"賞と奨学金","list":[{"id":"S1","title":"モロッコ国際協力庁（AMCI）からの奨学金","date":"2008-2012","category":"奨学金"},{"id":"S2","title":"Dr. Obiang Nguema MBASSOGO 財団からの奨学金","date":"2013-2014","category":"奨学金"},{"id":"S3","title":"日本国際協力機構（JICA）のABEイニシアティブプログラムからの奨学金","date":"2019-2021","category":"奨学金"},{"id":"S4","title":"日本科学技術振興機構（JST）からの研究フェローシッププログラム奨学金","date":"2022-2025","category":"奨学金"}]}},
+    "json/services.json": {"en":{"title":"Services","list":["Website creation and maintenance","Domain name and hosting space sales","Consulting in Digital Transformation","Consulting in Digital Communication"]},"fr":{"title":"Services","list":["Création et maintenance de sites web","Vente de noms de domaine et d'espace d'hébergement","Consultance en Transformation digitale","Consultance en Communication Digitale"]},"ja":{"title":"サービス","list":["ウェブサイトの作成・保守","ドメイン名およびホスティングスペースの販売","デジタルトランスフォーメーションのコンサルティング","デジタルコミュニケーションのコンサルティング"]}},
+    "json/map.json": {"en":[{"longitude":30.0619,"latitude":-1.9441,"description":"Kigali, Rwanda"},{"longitude":36.8219,"latitude":-1.2921,"description":"Nairobi, Kenya"},{"longitude":2.1154,"latitude":13.5116,"description":"Niamey, Niger"},{"longitude":2.4333,"latitude":6.3703,"description":"Cotonou, Benin"},{"longitude":-1.5197,"latitude":12.3714,"description":"Ouagadougou, Burkina Faso"},{"longitude":-4.2971,"latitude":11.1784,"description":"Bobo-Dioulasso, Burkina Faso"},{"longitude":-17.4479,"latitude":14.6928,"description":"Dakar, Senegal"},{"longitude":4.9041,"latitude":52.3676,"description":"Amsterdam, Netherlands"},{"longitude":38.7578,"latitude":9.034,"description":"Addis-Ababa, Ethiopia"},{"longitude":2.3522,"latitude":48.8566,"description":"Paris, France"},{"longitude":-9.5978,"latitude":30.4278,"description":"Agadir, Morocco"},{"longitude":-7.5898,"latitude":33.5731,"description":"Casablanca, Morocco"},{"longitude":-6.8498,"latitude":34.0209,"description":"Rabat, Morocco"},{"longitude":-5.7997,"latitude":35.7595,"description":"Tanger, Morocco"},{"longitude":-8.009,"latitude":31.6315,"description":"Marrakech, Morocco"},{"longitude":-7.6164,"latitude":33.0011,"description":"Settat, Morocco"},{"longitude":135.1955,"latitude":34.6901,"description":"Kobe, Japan"},{"longitude":135.5023,"latitude":34.6937,"description":"Osaka, Japan"},{"longitude":135.7681,"latitude":35.0116,"description":"Kyoto, Japan"},{"longitude":139.6917,"latitude":35.6895,"description":"Tokyo, Japan"},{"longitude":143.3896,"latitude":43.8508,"description":"Urahoro, Japan"},{"longitude":130.4017,"latitude":33.5902,"description":"Fukuoka, Japan"},{"longitude":132.4553,"latitude":34.3853,"description":"Hiroshima, Japan"},{"longitude":132.7661,"latitude":35.4723,"description":"Shimane, Japan"},{"longitude":114.1694,"latitude":22.3193,"description":"Hong Kong"},{"longitude":100.5018,"latitude":13.7563,"description":"Bangkok, Thailand"},{"longitude":-7.9922,"latitude":12.6392,"description":"Bamako, Mali"},{"longitude":-3.0026,"latitude":16.7735,"description":"Timbuktu, Mali"},{"longitude":-4.1931,"latitude":14.4946,"description":"Mopti, Mali"},{"longitude":-5.6666,"latitude":11.3177,"description":"Sikasso, Mali"},{"longitude":-6.267,"latitude":13.4317,"description":"Segou, Mali"},{"longitude":-8.0807,"latitude":12.7481,"description":"Kati, Mali"},{"longitude":-7.5528,"latitude":12.8628,"description":"Koulikoro, Mali"},{"longitude":-6.2603,"latitude":53.3498,"description":"Dublin, Ireland"},{"longitude":-8.9819,"latitude":52.8463,"description":"Ennis, Ireland"},{"longitude":-9.0568,"latitude":53.2707,"description":"Galway, Ireland"},{"longitude":120.9842,"latitude":14.5995,"description":"Manila, Philippines"},{"longitude":121.5654,"latitude":25.033,"description":"Taipei, Taiwan"},{"longitude":114.3055,"latitude":30.5928,"description":"Wuhan, China"},{"longitude":121.4737,"latitude":31.2304,"description":"Shanghai, China"},{"longitude":24.6522,"latitude":60.2052,"description":"Espoo, Finland"},{"longitude":80.2707,"latitude":13.0827,"description":"Chennai, India"},{"longitude":51.5310,"latitude":25.2854,"description":"Doha, Qatar"},{"longitude":101.6869,"latitude":3.1390,"description":"Kuala Lumpur, Malaysia"}],"fr":[{"longitude":30.0619,"latitude":-1.9441,"description":"Kigali, Rwanda"},{"longitude":36.8219,"latitude":-1.2921,"description":"Nairobi, Kenya"},{"longitude":2.1154,"latitude":13.5116,"description":"Niamey, Niger"},{"longitude":2.4333,"latitude":6.3703,"description":"Cotonou, Bénin"},{"longitude":-1.5197,"latitude":12.3714,"description":"Ouagadougou, Burkina Faso"},{"longitude":-4.2971,"latitude":11.1784,"description":"Bobo-Dioulasso, Burkina Faso"},{"longitude":-17.4479,"latitude":14.6928,"description":"Dakar, Sénégal"},{"longitude":4.9041,"latitude":52.3676,"description":"Amsterdam, Pays-Bas"},{"longitude":38.7578,"latitude":9.034,"description":"Addis-Abeba, Éthiopie"},{"longitude":2.3522,"latitude":48.8566,"description":"Paris, France"},{"longitude":-9.5978,"latitude":30.4278,"description":"Agadir, Maroc"},{"longitude":-7.5898,"latitude":33.5731,"description":"Casablanca, Maroc"},{"longitude":-6.8498,"latitude":34.0209,"description":"Rabat, Maroc"},{"longitude":-5.7997,"latitude":35.7595,"description":"Tanger, Maroc"},{"longitude":-8.009,"latitude":31.6315,"description":"Marrakech, Maroc"},{"longitude":-7.6164,"latitude":33.0011,"description":"Settat, Maroc"},{"longitude":135.1955,"latitude":34.6901,"description":"Kobe, Japon"},{"longitude":135.5023,"latitude":34.6937,"description":"Osaka, Japon"},{"longitude":135.7681,"latitude":35.0116,"description":"Kyoto, Japon"},{"longitude":139.6917,"latitude":35.6895,"description":"Tokyo, Japon"},{"longitude":143.3896,"latitude":43.8508,"description":"Urahoro, Japon"},{"longitude":130.4017,"latitude":33.5902,"description":"Fukuoka, Japon"},{"longitude":132.4553,"latitude":34.3853,"description":"Hiroshima, Japon"},{"longitude":132.7661,"latitude":35.4723,"description":"Shimane, Japon"},{"longitude":114.1694,"latitude":22.3193,"description":"Hong Kong"},{"longitude":100.5018,"latitude":13.7563,"description":"Bangkok, Thaïlande"},{"longitude":-7.9922,"latitude":12.6392,"description":"Bamako, Mali"},{"longitude":-3.0026,"latitude":16.7735,"description":"Tombouctou, Mali"},{"longitude":-4.1931,"latitude":14.4946,"description":"Mopti, Mali"},{"longitude":-5.6666,"latitude":11.3177,"description":"Sikasso, Mali"},{"longitude":-6.267,"latitude":13.4317,"description":"Ségou, Mali"},{"longitude":-8.0807,"latitude":12.7481,"description":"Kati, Mali"},{"longitude":-7.5528,"latitude":12.8628,"description":"Koulikoro, Mali"},{"longitude":-6.2603,"latitude":53.3498,"description":"Dublin, Irlande"},{"longitude":-8.9819,"latitude":52.8463,"description":"Ennis, Irlande"},{"longitude":-9.0568,"latitude":53.2707,"description":"Galway, Irlande"},{"longitude":120.9842,"latitude":14.5995,"description":"Manille, Philippines"},{"longitude":121.5654,"latitude":25.033,"description":"Taipei, Taïwan"},{"longitude":114.3055,"latitude":30.5928,"description":"Wuhan, Chine"},{"longitude":121.4737,"latitude":31.2304,"description":"Shanghai, Chine"},{"longitude":24.6522,"latitude":60.2052,"description":"Espoo, Finlande"},{"longitude":80.2707,"latitude":13.0827,"description":"Chennai, Inde"},{"longitude":51.5310,"latitude":25.2854,"description":"Doha, Qatar"},{"longitude":101.6869,"latitude":3.1390,"description":"Kuala Lumpur, Malaisie"}],"ja":[{"longitude":30.0619,"latitude":-1.9441,"description":"キガリ、ルワンダ"},{"longitude":36.8219,"latitude":-1.2921,"description":"ナイロビ、ケニア"},{"longitude":2.1154,"latitude":13.5116,"description":"ニアメ、ニジェール"},{"longitude":2.4333,"latitude":6.3703,"description":"コトヌー、ベナン"},{"longitude":-1.5197,"latitude":12.3714,"description":"ワガドゥグ、ブルキナファソ"},{"longitude":-4.2971,"latitude":11.1784,"description":"ボボ・ディウラッソ、ブルキナファソ"},{"longitude":-17.4479,"latitude":14.6928,"description":"ダカール、セネガル"},{"longitude":4.9041,"latitude":52.3676,"description":"アムステルダム、オランダ"},{"longitude":38.7578,"latitude":9.034,"description":"アディスアベバ、エチオピア"},{"longitude":2.3522,"latitude":48.8566,"description":"パリ、フランス"},{"longitude":-9.5978,"latitude":30.4278,"description":"アガディール、モロッコ"},{"longitude":-7.5898,"latitude":33.5731,"description":"カサブランカ、モロッコ"},{"longitude":-6.8498,"latitude":34.0209,"description":"ラバト、モロッコ"},{"longitude":-5.7997,"latitude":35.7595,"description":"タンジェ、モロッコ"},{"longitude":-8.009,"latitude":31.6315,"description":"マラケシュ、モロッコ"},{"longitude":-7.6164,"latitude":33.0011,"description":"セッタ、モロッコ"},{"longitude":135.1955,"latitude":34.6901,"description":"神戸、日本"},{"longitude":135.5023,"latitude":34.6937,"description":"大阪、日本"},{"longitude":135.7681,"latitude":35.0116,"description":"京都、日本"},{"longitude":139.6917,"latitude":35.6895,"description":"東京、日本"},{"longitude":143.3896,"latitude":43.8508,"description":"浦幌、日本"},{"longitude":130.4017,"latitude":33.5902,"description":"福岡、日本"},{"longitude":132.4553,"latitude":34.3853,"description":"広島、日本"},{"longitude":132.7661,"latitude":35.4723,"description":"島根、日本"},{"longitude":114.1694,"latitude":22.3193,"description":"香港"},{"longitude":100.5018,"latitude":13.7563,"description":"バンコク、タイ"},{"longitude":-7.9922,"latitude":12.6392,"description":"バマコ、マリ"},{"longitude":-3.0026,"latitude":16.7735,"description":"トンブクトゥ、マリ"},{"longitude":-4.1931,"latitude":14.4946,"description":"モプティ、マリ"},{"longitude":-5.6666,"latitude":11.3177,"description":"シカソ、マリ"},{"longitude":-6.267,"latitude":13.4317,"description":"セグー、マリ"},{"longitude":-8.0807,"latitude":12.7481,"description":"カティ、マリ"},{"longitude":-7.5528,"latitude":12.8628,"description":"クリコロ、マリ"},{"longitude":-6.2603,"latitude":53.3498,"description":"ダブリン、アイルランド"},{"longitude":-8.9819,"latitude":52.8463,"description":"エニス、アイルランド"},{"longitude":-9.0568,"latitude":53.2707,"description":"ゴールウェイ、アイルランド"},{"longitude":120.9842,"latitude":14.5995,"description":"マニラ、フィリピン"},{"longitude":121.5654,"latitude":25.033,"description":"台北、台湾"},{"longitude":114.3055,"latitude":30.5928,"description":"武漢、中国"},{"longitude":121.4737,"latitude":31.2304,"description":"上海、中国"},{"longitude":24.6522,"latitude":60.2052,"description":"エスポー、フィンランド"},{"longitude":80.2707,"latitude":13.0827,"description":"チェンナイ、インド"},{"longitude":51.5310,"latitude":25.2854,"description":"ドーハ、カタール"},{"longitude":101.6869,"latitude":3.1390,"description":"クアラルンプール、マレーシア"}]},
+    "json/gallery.json": {"en":{"title":"Gallery","list":[{"title":"Event 1","category":"Conference","src":"assets/gallery/gallery1.jpeg","link":"assets/gallery/gallery1.jpeg"},{"title":"Event 2","category":"Activity","src":"assets/gallery/gallery2.jpeg","link":"assets/gallery/gallery2.jpeg"},{"title":"Event 4","category":"Activity","src":"assets/gallery/gallery4.jpeg","link":"assets/gallery/gallery4.jpeg"},{"title":"Event 9","category":"Conference","src":"assets/gallery/gallery9.jpeg","link":"assets/gallery/gallery9.jpeg"},{"title":"Event 5","category":"Conference","src":"assets/gallery/gallery5.jpeg","link":"assets/gallery/gallery5.jpeg"},{"title":"Event 14","category":"Conference","src":"assets/gallery/gallery14.jpeg","link":"assets/gallery/gallery14.jpeg"},{"title":"IGF Kyoto 2024","category":"Conference","src":"assets/gallery/gallery15.jpeg","link":"assets/gallery/gallery15.jpeg"},{"title":"Graduation Ceremony 2023 - KIS","category":"Ceremony","src":"assets/gallery/gallery16.jpeg","link":"assets/gallery/gallery16.jpeg"},{"title":"Event 26","category":"Conference","src":"assets/gallery/gallery26.jpeg","link":"assets/gallery/gallery26.jpeg"},{"title":"Event 12","category":"Conference","src":"assets/gallery/gallery12.jpeg","link":"assets/gallery/gallery12.jpeg"},{"title":"Event 19","category":"Activity","src":"assets/gallery/gallery19.jpeg","link":"assets/gallery/gallery19.jpeg"},{"title":"Event 17","category":"Conference","src":"assets/gallery/gallery17.jpeg","link":"assets/gallery/gallery17.jpeg"},{"title":"Event 10","category":"Conference","src":"assets/gallery/gallery10.jpeg","link":"assets/gallery/gallery10.jpeg"},{"title":"Event 11","category":"Conference","src":"assets/gallery/gallery11.jpeg","link":"assets/gallery/gallery11.jpeg"},{"title":"Event 18","category":"Conference","src":"assets/gallery/gallery18.jpeg","link":"assets/gallery/gallery18.jpeg"},{"title":"Event 6","category":"Activity","src":"assets/gallery/gallery6.jpeg","link":"assets/gallery/gallery6.jpeg"},{"title":"Event 3","category":"Conference","src":"assets/gallery/gallery3.jpeg","link":"assets/gallery/gallery3.jpeg"},{"title":"Event 7","category":"Conference","src":"assets/gallery/gallery7.jpeg","link":"assets/gallery/gallery7.jpeg"},{"title":"Event 20","category":"Conference","src":"assets/gallery/gallery20.jpeg","link":"assets/gallery/gallery20.jpeg"},{"title":"Event 21","category":"Conference","src":"assets/gallery/gallery21.jpeg","link":"assets/gallery/gallery21.jpeg"},{"title":"Event 22","category":"Conference","src":"assets/gallery/gallery22.jpeg","link":"assets/gallery/gallery22.jpeg"},{"title":"Event 23","category":"Conference","src":"assets/gallery/gallery23.jpeg","link":"assets/gallery/gallery23.jpeg"},{"title":"Event 24","category":"Conference","src":"assets/gallery/gallery24.jpeg","link":"assets/gallery/gallery24.jpeg"},{"title":"Osaka Africa Business Forum 2022","category":"Forum","src":"assets/gallery/gallery31.jpeg","link":"assets/gallery/gallery31.jpeg"},{"title":"Event 27","category":"Conference","src":"assets/gallery/gallery27.jpeg","link":"assets/gallery/gallery27.jpeg"},{"title":"Event 28","category":"Conference","src":"assets/gallery/gallery28.jpeg","link":"assets/gallery/gallery28.jpeg"},{"title":"Event 32","category":"Conference","src":"assets/gallery/gallery32.jpeg","link":"assets/gallery/gallery32.jpeg"},{"title":"Doctoral Consortium - LASI EUROPE 2024 - Spain","category":"Conference","src":"assets/gallery/gallery25.jpeg","link":"assets/gallery/gallery25.jpeg"},{"title":"Program Sakura - KIS Lab 2023","category":"Program","src":"assets/gallery/gallery33.jpeg","link":"assets/gallery/gallery33.jpeg"},{"title":"Event 34","category":"Conference","src":"assets/gallery/gallery34.jpeg","link":"assets/gallery/gallery34.jpeg"},{"title":"Event 29","category":"Conference","src":"assets/gallery/gallery29.jpeg","link":"assets/gallery/gallery29.jpeg"},{"title":"Event 30","category":"Conference","src":"assets/gallery/gallery30.jpeg","link":"assets/gallery/gallery30.jpeg"},{"title":"Event 8","category":"Conference","src":"assets/gallery/gallery8.jpeg","link":"assets/gallery/gallery8.jpeg"},{"title":"Event 35","category":"Conference","src":"assets/gallery/gallery35.jpeg","link":"assets/gallery/gallery35.jpeg"}]},"fr":{"title":"Galerie","list":[{"title":"Événement 1","category":"Conférence","src":"assets/gallery/gallery1.jpeg","link":"assets/gallery/gallery1.jpeg"},{"title":"Événement 2","category":"Activité","src":"assets/gallery/gallery2.jpeg","link":"assets/gallery/gallery2.jpeg"},{"title":"Événement 4","category":"Activité","src":"assets/gallery/gallery4.jpeg","link":"assets/gallery/gallery4.jpeg"},{"title":"Événement 9","category":"Conférence","src":"assets/gallery/gallery9.jpeg","link":"assets/gallery/gallery9.jpeg"},{"title":"Événement 5","category":"Conférence","src":"assets/gallery/gallery5.jpeg","link":"assets/gallery/gallery5.jpeg"},{"title":"Événement 14","category":"Conférence","src":"assets/gallery/gallery14.jpeg","link":"assets/gallery/gallery14.jpeg"},{"title":"IGF Kyoto 2024","category":"Conférence","src":"assets/gallery/gallery15.jpeg","link":"assets/gallery/gallery15.jpeg"},{"title":"Cérémonie de Remise des Diplômes 2023 - KIS","category":"Cérémonie","src":"assets/gallery/gallery16.jpeg","link":"assets/gallery/gallery16.jpeg"},{"title":"Événement 26","category":"Conférence","src":"assets/gallery/gallery26.jpeg","link":"assets/gallery/gallery26.jpeg"},{"title":"Événement 12","category":"Conférence","src":"assets/gallery/gallery12.jpeg","link":"assets/gallery/gallery12.jpeg"},{"title":"Événement 19","category":"Activité","src":"assets/gallery/gallery19.jpeg","link":"assets/gallery/gallery19.jpeg"},{"title":"Événement 17","category":"Conférence","src":"assets/gallery/gallery17.jpeg","link":"assets/gallery/gallery17.jpeg"},{"title":"Événement 10","category":"Conférence","src":"assets/gallery/gallery10.jpeg","link":"assets/gallery/gallery10.jpeg"},{"title":"Événement 11","category":"Conférence","src":"assets/gallery/gallery11.jpeg","link":"assets/gallery/gallery11.jpeg"},{"title":"Événement 18","category":"Conférence","src":"assets/gallery/gallery18.jpeg","link":"assets/gallery/gallery18.jpeg"},{"title":"Événement 6","category":"Activité","src":"assets/gallery/gallery6.jpeg","link":"assets/gallery/gallery6.jpeg"},{"title":"Événement 3","category":"Conférence","src":"assets/gallery/gallery3.jpeg","link":"assets/gallery/gallery3.jpeg"},{"title":"Événement 7","category":"Conférence","src":"assets/gallery/gallery7.jpeg","link":"assets/gallery/gallery7.jpeg"},{"title":"Événement 20","category":"Conférence","src":"assets/gallery/gallery20.jpeg","link":"assets/gallery/gallery20.jpeg"},{"title":"Événement 21","category":"Conférence","src":"assets/gallery/gallery21.jpeg","link":"assets/gallery/gallery21.jpeg"},{"title":"Événement 22","category":"Conférence","src":"assets/gallery/gallery22.jpeg","link":"assets/gallery/gallery22.jpeg"},{"title":"Événement 23","category":"Conférence","src":"assets/gallery/gallery23.jpeg","link":"assets/gallery/gallery23.jpeg"},{"title":"Événement 24","category":"Conférence","src":"assets/gallery/gallery24.jpeg","link":"assets/gallery/gallery24.jpeg"},{"title":"Forum d'Affaires Osaka-Afrique 2022","category":"Forum","src":"assets/gallery/gallery31.jpeg","link":"assets/gallery/gallery31.jpeg"},{"title":"Événement 27","category":"Conférence","src":"assets/gallery/gallery27.jpeg","link":"assets/gallery/gallery27.jpeg"},{"title":"Événement 28","category":"Conférence","src":"assets/gallery/gallery28.jpeg","link":"assets/gallery/gallery28.jpeg"},{"title":"Événement 32","category":"Conférence","src":"assets/gallery/gallery32.jpeg","link":"assets/gallery/gallery32.jpeg"},{"title":"Consortium Doctoral - LASI EUROPE 2024 - Espagne","category":"Conférence","src":"assets/gallery/gallery25.jpeg","link":"assets/gallery/gallery25.jpeg"},{"title":"Programme Sakura - KIS Lab 2023","category":"Programme","src":"assets/gallery/gallery33.jpeg","link":"assets/gallery/gallery33.jpeg"},{"title":"Événement 34","category":"Conférence","src":"assets/gallery/gallery34.jpeg","link":"assets/gallery/gallery34.jpeg"},{"title":"Événement 29","category":"Conférence","src":"assets/gallery/gallery29.jpeg","link":"assets/gallery/gallery29.jpeg"},{"title":"Événement 30","category":"Conférence","src":"assets/gallery/gallery30.jpeg","link":"assets/gallery/gallery30.jpeg"},{"title":"Événement 8","category":"Conférence","src":"assets/gallery/gallery8.jpeg","link":"assets/gallery/gallery8.jpeg"},{"title":"Événement 35","category":"Conférence","src":"assets/gallery/gallery35.jpeg","link":"assets/gallery/gallery35.jpeg"}]},"ja":{"title":"ギャラリー","list":[{"title":"イベント 1","category":"会議","src":"assets/gallery/gallery1.jpeg","link":"assets/gallery/gallery1.jpeg"},{"title":"イベント 2","category":"活動","src":"assets/gallery/gallery2.jpeg","link":"assets/gallery/gallery2.jpeg"},{"title":"イベント 4","category":"活動","src":"assets/gallery/gallery4.jpeg","link":"assets/gallery/gallery4.jpeg"},{"title":"イベント 9","category":"会議","src":"assets/gallery/gallery9.jpeg","link":"assets/gallery/gallery9.jpeg"},{"title":"イベント 5","category":"会議","src":"assets/gallery/gallery5.jpeg","link":"assets/gallery/gallery5.jpeg"},{"title":"イベント 14","category":"会議","src":"assets/gallery/gallery14.jpeg","link":"assets/gallery/gallery14.jpeg"},{"title":"IGF 京都 2024","category":"会議","src":"assets/gallery/gallery15.jpeg","link":"assets/gallery/gallery15.jpeg"},{"title":"卒業式 2023 - KIS","category":"式典","src":"assets/gallery/gallery16.jpeg","link":"assets/gallery/gallery16.jpeg"},{"title":"イベント 26","category":"会議","src":"assets/gallery/gallery26.jpeg","link":"assets/gallery/gallery26.jpeg"},{"title":"イベント 12","category":"会議","src":"assets/gallery/gallery12.jpeg","link":"assets/gallery/gallery12.jpeg"},{"title":"イベント 19","category":"活動","src":"assets/gallery/gallery19.jpeg","link":"assets/gallery/gallery19.jpeg"},{"title":"イベント 17","category":"会議","src":"assets/gallery/gallery17.jpeg","link":"assets/gallery/gallery17.jpeg"},{"title":"イベント 10","category":"会議","src":"assets/gallery/gallery10.jpeg","link":"assets/gallery/gallery10.jpeg"},{"title":"イベント 11","category":"会議","src":"assets/gallery/gallery11.jpeg","link":"assets/gallery/gallery11.jpeg"},{"title":"イベント 18","category":"会議","src":"assets/gallery/gallery18.jpeg","link":"assets/gallery/gallery18.jpeg"},{"title":"イベント 6","category":"活動","src":"assets/gallery/gallery6.jpeg","link":"assets/gallery/gallery6.jpeg"},{"title":"イベント 3","category":"会議","src":"assets/gallery/gallery3.jpeg","link":"assets/gallery/gallery3.jpeg"},{"title":"イベント 7","category":"会議","src":"assets/gallery/gallery7.jpeg","link":"assets/gallery/gallery7.jpeg"},{"title":"イベント 20","category":"会議","src":"assets/gallery/gallery20.jpeg","link":"assets/gallery/gallery20.jpeg"},{"title":"イベント 21","category":"会議","src":"assets/gallery/gallery21.jpeg","link":"assets/gallery/gallery21.jpeg"},{"title":"イベント 22","category":"会議","src":"assets/gallery/gallery22.jpeg","link":"assets/gallery/gallery22.jpeg"},{"title":"イベント 23","category":"会議","src":"assets/gallery/gallery23.jpeg","link":"assets/gallery/gallery23.jpeg"},{"title":"イベント 24","category":"会議","src":"assets/gallery/gallery24.jpeg","link":"assets/gallery/gallery24.jpeg"},{"title":"大阪アフリカビジネスフォーラム 2022","category":"フォーラム","src":"assets/gallery/gallery31.jpeg","link":"assets/gallery/gallery31.jpeg"},{"title":"イベント 27","category":"会議","src":"assets/gallery/gallery27.jpeg","link":"assets/gallery/gallery27.jpeg"},{"title":"イベント 28","category":"会議","src":"assets/gallery/gallery28.jpeg","link":"assets/gallery/gallery28.jpeg"},{"title":"イベント 32","category":"会議","src":"assets/gallery/gallery32.jpeg","link":"assets/gallery/gallery32.jpeg"},{"title":"博士コンソーシアム - LASI EUROPE 2024 - スペイン","category":"会議","src":"assets/gallery/gallery25.jpeg","link":"assets/gallery/gallery25.jpeg"},{"title":"さくらプログラム - KISラボ 2023","category":"プログラム","src":"assets/gallery/gallery33.jpeg","link":"assets/gallery/gallery33.jpeg"},{"title":"イベント 34","category":"会議","src":"assets/gallery/gallery34.jpeg","link":"assets/gallery/gallery34.jpeg"},{"title":"イベント 29","category":"会議","src":"assets/gallery/gallery29.jpeg","link":"assets/gallery/gallery29.jpeg"},{"title":"イベント 30","category":"会議","src":"assets/gallery/gallery30.jpeg","link":"assets/gallery/gallery30.jpeg"},{"title":"イベント 8","category":"会議","src":"assets/gallery/gallery8.jpeg","link":"assets/gallery/gallery8.jpeg"},{"title":"イベント 35","category":"会議","src":"assets/gallery/gallery35.jpeg","link":"assets/gallery/gallery35.jpeg"}]}}
+  };
+  </script>
+
   <script>
   (() => {
     'use strict';
 
     // ========== EmailJS init ==========
     window.addEventListener('load', () => {
-      if (window.emailjs?.init) {
-        // Keep your public key or replace with your own
-        emailjs.init('h49ZLZln8LyVHj8n7');
-      }
+      if (window.emailjs?.init) emailjs.init('h49ZLZln8LyVHj8n7');
     });
 
-    // ========== i18n (labels only) ==========
+    // ========== i18n ==========
     const I18N = {
       en: {
-        nav: { about: 'About', interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact', download: 'Download as PDF' },
-        about: { lead: 'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
-        section: { interests: 'Interests', publications: 'Publications', experience: 'Experience', skills: 'Skills', education: 'Education', awards: 'Awards & Scholarships', services: 'Services', gallery: 'Gallery', map: 'Around the World', contact: 'Contact' },
-        contact: { name: 'Name:', email: 'Email:', message: 'Message:', send: 'Send', name_req: 'Please enter your name.', email_req: 'Please enter a valid email.', message_req: 'Please write a message.' },
-        interests: 'Multimodal learning analytics, human-AI interaction, eye-tracking, wearable sensing, inclusive education.'
+        nav: { about:'About', interests:'Interests', publications:'Publications', experience:'Experience', skills:'Skills', education:'Education', awards:'Awards', services:'Services', gallery:'Gallery', map:'Around the World', contact:'Contact', download:'Download CV' },
+        about: { lead:'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location:'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+        section: { interests:'Interests', publications:'Publications', experience:'Experience', skills:'Skills', education:'Education', awards:'Awards & Scholarships', services:'Services', gallery:'Gallery', map:'Around the World', contact:'Contact', social:'Follow Me' },
+        social: { followers:'Followers', connections:'Connections' },
+        contact: { name:'Name:', email:'Email:', message:'Message:', send:'Send', name_req:'Please enter your name.', email_req:'Please enter a valid email.', message_req:'Please write a message.' },
+        interests:'Multimodal learning analytics, human-AI interaction, eye-tracking, wearable sensing, inclusive education.'
       },
       fr: {
-        nav: { about: 'À propos', interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact', download: 'Télécharger en PDF' },
-        about: { lead: 'Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l’apprentissage.', location: 'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
-        section: { interests: 'Centres d’intérêt', publications: 'Publications', experience: 'Expérience', skills: 'Compétences', education: 'Éducation', awards: 'Prix & Bourses', services: 'Services', gallery: 'Galerie', map: 'Autour du monde', contact: 'Contact' },
-        contact: { name: 'Nom :', email: 'Email :', message: 'Message :', send: 'Envoyer', name_req: 'Veuillez entrer votre nom.', email_req: 'Veuillez saisir un email valide.', message_req: 'Veuillez écrire un message.' },
-        interests: 'Analytique d’apprentissage multimodale, interaction humain-IA, eye-tracking, capteurs portables, éducation inclusive.'
+        nav: { about:'À propos', interests:"Centres d'intérêt", publications:'Publications', experience:'Expérience', skills:'Compétences', education:'Éducation', awards:'Prix', services:'Services', gallery:'Galerie', map:'Autour du monde', contact:'Contact', download:'Télécharger CV' },
+        about: { lead:"Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l'apprentissage.", location:'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
+        section: { interests:"Centres d'intérêt", publications:'Publications', experience:'Expérience', skills:'Compétences', education:'Éducation', awards:'Prix & Bourses', services:'Services', gallery:'Galerie', map:'Autour du monde', contact:'Contact', social:'Réseaux Sociaux' },
+        social: { followers:'Abonnés', connections:'Relations' },
+        contact: { name:'Nom :', email:'Email :', message:'Message :', send:'Envoyer', name_req:'Veuillez entrer votre nom.', email_req:'Veuillez saisir un email valide.', message_req:'Veuillez écrire un message.' },
+        interests:"Analytique d'apprentissage multimodale, interaction humain-IA, eye-tracking, capteurs portables, éducation inclusive."
       },
       ja: {
-        nav: { about: '自己紹介', interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先', download: 'PDF をダウンロード' },
-        about: { lead: 'AI と教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location: '大阪府堺市堺区 590-0976 · ' },
-        section: { interests: '関心分野', publications: '業績', experience: '経験', skills: 'スキル', education: '学歴', awards: '受賞・奨学金', services: 'サービス', gallery: 'ギャラリー', map: '世界での活動', contact: '連絡先' },
-        contact: { name: 'お名前：', email: 'メール：', message: 'メッセージ：', send: '送信', name_req: 'お名前を入力してください。', email_req: '有効なメールを入力してください。', message_req: 'メッセージを入力してください。' },
-        interests: 'マルチモーダル学習分析、人間とAIのインタラクション、視線計測、ウェアラブル計測、インクルーシブ教育。'
+        nav: { about:'自己紹介', interests:'関心分野', publications:'業績', experience:'経験', skills:'スキル', education:'学歴', awards:'受賞', services:'サービス', gallery:'ギャラリー', map:'世界での活動', contact:'連絡先', download:'CVをダウンロード' },
+        about: { lead:'AIと教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location:'大阪府堺市堺区 590-0976 · ' },
+        section: { interests:'関心分野', publications:'業績', experience:'経験', skills:'スキル', education:'学歴', awards:'受賞・奨学金', services:'サービス', gallery:'ギャラリー', map:'世界での活動', contact:'連絡先', social:'フォローする' },
+        social: { followers:'フォロワー', connections:'つながり' },
+        contact: { name:'お名前：', email:'メール：', message:'メッセージ：', send:'送信', name_req:'お名前を入力してください。', email_req:'有効なメールを入力してください。', message_req:'メッセージを入力してください。' },
+        interests:'マルチモーダル学習分析、人間とAIのインタラクション、視線計測、ウェアラブル計測、インクルーシブ教育。'
       }
     };
 
@@ -253,63 +520,65 @@
         for (const k of keys) v = v?.[k];
         if (typeof v === 'string') el.textContent = v;
       });
-      const aboutLead = document.getElementById('about-lead');
-      if (aboutLead) aboutLead.textContent = dict.about.lead;
+      document.documentElement.lang = lang;
+      const lead = document.getElementById('about-lead');
+      if (lead) lead.textContent = dict.about.lead;
       const interests = document.getElementById('interests-content');
       if (interests) interests.textContent = dict.interests;
     }
 
-    // ========== Local fallback data ==========
-    //const LOCAL_DATA = {
-    //  publications: [
-    //    {
-      //    title: 'Integrative Analysis of Multimodal Interaction Data: Predicting Communication Dynamics and WtC',
-        //  venue: 'CEUR-WS, 2024',
-          //link: 'https://ceur-ws.org/Vol-3738/paper4.pdf'
-   //     }
-     // ],
-   //   experience: [
-    //    {
-     //     role: 'Doctoral Researcher',
-      //    org: 'Osaka Metropolitan University',
-       //   dates: '2022 – Present',
-      //    bullets: ['Multimodal learning analytics', 'Human–AI interaction', 'Eye-tracking & wearables']
-       // }
-      //],
-      //skills: ['Python','Django','PyTorch','Docker','MySQL','Leaflet','Vue','React','Data Viz'],
-      //education: [
-     //   { program: 'Ph.D. in Informatics', inst: 'Osaka Metropolitan University', dates: '2022 – Present' },
-    //    { program: 'MSc in ICT4D', inst: 'Kobe Institute of Computing', dates: '2018 – 2020' }
-  //    ],
-      //awards: ['Rotary Yoneyama Scholarship (candidate)'],
-    //  services: ['Reviewer (ICCE/LAK workshops)', 'Community building: Mali–Japan'],
-     // gallery: [
-     //   // 'assets/img/gallery/1.jpg',
-    //  ],
-   //   visited: [
-        //{ name: 'Japan', lat: 36.2048, lng: 138.2529 },
-       // { name: 'Mali', lat: 17.5707, lng: -3.9962 },
-        //{ name: 'Finland', lat: 61.9241, lng: 25.7482 }
-      //]
-    //};
+    // ========== Theme toggle ==========
+    function applyTheme(theme) {
+      document.body.setAttribute('data-theme', theme);
+      const btn   = document.getElementById('theme-toggle');
+      if (!btn) return;
+      const icon  = btn.querySelector('.theme-icon');
+      const label = btn.querySelector('.theme-label');
+      if (theme === 'dark') {
+        if (icon)  icon.className = 'fas fa-sun theme-icon';
+        if (label) label.textContent = 'Light';
+      } else {
+        if (icon)  icon.className = 'fas fa-moon theme-icon';
+        if (label) label.textContent = 'Dark';
+      }
+    }
 
-    // ========== JSON helpers ==========
-    const JSON_PATHS = {
-      about: 'json/about.json',
-      interests: 'json/interests.json',
-      publications: 'json/publications.json',
-      experience: 'json/experience.json',
-      skills: 'json/skills.json',
-      education: 'json/education.json',
-      awards: 'json/awards.json',
-      services: 'json/services.json',
-      gallery: 'json/gallery.json',
-      map: 'json/map.json',
-      menu: 'json/menu.json'
+    // ========== Fallback data (shown instantly before JSON loads) ==========
+    const LOCAL_DATA = {
+      publications: [],
+      experience: [], skills: [], education: [],
+      awards: [], services: [], gallery: [],
+      visited: [
+        { name: 'Japan',   lat: 36.2048,  lng: 138.2529 },
+        { name: 'Mali',    lat: 17.5707,  lng: -3.9962  },
+        { name: 'Finland', lat: 61.9241,  lng: 25.7482  }
+      ]
     };
+
+    // ========== JSON paths ==========
+    const JSON_PATHS = {
+      about:        'json/about.json',
+      interests:    'json/interests.json',
+      publications: 'json/publications.json',
+      experience:   'json/experience.json',
+      skills:       'json/skills.json',
+      education:    'json/education.json',
+      awards:       'json/awards.json',
+      services:     'json/services.json',
+      gallery:      'json/gallery.json',
+      map:          'json/map.json',
+      menu:         'json/menu.json'
+    };
+
     const cache = new Map();
     async function fetchJSON(url) {
       if (cache.has(url)) return cache.get(url);
+      // Use inline data first (works with file:// protocol and as instant fallback)
+      if (window.INLINE_JSON && window.INLINE_JSON[url]) {
+        const data = window.INLINE_JSON[url];
+        cache.set(url, Promise.resolve(data));
+        return data;
+      }
       const p = fetch(url).then(r => {
         if (!r.ok) throw new Error('HTTP ' + r.status + ' for ' + url);
         return r.json();
@@ -318,57 +587,48 @@
       return p;
     }
 
-    // ========== Painters from LOCAL_DATA ==========
+    // ========== Local data paint (instant) ==========
     function populateFromLocal() {
-      // Publications
       const pubs = document.getElementById('publications-list');
       if (pubs) {
         pubs.innerHTML = '';
         LOCAL_DATA.publications.forEach(p => {
-          const item = document.createElement('div');
-          item.className = 'mb-3';
-          item.innerHTML = `<strong>${p.title}</strong><br><span class="text-muted">${p.venue}</span>${p.link ? ` · <a href="${p.link}" target="_blank" rel="noopener">PDF</a>` : ''}`;
-          pubs.appendChild(item);
+          const d = document.createElement('div');
+          d.className = 'mb-3';
+          d.innerHTML = `<strong>${p.title}</strong><br><span class="text-muted">${p.venue}</span>${p.link ? ` · <a href="${p.link}" target="_blank" rel="noopener">PDF</a>` : ''}`;
+          pubs.appendChild(d);
         });
       }
-      // Experience
       const exp = document.getElementById('experience-list');
       if (exp) {
         exp.innerHTML = '';
         LOCAL_DATA.experience.forEach(e => {
-          const block = document.createElement('div');
-          block.className = 'mb-3';
-          block.innerHTML = `
-            <h5 class="mb-1">${e.role} · <span class="text-primary">${e.org}</span></h5>
-            <div class="text-muted small mb-2">${e.dates}</div>
-            <ul class="mb-0">${(e.bullets||[]).map(b => `<li>${b}</li>`).join('')}</ul>
-          `;
-          exp.appendChild(block);
+          const d = document.createElement('div');
+          d.className = 'mb-3';
+          d.innerHTML = `<h5 class="mb-1">${e.role} · <span class="text-primary">${e.org}</span></h5><div class="text-muted small mb-2">${e.dates}</div><ul class="mb-0">${(e.bullets||[]).map(b=>`<li>${b}</li>`).join('')}</ul>`;
+          exp.appendChild(d);
         });
       }
-      // Skills
       const skills = document.getElementById('skills-list');
       if (skills) {
         skills.innerHTML = '';
         LOCAL_DATA.skills.forEach(s => {
-          const col = document.createElement('div');
-          col.className = 'col-6 col-md-4 col-lg-3';
-          col.innerHTML = `<span class="badge bg-light text-dark border w-100 py-2">${s}</span>`;
-          skills.appendChild(col);
+          const c = document.createElement('div');
+          c.className = 'col-6 col-md-4 col-lg-3';
+          c.innerHTML = `<span class="badge bg-light text-dark border w-100 py-2">${s}</span>`;
+          skills.appendChild(c);
         });
       }
-      // Education
       const edu = document.getElementById('education-list');
       if (edu) {
         edu.innerHTML = '';
         LOCAL_DATA.education.forEach(ed => {
-          const item = document.createElement('div');
-          item.className = 'mb-2';
-          item.innerHTML = `<strong>${ed.program}</strong> — <span class="text-primary">${ed.inst}</span><div class="text-muted small">${ed.dates}</div>`;
-          edu.appendChild(item);
+          const d = document.createElement('div');
+          d.className = 'mb-2';
+          d.innerHTML = `<strong>${ed.program}</strong> — <span class="text-primary">${ed.inst}</span><div class="text-muted small">${ed.dates}</div>`;
+          edu.appendChild(d);
         });
       }
-      // Awards
       const awards = document.getElementById('awards-list');
       if (awards) {
         awards.innerHTML = '';
@@ -378,7 +638,6 @@
           awards.appendChild(li);
         });
       }
-      // Services
       const services = document.getElementById('services-list');
       if (services) {
         services.innerHTML = '';
@@ -388,85 +647,74 @@
           services.appendChild(li);
         });
       }
-      // Gallery
       const gallery = document.getElementById('gallery-list');
       if (gallery) {
         gallery.innerHTML = '';
         LOCAL_DATA.gallery.forEach((src, i) => {
-          const col = document.createElement('div');
-          col.className = 'col-6 col-md-4 col-lg-3 mb-3';
-          col.innerHTML = `<img class="img-fluid rounded shadow-sm" src="${src}" alt="Gallery image ${i + 1}" loading="lazy">`;
-          gallery.appendChild(col);
+          const c = document.createElement('div');
+          c.className = 'col-6 col-md-4 col-lg-3';
+          c.innerHTML = `<img class="img-fluid rounded" src="${src}" alt="Gallery ${i+1}" loading="lazy">`;
+          gallery.appendChild(c);
         });
       }
     }
 
-    // Expose for dev
     window.populateLists = populateFromLocal;
 
     // ========== Map ==========
-    window.initMap = function initMap() {
+    window.initMap = function() {
       if (!window.L) return;
       const el = document.getElementById('map-container');
-      if (!el) return;
-
+      if (!el || el._leaflet_id) return;
       const map = L.map('map-container');
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
       }).addTo(map);
-
-      const markers = (LOCAL_DATA.visited || []).map(v =>
-        L.marker([v.lat, v.lng]).bindPopup(v.name)
-      );
+      const markers = (LOCAL_DATA.visited || []).map(v => L.marker([v.lat, v.lng]).bindPopup(v.name));
       const group = L.featureGroup(markers).addTo(map);
       try { map.fitBounds(group.getBounds().pad(0.2)); }
       catch { map.setView([20, 0], 2); }
     };
 
-    // ========== Contact Form ==========
-    window.handleContactSubmit = function handleContactSubmit(e) {
+    // ========== Contact form ==========
+    window.handleContactSubmit = function(e) {
       e.preventDefault();
-      const form = e.currentTarget;
-      const siteField = document.getElementById('website');
+      const form   = e.currentTarget;
       const status = document.getElementById('contact-status');
-
       form.classList.add('was-validated');
       if (!form.checkValidity()) return;
-      if (siteField?.value) return; // bot
+      if (document.getElementById('website')?.value) return;
 
-      const name = document.getElementById('name')?.value?.trim();
-      const email = document.getElementById('email')?.value?.trim();
+      const name    = document.getElementById('name')?.value?.trim();
+      const email   = document.getElementById('email')?.value?.trim();
       const message = document.getElementById('message')?.value?.trim();
 
       if (window.emailjs && typeof emailjs.send === 'function') {
-        emailjs.send('service_0yhlrii', 'template_3bvruq2', {
-          from_name: name,
-          from_email: email,
-          message
-        })
-        .then(() => {
-          status.innerHTML = '<div class="alert alert-success" role="alert">Message sent successfully!</div>';
-          form.reset();
-          form.classList.remove('was-validated');
-        })
-        .catch(() => {
-          status.innerHTML = '<div class="alert alert-danger" role="alert">Failed to send message. Please try again later.</div>';
-        });
+        emailjs.send('service_0yhlrii', 'template_3bvruq2', { from_name: name, from_email: email, message })
+          .then(() => {
+            status.innerHTML = '<div class="alert alert-success" role="alert">Message sent successfully!</div>';
+            showToast('Message sent successfully!', 'success');
+            form.reset(); form.classList.remove('was-validated');
+          })
+          .catch(() => {
+            status.innerHTML = '<div class="alert alert-danger" role="alert">Failed to send. Please try again later.</div>';
+            showToast('Failed to send. Please try again.', 'error');
+          });
       } else {
         status.innerHTML = '<div class="alert alert-success" role="alert">Thanks! Your message has been recorded.</div>';
-        form.reset();
-        form.classList.remove('was-validated');
+        showToast('Message recorded!', 'success');
+        form.reset(); form.classList.remove('was-validated');
       }
     };
 
-    // ========== PDF ==========
-    window.downloadPDF = async function downloadPDF() {
+    // ========== PDF download ==========
+    window.downloadPDF = async function() {
       try {
         const { jsPDF } = window.jspdf || {};
         if (!jsPDF) throw new Error('jsPDF not loaded');
-        const doc = new jsPDF({ unit: 'pt', format: 'a4' });
+        const doc       = new jsPDF({ unit: 'pt', format: 'a4' });
         const pageWidth = doc.internal.pageSize.getWidth();
-        const margin = 40;
+        const margin    = 40;
         let y = margin + 8;
 
         function addLine(txt, size = 12, gap = 18, bold = false) {
@@ -478,18 +726,16 @@
           if (y > doc.internal.pageSize.getHeight() - margin) { doc.addPage(); y = margin; }
         }
 
-        addLine('Aboul Hassane Cisse', 20, 22, true);
-        const loc = document.getElementById('about-location')?.textContent.trim() || '';
-        addLine(`${loc} Email: aboulhcisse@gmail.com`);
-        const lead = document.getElementById('about-lead')?.textContent.trim() || '';
-        addLine(lead);
-
         function section(title) {
           y += 6; addLine(title, 14, 16, true);
-          doc.setDrawColor(30, 136, 229);
+          doc.setDrawColor(189, 93, 56);
           doc.line(margin, y, pageWidth - margin, y);
           y += 10;
         }
+
+        addLine('Aboul Hassane CISSE', 20, 22, true);
+        addLine((document.getElementById('about-location')?.textContent.trim() || '') + '  aboulhcisse@gmail.com');
+        addLine(document.getElementById('about-lead')?.textContent.trim() || '');
 
         section(document.getElementById('publications-title')?.textContent || 'Publications');
         (LOCAL_DATA.publications || []).forEach(p => addLine(`• ${p.title} — ${p.venue}`));
@@ -510,93 +756,172 @@
         (LOCAL_DATA.awards || []).forEach(a => addLine(`• ${a}`));
 
         doc.save('resume_Aboul-Hassane-CISSE.pdf');
-        const status = document.getElementById('download-status');
-        if (status) status.textContent = 'PDF downloaded.';
+        const st = document.getElementById('download-status');
+        if (st) st.textContent = 'PDF downloaded.';
+        showToast('CV downloaded successfully!', 'success');
       } catch (err) {
-        const status = document.getElementById('download-status');
-        if (status) status.textContent = 'PDF export failed.';
+        const st = document.getElementById('download-status');
+        if (st) st.textContent = 'PDF export failed.';
+        showToast('PDF export failed. Please try again.', 'error');
         console.error(err);
       }
     };
 
-    // ========== JSON Overlay (optional) ==========
-    window.changeLanguage = async function changeLanguage() {
-      const langSel = document.getElementById('language-select');
-      const lang = langSel?.value || 'en';
+    // ========== JSON overlay (language change) ==========
+    window.changeLanguage = async function() {
+      const lang = document.getElementById('language-select')?.value || 'en';
 
-      // About & Interests (simple helper)
-      async function fetchAndSetContent(url, titleId, elementId, propertyKey) {
-        try {
-          const data = await fetchJSON(url);
-          const byLang = data?.[lang];
-          if (!byLang) return;
-          if (byLang.title && titleId) {
-            const t = document.getElementById(titleId);
-            if (t) t.textContent = byLang.title;
+      // Clear dynamic sections immediately so wrong-language content never persists
+      ['publications-list','experience-list','skills-list','education-list',
+       'awards-list','services-list','gallery-list'].forEach(id => {
+        const el = document.getElementById(id); if (el) el.innerHTML = '';
+      });
+      const tabsEl = document.getElementById('pub-filter-tabs');
+      if (tabsEl) tabsEl.innerHTML = '';
+
+      // Helper: get language block with en fallback
+      function block(data) { return data?.[lang] || data?.en || null; }
+
+      // About
+      try {
+        const data = await fetchJSON(JSON_PATHS.about);
+        const b = block(data);
+        if (b) {
+          const t = document.getElementById('about-title'); if (t && b.title) t.textContent = b.title;
+          const l = document.getElementById('about-lead');  if (l && b.lead)  l.textContent = b.lead;
+        }
+      } catch {}
+
+      // Interests — content is an array of {category, items[]}
+      try {
+        const data = await fetchJSON(JSON_PATHS.interests);
+        const b = block(data);
+        const titleEl = document.getElementById('interests-title');
+        const el      = document.getElementById('interests-content');
+        if (b) {
+          if (titleEl && b.title) titleEl.textContent = b.title;
+          if (el) {
+            if (typeof b.content === 'string') {
+              el.textContent = b.content;
+            } else if (Array.isArray(b.content)) {
+              el.innerHTML = b.content.map(cat => `
+                <div class="mb-3">
+                  <h5 class="interests-category">${cat.category || ''}</h5>
+                  <ul class="interests-list">${(cat.items || []).map(item => `<li>${item}</li>`).join('')}</ul>
+                </div>`).join('');
+            }
           }
-          const el = document.getElementById(elementId);
-          const val = byLang[propertyKey];
-          if (!el) return;
-          if (typeof val === 'string') el.textContent = val;
-        } catch { /* optional */ }
-      }
-
-      await fetchAndSetContent(JSON_PATHS.about, 'about-title', 'about-lead', 'lead');
-      await fetchAndSetContent(JSON_PATHS.interests, 'interests-title', 'interests-content', 'content');
+        }
+      } catch {}
 
       // Publications
       try {
-        const data = await fetchJSON(JSON_PATHS.publications);
-        const list = document.getElementById('publications-list');
+        const data  = await fetchJSON(JSON_PATHS.publications);
+        const list  = document.getElementById('publications-list');
         const title = document.getElementById('publications-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
+          const readMoreLabel = block.readMore || 'Read more →';
+          const citeLabel     = block.cite     || 'Cite';
+          const allLabel      = block.all      || (lang === 'ja' ? 'すべて' : lang === 'fr' ? 'Tous' : 'All');
+          const types = block.list || [];
+
+          // ---- Build filter tabs from JSON type names ----
+          const pubTabsEl = document.getElementById('pub-filter-tabs');
+          if (pubTabsEl) {
+            pubTabsEl.innerHTML = '';
+            const allBtn = document.createElement('button');
+            allBtn.className = 'pub-tab active';
+            allBtn.textContent = allLabel;
+            allBtn.dataset.type = 'all';
+            pubTabsEl.appendChild(allBtn);
+            types.forEach(t => {
+              const btn = document.createElement('button');
+              btn.className = 'pub-tab';
+              btn.textContent = t.type || '';
+              btn.dataset.type = t.type || '';
+              pubTabsEl.appendChild(btn);
+            });
+            // One persistent handler (clone replaces old to avoid duplicates)
+            const fresh = pubTabsEl.cloneNode(true);
+            pubTabsEl.parentNode.replaceChild(fresh, pubTabsEl);
+            fresh.addEventListener('click', e => {
+              const btn = e.target.closest('.pub-tab');
+              if (!btn) return;
+              fresh.querySelectorAll('.pub-tab').forEach(b => b.classList.remove('active'));
+              btn.classList.add('active');
+              const filter = btn.dataset.type;
+              list.querySelectorAll('.pub-type-group').forEach(g => {
+                g.style.display = (filter === 'all' || g.dataset.type === filter) ? '' : 'none';
+              });
+            });
+          }
+
+          // ---- Render publications ----
           list.innerHTML = '';
-          (block.list || []).forEach(type => {
+          types.forEach(type => {
             const typeDiv = document.createElement('div');
-            typeDiv.innerHTML = `<h3>${type.type || ''}</h3>`;
+            typeDiv.className = 'pub-type-group mb-5';
+            typeDiv.dataset.type = type.type || '';
+            typeDiv.innerHTML = `<span class="pub-type-label">${type.type || ''}</span>`;
             (type.publications || []).forEach(pub => {
               const div = document.createElement('div');
-              div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
-              const open = pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener">` : '';
-              const close = pub.link ? `</a>` : '';
+              div.className = 'pub-card d-flex flex-column flex-md-row justify-content-between mb-4';
+              const hasLink  = pub.link && pub.link !== '#';
+              const open     = hasLink ? `<a href="${pub.link}" target="_blank" rel="noopener">` : '';
+              const close    = hasLink ? `</a>` : '';
+              const abstract = pub.abstract || '';
+              const truncated = abstract.length > 220 ? abstract.slice(0, 220) + '…' : abstract;
+              const readMore  = hasLink && abstract.length > 220
+                ? ` <a class="read-more-link" href="${pub.link}" target="_blank" rel="noopener">${readMoreLabel}</a>` : '';
+              const venue        = pub.event || pub.journal || pub.conference || '';
+              const contributors = (pub.contributors || []).join(', ');
+              const citeText     = `${contributors ? contributors + '. ' : ''}${pub.title || ''}. ${venue}. ${pub.date || ''}`;
               div.innerHTML = `
                 <div class="flex-grow-1">
-                  ${open}<h4 class="mb-0">${pub.id ? pub.id + ' - ' : ''}${pub.title || ''}${pub.language ? ' - version ' + pub.language : ''}</h4>${close}
-                  <p>${pub.abstract || ''} ${pub.link ? `<a href="${pub.link}" target="_blank" rel="noopener">...</a>` : ''}</p>
-                  ${pub.keywords ? `<p><b>${pub.keywords}</b></p>` : ''}
-                  <div class="subheading mb-3">${pub.event || pub.journal || pub.conference || ''}</div>
+                  ${open}<h4 class="mb-1 pub-title">${pub.title || ''}</h4>${close}
+                  ${contributors ? `<p class="pub-contributors small mb-1"><i class="fas fa-users"></i> ${contributors}</p>` : ''}
+                  <p class="abstract-text mb-1">${truncated}${readMore}</p>
+                  ${pub.keywords ? `<p class="pub-keywords small mb-2">${pub.keywords}</p>` : ''}
+                  <div class="subheading mb-2">${venue}</div>
+                  <button class="copy-cite-btn" data-cite="${citeText.replace(/"/g, '&quot;')}">
+                    <i class="fas fa-quote-right"></i> ${citeLabel}
+                  </button>
                 </div>
-                <div class="flex-shrink-0"><span class="text-primary">${pub.date || ''}</span></div>
-              `;
+                <div class="flex-shrink-0 ms-md-4 mt-2 mt-md-0">
+                  <span class="pub-date-badge">${pub.date ? pub.date.slice(0,4) : ''}</span>
+                </div>`;
               typeDiv.appendChild(div);
             });
             list.appendChild(typeDiv);
           });
+
+          // Fade-in on re-render
+          list.style.opacity = '0';
+          requestAnimationFrame(() => { list.style.transition = 'opacity 0.35s'; list.style.opacity = '1'; });
         }
       } catch {}
 
       // Experience
       try {
-        const data = await fetchJSON(JSON_PATHS.experience);
-        const list = document.getElementById('experience-list');
+        const data  = await fetchJSON(JSON_PATHS.experience);
+        const list  = document.getElementById('experience-list');
         const title = document.getElementById('experience-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           list.innerHTML = '';
           (block.list || []).forEach(ex => {
             const div = document.createElement('div');
-            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
+            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-4';
             div.innerHTML = `
               <div class="flex-grow-1">
-                <h3 class="mb-0">${ex.title || ''}</h3>
-                <div class="subheading mb-3">${ex.company || ''}</div>
+                <h3 class="mb-1">${ex.title || ''}</h3>
+                <div class="subheading mb-2">${ex.company || ''}</div>
                 <p>${ex.description || ''}</p>
               </div>
-              <div class="flex-shrink-0"><span class="text-primary">${ex.date || ''}</span></div>
-            `;
+              <div class="flex-shrink-0 ms-md-4 mt-2 mt-md-0"><span class="text-primary fw-semibold">${ex.date || ''}</span></div>`;
             list.appendChild(div);
           });
         }
@@ -604,39 +929,25 @@
 
       // Skills
       try {
-        const data = await fetchJSON(JSON_PATHS.skills);
-        const list = document.getElementById('skills-list');
+        const data  = await fetchJSON(JSON_PATHS.skills);
+        const list  = document.getElementById('skills-list');
         const title = document.getElementById('skills-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           list.innerHTML = '';
-          (block.list || []).forEach(skillBlock => {
+          (block.list || []).forEach(sb => {
             const div = document.createElement('div');
-            if (skillBlock.skills?.length) {
-              div.innerHTML += `
-                <div class="subheading mb-3">${skillBlock.category || ''}</div>
-                <ul class="fa-ul mb-3">
-                  ${skillBlock.skills.map(s => `<li><span class="fa-li"><i class="fas fa-check"></i></span>${s}</li>`).join('')}
-                </ul>
-              `;
+            div.className = 'col-12 mb-4';
+            let html = `<h5 class="mb-3 text-primary">${sb.category || ''}</h5>`;
+            if (sb.icons?.length) {
+              html += `<ul class="list-inline dev-icons">${sb.icons.map(ic=>`<li class="list-inline-item"><i class="${ic}"></i></li>`).join('')}</ul>`;
             }
-            if (skillBlock.workflow?.length) {
-              div.innerHTML += `
-                <div class="subheading mb-3">${skillBlock.category || ''}</div>
-                <ul class="fa-ul mb-3">
-                  ${skillBlock.workflow.map(flow => `<li><span class="fa-li"><i class="fas fa-check"></i></span>${flow}</li>`).join('')}
-                </ul>
-              `;
+            if (sb.workflow?.length || sb.skills?.length) {
+              const items = sb.workflow || sb.skills || [];
+              html += `<div class="row g-2">${items.map(s=>`<div class="col-6 col-md-4 col-lg-3"><span class="badge bg-light text-dark border w-100 py-2">${s}</span></div>`).join('')}</div>`;
             }
-            if (skillBlock.icons?.length) {
-              div.innerHTML += `
-                <div class="subheading mb-3">${skillBlock.category || ''}</div>
-                <ul class="list-inline dev-icons">
-                  ${skillBlock.icons.map(icon => `<li class="list-inline-item"><i class="${icon}"></i></li>`).join('')}
-                </ul>
-              `;
-            }
+            div.innerHTML = html;
             list.appendChild(div);
           });
         }
@@ -644,24 +955,23 @@
 
       // Education
       try {
-        const data = await fetchJSON(JSON_PATHS.education);
-        const list = document.getElementById('education-list');
+        const data  = await fetchJSON(JSON_PATHS.education);
+        const list  = document.getElementById('education-list');
         const title = document.getElementById('education-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           list.innerHTML = '';
           (block.list || []).forEach(ed => {
             const div = document.createElement('div');
-            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-5';
+            div.className = 'd-flex flex-column flex-md-row justify-content-between mb-4';
             div.innerHTML = `
               <div class="flex-grow-1">
-                <h3 class="mb-0">${ed.school || ''}</h3>
-                <div class="subheading mb-3">${ed.degree || ''}</div>
+                <h3 class="mb-1">${ed.school || ''}</h3>
+                <div class="subheading mb-2">${ed.degree || ''}</div>
                 <p>${ed.description || ''}</p>
               </div>
-              <div class="flex-shrink-0"><span class="text-primary">${ed.date || ''}</span></div>
-            `;
+              <div class="flex-shrink-0 ms-md-4 mt-2 mt-md-0"><span class="text-primary fw-semibold">${ed.date || ''}</span></div>`;
             list.appendChild(div);
           });
         }
@@ -669,16 +979,16 @@
 
       // Awards
       try {
-        const data = await fetchJSON(JSON_PATHS.awards);
-        const list = document.getElementById('awards-list');
+        const data  = await fetchJSON(JSON_PATHS.awards);
+        const list  = document.getElementById('awards-list');
         const title = document.getElementById('awards-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           list.innerHTML = '';
           (block.list || []).forEach(a => {
             const li = document.createElement('li');
-            li.innerHTML = `<span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>${a.date || ''}</b> : ${a.title || ''}`;
+            li.innerHTML = `<span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><strong>${a.date || ''}</strong> — ${a.title || ''}`;
             list.appendChild(li);
           });
         }
@@ -686,12 +996,12 @@
 
       // Services
       try {
-        const data = await fetchJSON(JSON_PATHS.services);
-        const list = document.getElementById('services-list');
+        const data  = await fetchJSON(JSON_PATHS.services);
+        const list  = document.getElementById('services-list');
         const title = document.getElementById('services-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (list && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           list.innerHTML = '';
           (block.list || []).forEach(s => {
             const li = document.createElement('li');
@@ -703,79 +1013,339 @@
 
       // Gallery
       try {
-        const data = await fetchJSON(JSON_PATHS.gallery);
-        const grid = document.getElementById('gallery-list');
+        const data  = await fetchJSON(JSON_PATHS.gallery);
+        const grid  = document.getElementById('gallery-list');
         const title = document.getElementById('gallery-title');
-        const block = data?.[lang];
+        const block = data?.[lang] || data?.en;
         if (grid && block) {
-          if (block.title) title.textContent = block.title;
+          if (block.title && title) title.textContent = block.title;
           grid.innerHTML = '';
           (block.list || []).forEach(photo => {
             const col = document.createElement('div');
-            col.className = 'col-lg-4 col-sm-6 mb-3';
+            col.className = 'col-lg-4 col-sm-6';
             col.innerHTML = `
               <a class="portfolio-box" href="${photo.link || photo.src}" title="${photo.title || ''}">
-                <img class="img-fluid" src="${photo.src}" alt="${photo.title || ''}">
+                <img class="img-fluid" src="${photo.src}" alt="${photo.title || ''}" loading="lazy">
                 <div class="portfolio-box-caption">
-                  <div class="project-category text-white-50">${photo.category || ''}</div>
-                  <div class="project-name">${photo.title || ''}</div>
+                  <div class="small text-white-50">${photo.category || ''}</div>
+                  <div class="fw-semibold">${photo.title || ''}</div>
                 </div>
-              </a>
-            `;
+              </a>`;
             grid.appendChild(col);
           });
         }
       } catch {}
 
-      // Map from JSON (optional)
+      // Map from JSON
       try {
-        const data = await fetchJSON(JSON_PATHS.map);
+        const data  = await fetchJSON(JSON_PATHS.map);
         const mapEl = document.getElementById('map-container');
         if (mapEl && window.L) {
-          const map = L.map('map-container').setView([0, 0], 2);
-          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; OpenStreetMap contributors'
-          }).addTo(map);
-          const items = data?.[lang] || [];
+          const items   = data?.[lang] || data?.en || [];
           const markers = items.map(loc => L.marker([loc.latitude, loc.longitude]).bindPopup(loc.description || ''));
-          const group = L.featureGroup(markers).addTo(map);
-          try { map.fitBounds(group.getBounds().pad(0.2)); } catch {}
+          if (!mapEl._leaflet_id) {
+            // First init — create the map
+            const map = L.map('map-container').setView([20, 0], 2);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+              attribution: '&copy; OpenStreetMap contributors'
+            }).addTo(map);
+            window._leafletMap         = map;
+            window._leafletMarkerGroup = L.featureGroup(markers).addTo(map);
+            try { map.fitBounds(window._leafletMarkerGroup.getBounds().pad(0.2)); } catch {}
+          } else if (window._leafletMap && window._leafletMarkerGroup) {
+            // Language switch — swap markers without recreating the map
+            window._leafletMarkerGroup.clearLayers();
+            markers.forEach(m => window._leafletMarkerGroup.addLayer(m));
+          }
         }
       } catch {}
 
-      // Menu labels (optional JSON)
+      // Menu labels
       try {
-        const data = await fetchJSON(JSON_PATHS.menu);
-        const block = data?.[lang];
+        const data  = await fetchJSON(JSON_PATHS.menu);
+        const block = data?.[lang] || data?.en;
         if (block) {
           document.querySelectorAll('#navbar-menu .nav-link').forEach(link => {
-            const key = link.getAttribute('data-key');
-            const icon = link.querySelector('i')?.className || '';
-            if (block[key]) link.innerHTML = `<i class="${icon}"></i> ${block[key]}`;
+            const key  = link.getAttribute('data-key');
+            const span = link.querySelector('span');
+            if (block[key] && span) span.textContent = block[key];
           });
         }
       } catch {}
     };
 
+    // ========== Toast notifications ==========
+    function showToast(msg, type = 'info', duration = 3000) {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
+      const toast = document.createElement('div');
+      toast.className = `toast-msg toast-${type}`;
+      toast.innerHTML = `<i class="fas ${icons[type] || icons.info}"></i> ${msg}`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.classList.add('toast-out');
+        setTimeout(() => toast.remove(), 320);
+      }, duration);
+    }
+    window.showToast = showToast;
+
+    // ========== Typewriter effect ==========
+    function initTypewriter() {
+      const el = document.getElementById('typewriter');
+      if (!el) return;
+      const roles = ['PhD Researcher', 'Developer', 'Entrepreneur', 'Social Innovator'];
+      let ri = 0, ci = 0, deleting = false;
+      function tick() {
+        const role = roles[ri];
+        el.textContent = deleting ? role.slice(0, ci--) : role.slice(0, ci++);
+        let delay = deleting ? 60 : 100;
+        if (!deleting && ci > role.length) { delay = 1800; deleting = true; }
+        else if (deleting && ci < 0)       { deleting = false; ri = (ri + 1) % roles.length; ci = 0; delay = 400; }
+        setTimeout(tick, delay);
+      }
+      tick();
+    }
+
+    // ========== Animated stat counters ==========
+    function initCounters() {
+      if (!window.IntersectionObserver) return;
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          obs.unobserve(e.target);
+          const el     = e.target;
+          const target = parseInt(el.dataset.target, 10);
+          const suffix = el.dataset.suffix || '';
+          const dur    = 1200;
+          const step   = 16;
+          const inc    = target / (dur / step);
+          let cur      = 0;
+          const timer  = setInterval(() => {
+            cur += inc;
+            if (cur >= target) { cur = target; clearInterval(timer); }
+            el.textContent = Math.floor(cur) + suffix;
+          }, step);
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('.stat-num[data-target]').forEach(el => obs.observe(el));
+    }
+
+    // ========== Reading progress bar ==========
+    function initProgressBar() {
+      const bar = document.getElementById('reading-progress');
+      if (!bar) return;
+      window.addEventListener('scroll', () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = total > 0 ? (window.scrollY / total * 100) + '%' : '0%';
+      }, { passive: true });
+    }
+
+    // ========== Section progress dots ==========
+    function initSectionDots() {
+      const dots = document.querySelectorAll('#section-dots .dot');
+      if (!dots.length) return;
+      dots.forEach(dot => {
+        dot.addEventListener('click', () => {
+          const target = document.getElementById(dot.dataset.target);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+      const sections = Array.from(dots).map(d => document.getElementById(d.dataset.target)).filter(Boolean);
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (!e.isIntersecting) return;
+          dots.forEach(d => d.classList.remove('active'));
+          const dot = document.querySelector(`#section-dots .dot[data-target="${e.target.id}"]`);
+          if (dot) dot.classList.add('active');
+        });
+      }, { threshold: 0.4 });
+      sections.forEach(s => obs.observe(s));
+    }
+
+    // ========== Gallery lightbox ==========
+    function initLightbox() {
+      const lb      = document.getElementById('lightbox');
+      const lbImg   = document.getElementById('lightbox-img');
+      const lbCap   = document.getElementById('lightbox-caption');
+      const lbClose = document.getElementById('lightbox-close');
+      const lbPrev  = document.getElementById('lightbox-prev');
+      const lbNext  = document.getElementById('lightbox-next');
+      if (!lb) return;
+
+      let images = [], current = 0;
+
+      function open(idx) {
+        current = idx;
+        lbImg.src     = images[idx].src;
+        lbImg.alt     = images[idx].alt;
+        lbCap.textContent = images[idx].caption || '';
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function close() {
+        lb.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      function nav(dir) {
+        current = (current + dir + images.length) % images.length;
+        lbImg.src = images[current].src;
+        lbImg.alt = images[current].alt;
+        lbCap.textContent = images[current].caption || '';
+      }
+
+      lbClose.addEventListener('click', close);
+      lbPrev.addEventListener('click', () => nav(-1));
+      lbNext.addEventListener('click', () => nav(1));
+      lb.addEventListener('click', e => { if (e.target === lb) close(); });
+      document.addEventListener('keydown', e => {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft')  nav(-1);
+        if (e.key === 'ArrowRight') nav(1);
+      });
+
+      // Delegate clicks from gallery items (populated dynamically)
+      document.getElementById('gallery-list')?.addEventListener('click', e => {
+        const link = e.target.closest('.portfolio-box, a');
+        if (!link) return;
+        e.preventDefault();
+        // Rebuild image list from current gallery
+        images = Array.from(document.querySelectorAll('#gallery-list img')).map(img => ({
+          src:     img.src,
+          alt:     img.alt,
+          caption: img.closest('.portfolio-box, a')?.querySelector('.project-name, div')?.textContent?.trim() || img.alt
+        }));
+        const clickedImg = link.querySelector('img');
+        current = images.findIndex(i => i.src === clickedImg?.src);
+        if (current < 0) current = 0;
+        open(current);
+      });
+    }
+
+    // ========== Skeleton loaders ==========
+    function showSkeletons() {
+      const sections = {
+        'publications-list': 3,
+        'experience-list':   2,
+        'education-list':    2,
+        'skills-list':       1,
+        'awards-list':       3,
+        'services-list':     3,
+      };
+      Object.entries(sections).forEach(([id, count]) => {
+        const el = document.getElementById(id);
+        if (!el || el.children.length) return;
+        let html = '';
+        for (let i = 0; i < count; i++) {
+          html += `<div class="mb-4">
+            <div class="skeleton skeleton-block skeleton-title"></div>
+            <div class="skeleton skeleton-block wide"></div>
+            <div class="skeleton skeleton-block medium"></div>
+            <div class="skeleton skeleton-block narrow"></div>
+          </div>`;
+        }
+        el.innerHTML = html;
+      });
+    }
+
+    // ========== Scroll fade-in (staggered) ==========
+    function initFadeIn() {
+      const els = document.querySelectorAll('.fade-up');
+      if (!window.IntersectionObserver) {
+        els.forEach(el => el.classList.add('visible'));
+        return;
+      }
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            // Stagger children inside each .fade-up container
+            e.target.querySelectorAll('.d-flex, .skill-category-block, li').forEach((child, i) => {
+              child.style.setProperty('--stagger', `${i * 60}ms`);
+              child.classList.add('fade-up');
+              setTimeout(() => child.classList.add('visible'), i * 60);
+            });
+            e.target.classList.add('visible');
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      els.forEach(el => obs.observe(el));
+    }
+
     // ========== Bootstrap ScrollSpy & navbar collapse ==========
     document.addEventListener('DOMContentLoaded', () => {
       const sideNav = document.querySelector('#sideNav');
       if (sideNav && window.bootstrap?.ScrollSpy) {
-        new bootstrap.ScrollSpy(document.body, { target: '#sideNav', offset: 80 });
+        new bootstrap.ScrollSpy(document.body, { target: '#sideNav', offset: 70 });
       }
-      const navbarToggler = document.querySelector('.navbar-toggler');
-      document.querySelectorAll('#navbarResponsive .nav-link').forEach(item => {
-        item.addEventListener('click', () => {
-          if (navbarToggler && getComputedStyle(navbarToggler).display !== 'none') {
-            navbarToggler.click();
-          }
-        });
+      // ---- Custom mobile drawer ----
+      const drawerToggle = document.getElementById('nav-drawer-toggle');
+      const drawerClose  = document.getElementById('nav-drawer-close');
+      const drawer       = document.getElementById('navbarResponsive');
+      const backdrop     = document.getElementById('nav-backdrop');
+
+      function openDrawer() {
+        drawer.classList.add('drawer-open');
+        backdrop.classList.add('active');
+        drawerToggle.classList.add('open');
+        drawerToggle.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeDrawer() {
+        drawer.classList.remove('drawer-open');
+        backdrop.classList.remove('active');
+        drawerToggle.classList.remove('open');
+        drawerToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      }
+
+      if (drawerToggle) drawerToggle.addEventListener('click', openDrawer);
+      if (drawerClose)  drawerClose.addEventListener('click', closeDrawer);
+      if (backdrop)     backdrop.addEventListener('click', closeDrawer);
+
+      document.querySelectorAll('#navbarResponsive .nav-link').forEach(link => {
+        link.addEventListener('click', () => { if (window.innerWidth < 992) closeDrawer(); });
       });
+
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
     });
+
+    // ========== Social counts (from GitHub Actions cron) ==========
+    async function loadSocialCounts() {
+      try {
+        const r = await fetch('json/social-counts.json');
+        if (!r.ok) return;
+        const data = await r.json();
+        function fmtCount(n) {
+          if (typeof n === 'string') return n;
+          if (!n || n <= 0) return '—';
+          if (n >= 1000000) return (n / 1000000).toFixed(1).replace('.0', '') + 'M';
+          if (n >= 1000) return (n / 1000).toFixed(1).replace('.0', '') + 'K';
+          return n.toLocaleString();
+        }
+        document.querySelectorAll('[data-social]').forEach(el => {
+          const key = el.dataset.social;
+          if (data[key] !== undefined) el.textContent = fmtCount(data[key]);
+        });
+      } catch {}
+    }
 
     // ========== Boot ==========
     document.addEventListener('DOMContentLoaded', () => {
-      // i18n default
+      // Theme
+      const savedTheme = localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      applyTheme(savedTheme);
+      document.getElementById('theme-toggle')?.addEventListener('click', () => {
+        const next = document.body.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        applyTheme(next);
+      });
+
+      // Language
       const langSel = document.getElementById('language-select');
       const initial = localStorage.getItem('lang') || 'en';
       if (langSel) {
@@ -783,21 +1353,76 @@
         langSel.addEventListener('change', () => {
           localStorage.setItem('lang', langSel.value);
           applyI18n(langSel.value);
-          window.changeLanguage?.();
+          window.changeLanguage();
         });
       }
       applyI18n(initial);
 
-      // Paint local first (never empty), then overlay JSON
+      // Data
+      showSkeletons();
       populateFromLocal();
-      window.initMap?.();
-      window.changeLanguage?.();
+      window.changeLanguage();
+      loadSocialCounts();
 
-      // Wire form & PDF
+      // Init features
+      initTypewriter();
+      initCounters();
+      initProgressBar();
+      initSectionDots();
+      initLightbox();
+
+      // Form & PDF
       const form = document.getElementById('contact-form');
       if (form) form.addEventListener('submit', window.handleContactSubmit);
       const dl = document.getElementById('download-pdf');
       if (dl) dl.addEventListener('click', window.downloadPDF);
+
+      // Navbar scroll shrink (#1)
+      const nav = document.getElementById('sideNav');
+      window.addEventListener('scroll', () => {
+        nav?.classList.toggle('scrolled', window.scrollY > 60);
+      }, { passive: true });
+
+      // Copy citation handler (#7)
+      document.addEventListener('click', e => {
+        const citeBtn = e.target.closest('.copy-cite-btn');
+        if (citeBtn) {
+          navigator.clipboard?.writeText(citeBtn.dataset.cite || '').then(() => {
+            citeBtn.classList.add('copied');
+            citeBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            showToast('Citation copied to clipboard!', 'success');
+            setTimeout(() => {
+              citeBtn.classList.remove('copied');
+              citeBtn.innerHTML = '<i class="fas fa-quote-right"></i> Cite';
+            }, 2000);
+          });
+        }
+        const emailBtn = e.target.closest('.copy-email-btn');
+        if (emailBtn) {
+          navigator.clipboard?.writeText(emailBtn.dataset.email || '').then(() => {
+            showToast('Email address copied!', 'success');
+          });
+        }
+      });
+
+      // Keyboard shortcut: T = back to top
+      document.addEventListener('keydown', e => {
+        const tag = document.activeElement?.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        if (e.key === 't' || e.key === 'T') window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Scroll-to-top
+      const scrollTopBtn = document.getElementById('scroll-top');
+      if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+          scrollTopBtn.classList.toggle('visible', window.scrollY > 400);
+        }, { passive: true });
+        scrollTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+      }
+
+      // Animations
+      initFadeIn();
     });
 
   })();

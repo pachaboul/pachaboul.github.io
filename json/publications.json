@@ -1,6 +1,9 @@
 {
   "en": {
     "title": "Publications",
+    "readMore": "Read more →",
+    "cite": "Cite",
+    "all": "All",
     "list": [
       {
         "type": "Workshop",
@@ -69,6 +72,47 @@
             "contributors": ["Cisse, A.", "Ishimaru, S."],
             "language": "en",
             "link": "https://doi.org/10.1145/3714394.3754403"
+          },
+          {
+            "id": "CP3",
+            "title": "Real-time Adaptive Learning Environments Using Gaze and Emotion Recognition Engagement and Learning Outcomes",
+            "abstract": "Investigates real-time adaptive learning environments that leverage gaze and emotion recognition to monitor and dynamically improve learner engagement and learning outcomes.",
+            "keywords": "Real-time, Adaptive Learning, Gaze Recognition, Emotion Recognition, Engagement, Learning Outcomes",
+            "event": "ICCE 2024 (International Conference on Computers in Education)",
+            "date": "2024-11-01",
+            "category": "Conference",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "CP4",
+            "title": "Integrative Analysis of Multimodal Interaction Data for Enhancing Communication and Engagement in Adaptive Learning Environments",
+            "abstract": "Poster presenting an integrative analysis of multimodal interaction data aimed at enhancing communication and engagement within adaptive learning environments.",
+            "keywords": "Multimodal Interaction, Adaptive Learning, Communication, Engagement, Data Analysis",
+            "event": "ICCE 2024",
+            "date": "2024-11-01",
+            "category": "Poster",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "Articles",
+        "publications": [
+          {
+            "id": "AR1",
+            "title": "Integrative Analysis of Multimodal Interaction Data: Predicting Communication Dynamics and Willingness to Communicate (WtC) in Human-Agent Interaction",
+            "abstract": "Presents an integrative analysis of multimodal interaction data to predict communication dynamics and willingness to communicate (WtC) in human-agent interaction contexts.",
+            "keywords": "Multimodal Interaction, Human-Agent Interaction, Communication Dynamics, Willingness to Communicate, WtC",
+            "event": "",
+            "date": "2024-08-01",
+            "category": "Article",
+            "contributors": ["Cisse, A. H.", "Seta, K.", "Hayashi, Y."],
+            "language": "en",
+            "link": "#"
           }
         ]
       },
@@ -145,30 +189,203 @@
       }
     ]
   },
-  "fr": {
-    "title": "Publications",
+  "ja": {
+    "title": "業績",
+    "readMore": "続きを読む →",
+    "cite": "引用",
+    "all": "すべて",
     "list": [
       {
-        "type": "Ateliers",
+        "type": "ワークショップ",
         "publications": [
           {
             "id": "WP1",
-            "title": "Atelier - Éducation des zones reculées : une université hybride pour la collaboration et l'inclusion grâce aux TIC à Tombouctou",
-            "abstract": "The study environment in Malian universities has been considerably degraded in recent decades,and at the same time a digital divide between urban and rural area is also being observed, howeverother developing countries continue to offer or deploy new solutions to cope with the significantincrease of the number of new students. To cope with this issue, deploying an integrated ICT inEducation can be a better option to improve the quality of education and reduce the unemploymentrate in the Malian youth. Our case study is focused on Timbuktu town located at 930 kilometersfrom the capital city Bamako, although Timbuktu has no public university. In 2019, 2456 students(from Timbuktu region, source Academia of Timbuktu) enrolled at the various universities in Mali.95% of them had to move to Bamako because Timbuktu has only 2 private universities. Toinvestigate the efficiency of our proposed solution, this research study explored the potentialbenefits and challenges towards the utilization of the Khadas [1], Raspberry PI 4[2] and refurbishedold Laptop computers for the use of projected university in Timbuktu. While we encountered somechallenges, we were able to test and understand the possibility of integrating and associatingexisting tools for our proposed solution for improving access to higher education for an increasingneed of higher education and reducing the digital divide in Mali.",
-            "keywords": "Digital pedagogy, e-learning, Technology leapfrogging, Digital Transforming, ICT in Education",
-            "event": "Atelier CROMSSMMLA + SLE à LAK22",
+            "title": "遠隔地教育：ICTを活用したティンブクトゥにおける協働とインクルージョンのためのハイブリッド大学",
+            "abstract": "マリの大学における学習環境は近年著しく悪化しており、都市と農村の間のデジタルデバイドも拡大しています。本研究では、ティンブクトゥにおける高等教育アクセス向上のためのICT活用ハイブリッド大学構想を提案し、Khadas、Raspberry Pi 4、リファービッシュPCの活用可能性を検証しました。",
+            "keywords": "デジタル教授法、eラーニング、ICT教育、デジタル変革",
+            "event": "LAK22 ワークショップ (CROMSSMMLA + SLE)",
             "date": "2022-03-21",
-            "category": "Autre",
+            "category": "ワークショップ",
             "contributors": ["AboulHassane, C", "Takahara Toshiro"],
             "language": "en",
             "link": "#"
           },
           {
             "id": "WP2",
-            "title": "Enhancing Hybrid Learning: The Role of Multimodal Adaptive Feedback in Human-AI Collaboration",
-            "abstract": "Explores how multimodal adaptive feedback can support hybrid learning environments by leveraging real-time biometric and behavioral data.",
-            "keywords": "Hybrid Learning, Multimodal Feedback, Human-AI Collaboration, Adaptive Systems",
-            "event": "Joint Proceedings of LAK 2025 Workshops",
+            "title": "ハイブリッド学習の強化：人間とAIの協働におけるマルチモーダル適応フィードバックの役割",
+            "abstract": "リアルタイムの生体・行動データを活用したマルチモーダル適応フィードバックがハイブリッド学習環境をどのように支援するかを探ります。",
+            "keywords": "ハイブリッド学習、マルチモーダルフィードバック、人間-AI協働、適応システム",
+            "event": "LAK 2025 ワークショップ合同予稿集",
+            "date": "2025-03-10",
+            "category": "ワークショップ",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "urn:nbn:de:0074-3995-X"
+          },
+          {
+            "id": "WP3",
+            "title": "学習環境における適応フィードバック：フィードバック感度と学習者エンゲージメント向上のためのマルチモーダルアプローチ",
+            "abstract": "マルチモーダルデータストリームがフィードバック設計と学習者エンゲージメント向上にどう貢献するかを研究する博士コンソーシアム論文。",
+            "keywords": "適応フィードバック、学習者エンゲージメント、マルチモーダルデータ、博士コンソーシアム",
+            "event": "LAK25 博士コンソーシアム",
+            "date": "2025-03-11",
+            "category": "ワークショップ",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "国際会議",
+        "publications": [
+          {
+            "id": "CP1",
+            "title": "プログラミング教育における生成AIとマルチモーダルプロファイリング：ツール・教育的影響・将来的コンピテンシーの体系的レビュー",
+            "abstract": "生成AIとマルチモーダルプロファイリングツールがプログラミング教育をどのように再構築しているかを分析する体系的レビュー。",
+            "keywords": "生成AI、プログラミング教育、マルチモーダルプロファイリング、体系的レビュー",
+            "event": "ICCE 2025（インド・チェンナイ）",
+            "date": "2025-12-01",
+            "category": "会議",
+            "contributors": ["Cisse, A.", "Ishimaru, S."],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "CP2",
+            "title": "シグナルから認知へ：ウェアラブルセンサーストリームからの認知状態推定のための自己教師あり学習",
+            "abstract": "ウェアラブルセンサーデータから認知状態を推定する自己教師ありアプローチを提案。",
+            "keywords": "自己教師あり学習、マルチモーダルセンサー、認知状態、ウェアラブル",
+            "event": "UbiComp Companion 2025（フィンランド・エスポー）",
+            "date": "2025-10-12",
+            "category": "会議",
+            "contributors": ["Cisse, A.", "Ishimaru, S."],
+            "language": "en",
+            "link": "https://doi.org/10.1145/3714394.3754403"
+          },
+          {
+            "id": "CP3",
+            "title": "視線・感情認識を活用したリアルタイム適応学習環境：エンゲージメントと学習成果",
+            "abstract": "視線・感情認識を活用してリアルタイムで学習者のエンゲージメントと学習成果を動的に向上させる適応学習環境を研究します。",
+            "keywords": "リアルタイム、適応学習、視線認識、感情認識、エンゲージメント、学習成果",
+            "event": "ICCE 2024（コンピュータと教育に関する国際会議）",
+            "date": "2024-11-01",
+            "category": "会議",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "CP4",
+            "title": "適応学習環境におけるコミュニケーションとエンゲージメント向上のためのマルチモーダル相互作用データの統合分析",
+            "abstract": "適応学習環境内でのコミュニケーションとエンゲージメントを強化することを目的としたマルチモーダル相互作用データの統合分析を提示するポスター。",
+            "keywords": "マルチモーダル相互作用、適応学習、コミュニケーション、エンゲージメント、データ分析",
+            "event": "ICCE 2024",
+            "date": "2024-11-01",
+            "category": "ポスター",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "論文",
+        "publications": [
+          {
+            "id": "AR1",
+            "title": "ヒューマンエージェント相互作用におけるコミュニケーションダイナミクスと意思疎通意欲（WtC）予測のためのマルチモーダル相互作用データの統合分析",
+            "abstract": "ヒューマンエージェント相互作用におけるコミュニケーションダイナミクスと意思疎通意欲（WtC）を予測するためのマルチモーダル相互作用データの統合分析を提示。",
+            "keywords": "マルチモーダル相互作用、ヒューマンエージェント相互作用、コミュニケーションダイナミクス、意思疎通意欲、WtC",
+            "event": "",
+            "date": "2024-08-01",
+            "category": "論文",
+            "contributors": ["Cisse, A. H.", "Seta, K.", "Hayashi, Y."],
+            "language": "en",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "書籍",
+        "publications": [
+          {
+            "id": "BK1",
+            "title": "マリにおける革新的教育に向けて：ビジョンと戦略",
+            "abstract": "ICTとインクルーシブ政策を活用してマリの教育を近代化するためのビジョンと戦略を提案する書籍。",
+            "keywords": "教育、イノベーション、マリ、ICT",
+            "date": "2025-01-15",
+            "category": "書籍",
+            "contributors": ["Cisse, A. H."],
+            "language": "fr",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "ブログ",
+        "publications": [
+          {
+            "id": "BP5",
+            "title": "コロナウイルス：免疫力を高める5つのアドバイス",
+            "abstract": "ブロガーMalizéがマリにおけるコロナウイルス感染症に対して免疫力を高めるための5つのアドバイスを紹介。",
+            "keywords": "",
+            "date": "2020-03-30",
+            "category": "ブログ",
+            "language": "fr",
+            "link": "https://benbere.org/au-grin/coronavirus-5-conseils-renforcer-systeme-immunitaire/"
+          },
+          {
+            "id": "BP4",
+            "title": "メダルの他に、Mamoutou Diarraは奨学金に値する",
+            "abstract": "洪水で溺れかけた若者たちを救ったMamoutou Diarraへの、メダルより意義深い留学奨学金を求める論説。",
+            "keywords": "",
+            "date": "2019-05-21",
+            "category": "ブログ",
+            "language": "fr",
+            "link": "https://benbere.org/terre-dopportunites/medaille-bourse-etudes-mamoutou-diarra-merite/"
+          },
+          {
+            "id": "BP3",
+            "title": "不透明さがフェイクニュースを助長する",
+            "abstract": "当局が敏感な情報を隠し続ければ、選挙後の緊張した状況下では噂が優勢になるとブロガーMalizéが論じる。",
+            "keywords": "",
+            "date": "2018-08-31",
+            "category": "ブログ",
+            "language": "fr",
+            "link": "https://benbere.org/au-grin/non-transparence-encourage-fake-news/"
+          }
+        ]
+      }
+    ]
+  },
+  "fr": {
+    "title": "Publications",
+    "readMore": "Lire la suite →",
+    "cite": "Citer",
+    "all": "Tous",
+    "list": [
+      {
+        "type": "Ateliers",
+        "publications": [
+          {
+            "id": "WP1",
+            "title": "Atelier — Éducation en zone éloignée : une université hybride pour la collaboration et l'inclusion par les TIC à Tombouctou",
+            "abstract": "L'environnement d'étude dans les universités maliennes s'est considérablement dégradé ces dernières décennies, tandis qu'une fracture numérique entre zones urbaines et rurales se creuse. Notre étude de cas, centrée sur Tombouctou (à 930 km de Bamako), explore le potentiel du Khadas, du Raspberry Pi 4 et d'ordinateurs portables reconditionnés pour déployer une université hybride inclusive, améliorer l'accès à l'enseignement supérieur et réduire la fracture numérique au Mali.",
+            "keywords": "Pédagogie numérique, e-learning, TIC en éducation, transformation numérique",
+            "event": "Atelier CROMSSMMLA + SLE à LAK22",
+            "date": "2022-03-21",
+            "category": "Atelier",
+            "contributors": ["AboulHassane, C", "Takahara Toshiro"],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "WP2",
+            "title": "Améliorer l'apprentissage hybride : le rôle du retour d'information adaptatif multimodal dans la collaboration humain-IA",
+            "abstract": "Cette étude explore comment le retour d'information adaptatif multimodal peut soutenir les environnements d'apprentissage hybrides en exploitant des données biométriques et comportementales en temps réel.",
+            "keywords": "Apprentissage hybride, retour d'information multimodal, collaboration humain-IA, systèmes adaptatifs",
+            "event": "Actes conjoints des ateliers LAK 2025",
             "date": "2025-03-10",
             "category": "Atelier",
             "contributors": ["Cisse, A."],
@@ -177,10 +394,10 @@
           },
           {
             "id": "WP3",
-            "title": "Adaptive Feedback in Learning Environments: A Multimodal Approach to Enhancing Feedback Sensitivity and Learner Engagement",
-            "abstract": "Doctoral consortium paper examining how multimodal data streams improve feedback design for enhancing learner engagement.",
-            "keywords": "Adaptive Feedback, Learner Engagement, Multimodal Data, Doctoral Consortium",
-            "event": "LAK25 Doctoral Consortium",
+            "title": "Retour d'information adaptatif dans les environnements d'apprentissage : une approche multimodale pour améliorer la sensibilité au retour et l'engagement des apprenants",
+            "abstract": "Article de consortium doctoral examinant comment les flux de données multimodaux améliorent la conception du retour d'information et renforcent l'engagement des apprenants.",
+            "keywords": "Retour adaptatif, engagement des apprenants, données multimodales, consortium doctoral",
+            "event": "Consortium doctoral LAK25",
             "date": "2025-03-11",
             "category": "Atelier",
             "contributors": ["Cisse, A."],
@@ -194,10 +411,10 @@
         "publications": [
           {
             "id": "CP1",
-            "title": "Generative AI and Multimodal Profiling in Programming Education: A Systematic Review of Tools, Pedagogical Impacts, and Future Competencies",
-            "abstract": "A systematic review analyzing how generative AI and multimodal profiling tools reshape programming education by identifying impacts on pedagogy and future competencies.",
-            "keywords": "Generative AI, Programming Education, Multimodal Profiling, Systematic Review",
-            "event": "ICCE 2025 (Chennai, India)",
+            "title": "IA générative et profilage multimodal dans l'enseignement de la programmation : une revue systématique des outils, impacts pédagogiques et compétences futures",
+            "abstract": "Une revue systématique analysant comment l'IA générative et les outils de profilage multimodal transforment l'enseignement de la programmation, en identifiant les impacts pédagogiques et les compétences requises pour l'avenir.",
+            "keywords": "IA générative, enseignement de la programmation, profilage multimodal, revue systématique",
+            "event": "ICCE 2025 (Chennai, Inde)",
             "date": "2025-12-01",
             "category": "Conférence",
             "contributors": ["Cisse, A.", "Ishimaru, S."],
@@ -206,15 +423,56 @@
           },
           {
             "id": "CP2",
-            "title": "From Signals to Cognition: Self-Supervised Multimodal Learning for Cognitive State Inference from Wearable Sensor Streams",
-            "abstract": "Introduces a self-supervised approach to infer cognitive states using wearable sensor data streams.",
-            "keywords": "Self-Supervised Learning, Multimodal Sensors, Cognitive State, Wearables",
-            "event": "UbiComp Companion 2025 (Espoo, Finland)",
+            "title": "Des signaux à la cognition : apprentissage multimodal auto-supervisé pour l'inférence d'états cognitifs à partir de capteurs portables",
+            "abstract": "Présente une approche auto-supervisée pour inférer les états cognitifs à partir de flux de données de capteurs portables en temps réel.",
+            "keywords": "Apprentissage auto-supervisé, capteurs multimodaux, état cognitif, informatique portable",
+            "event": "UbiComp Companion 2025 (Espoo, Finlande)",
             "date": "2025-10-12",
             "category": "Conférence",
             "contributors": ["Cisse, A.", "Ishimaru, S."],
             "language": "en",
             "link": "https://doi.org/10.1145/3714394.3754403"
+          },
+          {
+            "id": "CP3",
+            "title": "Environnements d'apprentissage adaptatifs en temps réel utilisant la reconnaissance du regard et des émotions pour l'engagement et les résultats d'apprentissage",
+            "abstract": "Explore les environnements d'apprentissage adaptatifs en temps réel qui exploitent la reconnaissance du regard et des émotions pour surveiller et améliorer dynamiquement l'engagement des apprenants et les résultats d'apprentissage.",
+            "keywords": "Temps réel, apprentissage adaptatif, reconnaissance du regard, reconnaissance des émotions, engagement, résultats d'apprentissage",
+            "event": "ICCE 2024 (Conférence internationale sur les ordinateurs dans l'éducation)",
+            "date": "2024-11-01",
+            "category": "Conférence",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          },
+          {
+            "id": "CP4",
+            "title": "Analyse intégrative des données d'interaction multimodales pour améliorer la communication et l'engagement dans les environnements d'apprentissage adaptatifs",
+            "abstract": "Poster présentant une analyse intégrative des données d'interaction multimodales visant à améliorer la communication et l'engagement dans les environnements d'apprentissage adaptatifs.",
+            "keywords": "Interaction multimodale, apprentissage adaptatif, communication, engagement, analyse de données",
+            "event": "ICCE 2024",
+            "date": "2024-11-01",
+            "category": "Poster",
+            "contributors": ["Cisse, A."],
+            "language": "en",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "type": "Articles",
+        "publications": [
+          {
+            "id": "AR1",
+            "title": "Analyse intégrative des données d'interaction multimodales : prédire la dynamique de communication et la volonté de communiquer (WtC) dans l'interaction humain-agent",
+            "abstract": "Présente une analyse intégrative des données d'interaction multimodales pour prédire la dynamique de communication et la volonté de communiquer (WtC) dans des contextes d'interaction humain-agent.",
+            "keywords": "Interaction multimodale, interaction humain-agent, dynamique de communication, volonté de communiquer, WtC",
+            "event": "",
+            "date": "2024-08-01",
+            "category": "Article",
+            "contributors": ["Cisse, A. H.", "Seta, K.", "Hayashi, Y."],
+            "language": "en",
+            "link": "#"
           }
         ]
       },
@@ -223,9 +481,9 @@
         "publications": [
           {
             "id": "BK1",
-            "title": "Vers une éducation innovante au Mali: Vision et stratégie",
-            "abstract": "Proposes a vision and strategies to modernize education in Mali using innovative approaches, ICT, and inclusive policies.",
-            "keywords": "Education, Innovation, Mali, ICT",
+            "title": "Vers une éducation innovante au Mali : vision et stratégie",
+            "abstract": "Propose une vision et des stratégies pour moderniser l'éducation au Mali grâce aux approches innovantes, aux TIC et aux politiques inclusives, en mettant l'accent sur l'équité et l'accès à l'enseignement supérieur.",
+            "keywords": "Éducation, innovation, Mali, TIC, inclusivité",
             "date": "2025-01-15",
             "category": "Livre",
             "contributors": ["Cisse, A. H."],

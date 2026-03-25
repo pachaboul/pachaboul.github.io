@@ -16,5 +16,14 @@
             "Consultance en Transformation digitale",
             "Consultance en Communication Digitale"
         ]
+    },
+    "ja": {
+        "title": "サービス",
+        "list": [
+            "ウェブサイトの作成・保守",
+            "ドメイン名およびホスティングスペースの販売",
+            "デジタルトランスフォーメーションのコンサルティング",
+            "デジタルコミュニケーションのコンサルティング"
+        ]
     }
 }
