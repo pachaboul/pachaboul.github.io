@@ -154,7 +154,14 @@
         <p class="hero-greeting">Hello, I'm</p>
         <h1 class="hero-name">Aboul Hassane <span class="accent">(Pacha)</span> CISSE</h1>
         <p class="hero-role"><span id="typewriter"></span><span class="typewriter-cursor">|</span></p>
-        <p id="about-lead" class="hero-bio"></p>
+        <div class="hero-bio-row">
+          <p id="about-lead" class="hero-bio"></p>
+          <blockquote class="quran-verse" id="quran-verse">
+            <p class="quran-translation" id="quran-translation"></p>
+            <p class="quran-arabic" lang="ar">إِنَّ فِي خَلْقِ السَّمَاوَاتِ وَالْأَرْضِ وَاخْتِلَافِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لِّأُولِي الْأَلْبَابِ</p>
+            <cite class="quran-ref" id="quran-ref"></cite>
+          </blockquote>
+        </div>
         <p id="about-location" class="hero-location">
           <i class="fas fa-map-marker-alt"></i>
           SAKAI-KU, SAKAI-SHI, OSAKA &nbsp;·&nbsp;
@@ -491,6 +498,7 @@
         about: { lead:'Researcher in AI & Educational Technology. I build data-driven tools to understand and enhance learning.', location:'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
         section: { interests:'Interests', publications:'Publications', experience:'Experience', skills:'Skills', education:'Education', awards:'Awards & Scholarships', services:'Services', gallery:'Gallery', map:'Around the World', contact:'Contact', social:'Follow Me' },
         social: { followers:'Followers', connections:'Connections' },
+        quran: { text:'"Indeed, in the creation of the heavens and the earth and the alternation of the day and night there are signs for people of reason."', ref:'Quran, Surah 3 (Ali \'Imran), verse 190' },
         contact: { name:'Name:', email:'Email:', message:'Message:', send:'Send', name_req:'Please enter your name.', email_req:'Please enter a valid email.', message_req:'Please write a message.' },
         interests:'Multimodal learning analytics, human-AI interaction, eye-tracking, wearable sensing, inclusive education.'
       },
@@ -499,6 +507,7 @@
         about: { lead:"Chercheur en IA et technologies éducatives. Je conçois des outils basés sur les données pour améliorer l'apprentissage.", location:'SAKAI-KU, SAKAI-SHI, OSAKA 590-0976 · ' },
         section: { interests:"Centres d'intérêt", publications:'Publications', experience:'Expérience', skills:'Compétences', education:'Éducation', awards:'Prix & Bourses', services:'Services', gallery:'Galerie', map:'Autour du monde', contact:'Contact', social:'Réseaux Sociaux' },
         social: { followers:'Abonnés', connections:'Relations' },
+        quran: { text:'« En vérité, dans la création des cieux et de la terre, et dans l\'alternance de la nuit et du jour, il y a certes des signes pour les doués d\'intelligence »', ref:'Sourate 3 (Ali-\'Imran), verset 190 — S3:V190' },
         contact: { name:'Nom :', email:'Email :', message:'Message :', send:'Envoyer', name_req:'Veuillez entrer votre nom.', email_req:'Veuillez saisir un email valide.', message_req:'Veuillez écrire un message.' },
         interests:"Analytique d'apprentissage multimodale, interaction humain-IA, eye-tracking, capteurs portables, éducation inclusive."
       },
@@ -507,6 +516,7 @@
         about: { lead:'AIと教育工学の研究者。学習を理解・向上させるデータ駆動型ツールを開発しています。', location:'大阪府堺市堺区 590-0976 · ' },
         section: { interests:'関心分野', publications:'業績', experience:'経験', skills:'スキル', education:'学歴', awards:'受賞・奨学金', services:'サービス', gallery:'ギャラリー', map:'世界での活動', contact:'連絡先', social:'フォローする' },
         social: { followers:'フォロワー', connections:'つながり' },
+        quran: { text:'「まことに、天と地の創造と、夜と昼の交替の中に、理性ある人々のための徴がある。」', ref:'クルアーン 第3章（アーリ・イムラーン）190節' },
         contact: { name:'お名前：', email:'メール：', message:'メッセージ：', send:'送信', name_req:'お名前を入力してください。', email_req:'有効なメールを入力してください。', message_req:'メッセージを入力してください。' },
         interests:'マルチモーダル学習分析、人間とAIのインタラクション、視線計測、ウェアラブル計測、インクルーシブ教育。'
       }
@@ -523,6 +533,10 @@
       document.documentElement.lang = lang;
       const lead = document.getElementById('about-lead');
       if (lead) lead.textContent = dict.about.lead;
+      const qTrans = document.getElementById('quran-translation');
+      const qRef   = document.getElementById('quran-ref');
+      if (qTrans && dict.quran) qTrans.textContent = dict.quran.text;
+      if (qRef   && dict.quran) qRef.textContent   = dict.quran.ref;
       const interests = document.getElementById('interests-content');
       if (interests) interests.textContent = dict.interests;
     }
