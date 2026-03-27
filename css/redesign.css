@@ -1623,45 +1623,46 @@ body { padding-bottom: 44px; }
 
 .quran-verse {
   flex: 0 0 auto;
-  width: 260px;
+  width: 270px;
   margin: 0;
-  padding: 1rem 1.1rem;
-  border-left: 3px solid var(--accent);
-  background: rgba(189,93,56,0.06);
-  border-radius: 0 10px 10px 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid #d4a853;
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0 12px 12px 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-}
-
-[data-theme="dark"] .quran-verse {
-  background: rgba(189,93,56,0.1);
+  gap: 0.6rem;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.08);
 }
 
 .quran-translation {
-  font-size: 0.82rem;
+  font-size: 0.83rem;
   font-style: italic;
-  color: var(--text);
-  line-height: 1.6;
+  color: rgba(255,255,255,0.82);
+  line-height: 1.65;
   margin: 0;
 }
 
 .quran-arabic {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: 'Amiri', 'Traditional Arabic', 'Scheherazade New', serif;
   direction: rtl;
   text-align: right;
-  color: var(--accent);
-  line-height: 1.9;
+  color: #d4a853;
+  line-height: 2;
   margin: 0;
   font-weight: 600;
+  text-shadow: 0 1px 8px rgba(212,168,83,0.25);
 }
 
 .quran-ref {
-  font-size: 0.72rem;
-  color: var(--text-muted);
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.4);
   font-style: normal;
   display: block;
+  letter-spacing: 0.02em;
 }
 
 @media (max-width: 900px) {
